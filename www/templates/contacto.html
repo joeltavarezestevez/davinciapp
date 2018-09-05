@@ -1,0 +1,39 @@
+<ion-view title="Cont&aacute;ctenos" class="bg-yellow">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>     
+    <ion-content class="has-header">
+        <div style="padding-left: 15px; padding-top: 5px;">
+            <h4 class="energized" ><b>Nuestra Direcci&oacute;n</b></h4>
+        </div>
+        <div class="card">
+            <!-- map directive-->
+            <app-map style="height:200px;margin:2px;box-shadow:0 3px 25px black;" center="basel" markers="whoiswhere">
+            </app-map>
+        </div>
+        <div class="item card text-center bg-yellow-dark">
+            <h2 style="color: #031D7C;"><i><b>Cont&aacute;ctanos por</b></i></h2>
+            <div class="button-bar">
+              <a class="button button-positive" onclick="window.open('tel:+1-809-734-1535', '_system', 'location=no'); return false;"><i class="icon ion-android-call"></i></a>
+              <a class="button button-balanced" onclick="window.open('mailto:info@leonardo-da-vinci.edu.do', '_system', 'location=no'); return false;"><i class="icon ion-email"></i></a>
+            </div> 
+            &nbsp;
+            <h2 style="color: #031D7C;"><i><b>Síguenos por</b></i></h2>
+            <div class="button-bar">
+              <a class="button button-positive" style="background: #3b5998;" onclick="window.open('fb://page/168817569860916', '_system', 'location=no'); return false;"><i class="icon ion-social-facebook"></i></a>
+              <a class="button button-calm" style="background: #00aced;" onclick="window.open('twitter://user?screen_name=ildvinci', '_system', 'location=no'); return false;"><i class="icon ion-social-twitter"></i></a>
+              <a class="button button-royal" style="background: linear-gradient(to right, #8A3AB9, #FBAD50);" onclick="window.open('instagram://user?username=ildvinci', '_system', 'location=no'); return false;"><i class="icon ion-social-instagram"></i></a>
+              <a class="button button-assertive" style="background: #FF0000;" onclick="window.open('http://www.youtube.com/channel/UCFcOIizcrUwehgig7-R4DGA', '_system', 'location=yes'); return false;"><i class="icon ion-social-youtube"></i></a>
+            </div>
+            &nbsp;
+            <br>
+            <a class="button button-energized button-clear" onclick="window.open('http://www.leonardo-da-vinci.edu.do', '_system', 'location=yes'); return false;">
+                <i class="icon ion-cloud"> Visite nuestra p&aacute;gina web</i>
+            </a>
+            <br>
+            <button class="button button-energized button-clear" ng-click="mensaje()">
+                <big><i class="icon ion-email"> Env&iacute;enos un mensaje</i></big>
+            </button>
+        </div>       
+    </ion-content>
+</ion-view>

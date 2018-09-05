@@ -1,0 +1,76 @@
+<ion-view title="Notas">
+    <ion-content overflow-scroll="true" scroll="true" class="content has-header">
+        <h5 class="energized text-center"><b>REPORTE DE CALIFICACIONES</b></h5>
+        <h5 class="energized text-center"><b>Segundo Semestre</b></h5>
+        <div class="card">
+            <div class="item item-divider">
+                <h3><b>Datos del Estudiante</b></h3>
+            </div>
+            <div>
+                <div class="row responsive-sm">
+                    <p class="col small-line"><small>Alumno(a): <b>{{ alumno }}</b></small></p>
+                </div>
+                <div class="row responsive-sm">
+                    <p class="col small-line"><small>Matrícula: <b>{{ matricula }}</b></small></p>
+                    <p class="col small-line"><small>Curso: <b>{{ curso }}</b></small></p>
+                </div>
+                <div class="row responsive-sm">
+                    <p class="col small-line"><small>Sección: <b>{{ seccion }}</b></small></p>
+                    <p class="col small-line"><small>Nivel: <b>{{ nivel }}</b></small></p>
+                    <p class="col small-line"><small>Año Escolar: <b>{{ ano_escolar }}</b></small></p>
+                </div>                   
+            </div>
+        </div>
+        <div class="card">
+            <ion-scroll direction="x" class="padding wide-as-needed">
+                <div class="item item-header item-energized row row-item min-500">
+                    <div class="col col-left min-150">Asignatura</div>
+                    <div class="col col-right min-10">1EV</div>
+                    <div class="col col-right min-10">2EV</div>
+                    <div class="col col-right min-10">3EV</div>
+                    <div class="col col-right min-10">4EV</div>
+                    <div class="col col-right min-10">PROM<br>SEM</div>
+                    <div class="col col-right min-10">70%<br>PROM</div>
+                    <div class="col col-right min-10">PRU<br>SEM</div>
+                    <div class="col col-right min-10">30%<br>PRU</div>
+                    <div class="col col-right min-10">CFS</div>
+                    <div class="col col-right min-10">ASI</div>    
+                </div>
+                <div class="item row row-item min-500" ng-repeat="row in data | orderBy:predicate:desc">
+                    <div class="col col-left min-150">{{ row.asignatura | limitTo: 23 }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.ev1 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.ev2 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.ev3 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.ev4 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.promsem | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.prom70 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.prusem | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.pru30 | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.cfs | number }}</div>
+                    <div class="col col-right col-sep min-10">{{ row.asi | number }}</div>
+                </div>
+                <div></div>
+            </ion-scroll>
+        </div>
+        <div class="card">
+            <div class="item item-divider" >
+                <h3><b>Leyenda</b></h3>
+            </div>
+            <div>
+                <div class="row">
+                    <p class="col col-50 small-line"><small><b>EV</b> = Evaluación </small></p>
+                    <p class="col col-50 small-line"><small><b>SEM</b> = Semestre</small></p>
+                </div>
+                <div class="row">
+                    <p class="col col-50 small-line"><small><b>PROM</b> = Promedio </small></p>
+                    <p class="col col-50 small-line"><small><b>PRU</b> = Prueba</small></p>
+                </div>
+                <div class="row">
+                    <p class="col col-50 small-line"><small><b>CFS</b> = Calif. Fin Sem</small></p>
+                    <p class="col col-50 small-line"><small><b>ASI</b> = Asistencia</small></p>
+                </div>
+            </div>
+        </div>
+        &nbsp;
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="Promociones" class="bg-yellow">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+	</ion-nav-buttons>
+	<ion-content class="padding bg-yellow">
+		<h2 class="text-center">Promociones</h2>
+		<div class="list list-inset">
+		  <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+		    <i class="icon ion-search placeholder-icon"></i>
+		    <input type="search" ng-model="search" placeholder=" Buscar por Promoci&oacute;n/Estudiante" />
+		  </div>
+		</div>		
+		<ion-list class="bg-yellow-dark">
+			<div ng-repeat="promocion in promociones | filter:search" id="promocion">
+			<ion-item class="item item-thumbnail-left item-icon-right item-text-wrap" href="#/app/comunidad/promociones/{{promocion.id}}">
+				<img ng-src="{{promocion.foto_cuadro}}"	>
+				<h2 class="">{{promocion.nombre_promocion}}</h2>
+				<p>Promoción {{promocion.ano_escolar}}</p>
+				<i class="icon ion-ios-arrow-right"></i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

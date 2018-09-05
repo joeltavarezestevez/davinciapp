@@ -1,0 +1,41 @@
+<ion-view view-title="{{promocion.nombre_promocion}}">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>	
+	<ion-content class="padding bg-yellow">
+		<div class="text-center">
+			<h2>{{promocion.nombre_promocion}}</h2>			
+			<a ng-click="openModalCuadro({{promocion.id}})">
+				<img ng-src="{{promocion.foto_cuadro}}" alt="{{promocion.foto_cuadro}}" width="100" style="margin: 5px;">
+			</a>
+			<a ng-click="openModalCollage({{promocion.id}})">
+				<img ng-src="{{promocion.foto_collage}}" alt="{{promocion.foto_collage}}" width="200" style="margin: 5px;">
+			</a>
+		</div>
+		<div class="list list-inset">
+		  <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+		    <i class="icon ion-search placeholder-icon"></i>
+		    <input type="search" ng-model="search" placeholder=" Buscar Estudiante" />
+		  </div>
+		</div>
+		<h3 ng-show="promocion.integrantes.length > 2">Integrantes <span class="badge badge-energized">{{promocion.integrantes.length}}</span></h3>
+		<ion-list ng-show="promocion.integrantes.length > 2">
+			<ion-item id="integrante" class="item-accordion" ng-repeat="integrante in promocion.integrantes | filter:search">
+				<i class="ion-university"></i> {{integrante.nombre}}
+			</ion-item>
+		</ion-list>
+		<h3 ng-show="promocion.integrantes.length <= 2">Integrantes <span class="badge badge-energized">{{promocion.integrantes[0].integrantes.length + promocion.integrantes[1].integrantes.length}}</span></h3>	
+		<ion-list ng-show="promocion.integrantes.length <= 2">
+			<div ng-repeat="curso in promocion.integrantes">
+				<ion-item id="integrante" class="item-stable bg-yellow" ng-click="toggleGroup(curso)" ng-class="{active: isGroupShown(curso)}">
+					<i class="icon" ng-class="isGroupShown(curso) ? 'ion-minus' : 'ion-plus'"></i> &nbsp;
+					<b>{{curso.seccion}} <span class="badge badge-energized">{{curso.integrantes.length}}</span></b>
+				</ion-item>
+				<ion-item id="integrante" class="item-accordion" ng-repeat="integrante in curso.integrantes | filter:search" ng-show="isGroupShown(curso)">
+					<i class="ion-university"></i> {{integrante.nombre}}
+				</ion-item>
+			</div>
+		</ion-list>
+		<div>&nbsp;</div>
+	</ion-content>
+</ion-view>

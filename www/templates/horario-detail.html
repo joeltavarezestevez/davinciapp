@@ -1,0 +1,13 @@
+<ion-view view-title="{{horario.nombre_horario}}">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>	
+	<ion-content class="padding bg-yellow">
+		<div class="text-center">
+			<h2>{{horario.nombre_horario}}</h2>			
+			<a ng-click="openModalHorario({{horario.id}})">
+				<img ng-src="{{url+''+horario.foto_horario}}" alt="{{url+''+horario.foto_horario}}" width="500">
+			</a>
+		</div>
+	</ion-content>
+</ion-view>

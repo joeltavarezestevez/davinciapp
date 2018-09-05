@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/joeltavarezestevez/IonicProjects/davinciapp/platforms/android/assets/www/lib/ionic/js/ionic.min.js",
+        "/Users/joeltavarezestevez/IonicProjects/davinciapp/platforms/android/build/intermediates/assets/debug/www/plugins/cordova-plugin-device/www/device.js",
+        "/Users/joeltavarezestevez/IonicProjects/davinciapp/www/js/app.js"
+    ]
+}

@@ -1,0 +1,187 @@
+/* Empty. Add your own CSS if you like */
+
+.background{
+    background: #BB0067;
+    border-color: #BB0067;
+    color: #FFFFFF;
+}
+
+.bg-yellow {
+  background: #f2e7c7;
+}
+
+.bg-yellow-dark {
+  background: #ecdcac;
+}
+
+.darkpink {
+    background: #AD1457;
+    color: #FFFFFF;
+}
+
+.pink-text {
+  color: #A10461;
+}
+
+.purple {
+    background:  #880E4F;
+    color: #FFFFFF;
+}
+
+.pink {
+    background: #C2185B;
+    color: #FFFFFF;
+}
+
+.noborder {
+    border: none;
+}
+
+.circled {
+  border-radius: 50%;
+}
+
+.item-header {
+  font-size: 10px !important;
+  font-weight: bold;
+    background: lightgrey;
+}
+
+.item-footer {
+  font-size: 10px !important;
+  font-weight: bold;
+  
+  /* the workaround below "fixes" the scrolling */
+  margin-bottom: 30px !important;
+}
+
+.col-right {
+  text-align: right;
+  padding: 1px 3px 1px 3px !important;
+}
+
+.col-sep {
+  border-left: 1px solid lightgray;
+}
+
+.col-left {
+  padding: 1px 3px 1px 3px !important;
+}
+
+.min-10 { min-width: 10px; }
+.min-150 { min-width: 150px; }
+.min-500 { min-width: 500px; }
+
+.small-line {line-height: 20%; }
+
+.row-item {
+  padding: 0px !important;
+  margin-left: 0 !important;
+  font-size: 10px !important;
+}
+
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.row-content {
+  padding-top: 30px;
+  border-bottom: 1px ridge;
+  /*padding: 50px 0px 50px 0px;*/
+}
+ion-scroll {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  color: #001e7b;
+}
+
+p {font-size: 1.2em; color: #5d535f;}
+
+h2 {
+  padding: 5px;
+  border-bottom: 2px solid #6c004e;
+  text-transform: uppercase;
+}
+
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.img-center {
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+
+#promocion>ion-item {
+  border-color: #A10461;
+}
+
+#promocion>ion-item>.item-content {
+  background-color: #ecdcac;
+  border-color: #A10461;
+}
+
+#integrante {
+  background-color: #ecdcac;
+  border-color: #A10461;
+}
+
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.transparent {
+  background: rgba(0,0,0,0.7);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+#instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 200px; /* change this to change the size*/
+  
+}
+
+#fb.positive {
+    color: #031D7C;
+}
+
+#twitter.calm {
+    color: #11c1f3;
+}

@@ -1,0 +1,32 @@
+<ion-view view-title="Calendario Escolar" class="bg-yellow">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>   
+  <ion-content class="bg-yellow">
+    <h2 class="text-center">Calendario Escolar</h2>
+    <h4 class="text-center energized">2018-2019</h4>
+    <div class="list list-inset">
+      <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="search" placeholder=" Buscar por Actividad/Fecha/Curso, etc." />
+      </div>
+    </div>    
+      <ion-list class="bg-yellow">      
+          <ion-item ng-repeat="c in calendario" class="item item- bg-yellow">
+            <div class="item item-divider bg-yellow-dark">
+              <b> {{c.mes}} </b>
+            </div>
+            <div ng-repeat="actividad in c.actividades | filter:search" class="padding bg-yellow">
+              <h3 style="color: #031d7c;" ng-if="actividad.fecha"><b>{{actividad.fecha}}</b></h3>
+              <ul ng-repeat="cc in actividad.eventos">
+                  <li ng-if="cc.evento">
+                    <span class="energized item-text-wrap" >- {{cc.evento}}</span>
+                    <span class="energized" ng-if="cc.hora"><br>&nbsp;&nbsp;<b>Hora: </b>{{cc.hora}}</span>
+                    <span class="energized" ng-if="cc.modalidad"><br>&nbsp;&nbsp;<b>{{cc.modalidad}}</b></span>
+                  </li>
+              </ul>              
+            </div>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

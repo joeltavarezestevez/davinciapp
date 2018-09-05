@@ -1,0 +1,259 @@
+[
+    { 
+        "mes": "Agosto 2018",
+        "actividades": [
+            {
+                "fecha": "Miércoles 1 al Miércoles 8 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Pruebas Extraordinarias N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 13 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "INICIO AÑO ESCOLAR 2018-2019."
+                    },
+                    {
+                        "evento": "Escuela Abierta De 8:00 a.m. - 9:20 a.m."
+                    },
+                    {
+                        "evento": "Jornada de Ambientación De 9:20 a.m. - 1:30 p.m."
+                    },
+                    {
+                        "evento": "Inicio Horario Regular"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 14 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Cont. Jornada de Ambientación"
+                    },
+                    {
+                        "evento": "Inicio Tardes Deportivas N.P./N.S.",
+                        "hora": "2:15 a 4:00 p.m."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 15 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Inicio de Electivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 16 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Día de la Restauración de la R.D.",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 23 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Primera Reunión General de Padres N.I., N.P., N.S.",
+                        "hora": "6:30 p.m.",
+                        "modalidad": "Lugar: Cancha Techada"
+                    },
+                    {
+                        "evento": "Día de la Tierra"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 24 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Fecha límite cambio electivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 28 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 6to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 1ro. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 29 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 5to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 2do. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 30 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 4to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 3ro. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 31 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Elección Consejo de Cursos"
+                    },
+                    {
+                        "evento": "Fecha Límite Descuento 1ra. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Septiembre 2018",
+        "actividades": [
+            {
+                "fecha": "Martes 4 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 3ro. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 6to. A-B N.S."
+                    }                    
+                ]
+            },
+            {
+                "fecha": "Miércoles 5 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 2do. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 4to. A-B N.S."
+                    }                    
+                ]
+            }, 
+            {
+                "fecha": "Jueves 6 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 1ro. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 5to. A-B N.S."
+                    },
+                    {
+                        "evento": "Inicio Catecismo"
+                    },
+                    {
+                        "evento": "Inicio Preparación Confirmación",
+                        "hora": "2:15 a 3:45 p.m."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Viernes 7 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Elección Consejo Estudiantil"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Sábado 8 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de Gregorio Luperón"
+                    },
+                    {
+                        "evento": "Día Internacional de la Alfabetización"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Viernes 14 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Saldo 1ra. Cuota"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Domingo 16 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Natalicio Federico Henríquez y Carvajal"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Viernes 21 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Día Internacional de la Paz"
+                    },
+                    {
+                        "evento": "Merienda Despedida Consejo Estudiantil"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Lunes 24 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Dia de las Mercedes",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Martes 25 al Sábado 29 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Excursión 6to. A-B N.S."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Miércoles 26 al Sábado 29 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Excursión 5to. A-B N.S."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Jueves 27 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Día de Enriquillo"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Sábado 29 de Septiembre",
+                "eventos": [
+                    {
+                        "evento": "Día Nacional de los Derechos de la Niñez"
+                    }
+                ]
+            }
+
+        ]
+    }  
+]

@@ -1,0 +1,181 @@
+[
+	{
+		"niveles": [
+			{
+				"nombre": "Nivel Inicial",
+				"horarios": [
+					{
+						"id": 1,
+						"nombre_horario": "Explorando en Pañales",
+						"foto_horario": "img/horarios/explorando.png"
+					},
+					{
+						"id": 2,
+						"nombre_horario": "Infantes",
+						"foto_horario": "img/horarios/infantes.png"
+					},
+					{
+						"id": 3,
+						"nombre_horario": "Párvulo",
+						"foto_horario": "img/horarios/parvulo.png"
+					},
+					{
+						"id": 4,
+						"nombre_horario": "Pre-kinder",
+						"foto_horario": "img/horarios/prekinder.png"
+					},
+					{
+						"id": 5,
+						"nombre_horario": "Kinder A",
+						"foto_horario": "img/horarios/kinder_A.png"
+					},
+					{
+						"id": 6,
+						"nombre_horario": "Kinder B",
+						"foto_horario": "img/horarios/kinder_B.png"
+					},
+					{
+						"id": 7,
+						"nombre_horario": "Pre-primario A",
+						"foto_horario": "img/horarios/preprimario_A.png"
+					},
+					{
+						"id": 8,
+						"nombre_horario": "Pre-primario B",
+						"foto_horario": "img/horarios/preprimario_B.png"
+					}							
+				]		
+			},			
+			{
+				"nombre": "Nivel Primario",
+				"horarios": [
+					{
+						"id": 9,
+						"nombre_horario": "1ro. A N.P.",
+						"foto_horario": "img/horarios/Primero_A_NP.png"
+					},
+					{
+						"id": 10,
+						"nombre_horario": "1ro. B N.P.",
+						"foto_horario": "img/horarios/Primero_B_NP.png"
+					},
+					{
+						"id": 11,
+						"nombre_horario": "2do. A N.P.",
+						"foto_horario": "img/horarios/Segundo_A_NP.png"
+					},
+					{
+						"id": 12,
+						"nombre_horario": "2do. B N.P.",
+						"foto_horario": "img/horarios/Segundo_B_NP.png"
+					},
+					{
+						"id": 13,
+						"nombre_horario": "3ro. A N.P.",
+						"foto_horario": "img/horarios/Tercero_A_NP.png"
+					},
+					{
+						"id": 14,
+						"nombre_horario": "3ro. B N.P.",
+						"foto_horario": "img/horarios/Tercero_B_NP.png"
+					},
+					{
+						"id": 15,
+						"nombre_horario": "4to. A N.P.",
+						"foto_horario": "img/horarios/Cuarto_A_NP.png"
+					},
+					{
+						"id": 16,
+						"nombre_horario": "4to. B N.P.",
+						"foto_horario": "img/horarios/Cuarto_B_NP.png"
+					},
+					{
+						"id": 17,
+						"nombre_horario": "5to. A N.P.",
+						"foto_horario": "img/horarios/Quinto_A_NP.png"
+					},
+					{
+						"id": 18,
+						"nombre_horario": "5to. B N.P.",
+						"foto_horario": "img/horarios/Quinto_B_NP.png"
+					},
+					{
+						"id": 19,
+						"nombre_horario": "6to. A N.P.",
+						"foto_horario": "img/horarios/Sexto_A_NP.png"
+					},
+					{
+						"id": 20,
+						"nombre_horario": "6to. B N.P.",
+						"foto_horario": "img/horarios/Sexto_B_NP.png"
+					}							
+				]			
+			},
+			{
+				"nombre": "Nivel Secundario",
+				"horarios": [
+					{
+						"id": 21,
+						"nombre_horario": "1ro. A N.S.",
+						"foto_horario": "img/horarios/Primero_A_NS.png"
+					},
+					{
+						"id": 22,
+						"nombre_horario": "1ro. B N.S.",
+						"foto_horario": "img/horarios/Primero_B_NS.png"
+					},
+					{
+						"id": 23,
+						"nombre_horario": "2do. A N.S.",
+						"foto_horario": "img/horarios/Segundo_A_NS.png"
+					},
+					{
+						"id": 24,
+						"nombre_horario": "2do. B N.S.",
+						"foto_horario": "img/horarios/Segundo_B_NS.png"
+					},
+					{
+						"id": 25,
+						"nombre_horario": "3ro. A N.S.",
+						"foto_horario": "img/horarios/Tercero_A_NS.png"
+					},
+					{
+						"id": 26,
+						"nombre_horario": "3ro. B N.S.",
+						"foto_horario": "img/horarios/Tercero_B_NS.png"
+					},
+					{
+						"id": 27,
+						"nombre_horario": "4to. A N.S.",
+						"foto_horario": "img/horarios/Cuarto_A_NS.png"
+					},
+					{
+						"id": 28,
+						"nombre_horario": "4to. B N.S.",
+						"foto_horario": "img/horarios/Cuarto_B_NS.png"
+					},
+					{
+						"id": 29,
+						"nombre_horario": "5to. A N.S.",
+						"foto_horario": "img/horarios/Quinto_A_NS.png"
+					},
+					{
+						"id": 30,
+						"nombre_horario": "5to. B N.S.",
+						"foto_horario": "img/horarios/Quinto_B_NS.png"
+					},
+					{
+						"id": 31,
+						"nombre_horario": "6to. A N.S.",
+						"foto_horario": "img/horarios/Sexto_A_NS.png"
+					},
+					{
+						"id": 32,
+						"nombre_horario": "6to. B N.S.",
+						"foto_horario": "img/horarios/Sexto_B_NS.png"
+					}						
+				]			
+			}			
+		]
+	}
+]

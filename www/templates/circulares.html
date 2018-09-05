@@ -1,0 +1,21 @@
+<ion-view view-title="Circulares" class="bg-yellow"> 
+  <ion-content class="padding bg-yellow">
+    <h2 class="text-center">Circulares</h2>
+    <div class="list list-inset">
+      <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="search" placeholder=" Buscar por nombre/descripción" />
+      </div>
+    </div>
+    <div ng-if="circulares.length <= 0" class="text-center">No hay circulares disponibles</div>
+    <ion-list class="bg-yellow-dark" ng-if="circulares.length > 0">
+      <div ng-repeat="circular in circulares | filter:search" id="promocion">
+      <ion-item class="item item-thumbnail-left item-icon-right item-text-wrap" href="#/app/circulares/{{circular.id}}">
+        <img ng-src="{{url+''+circular.circular_foto}}" >
+        <h2 class="">{{circular.circular_nombre}}</h2>
+        <p>{{circular.circular_descripcion}}</p>
+        <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

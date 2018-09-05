@@ -1,0 +1,30 @@
+<ion-view view-title="Horarios" class="bg-yellow"> 
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>  
+  <ion-content class="padding bg-yellow">
+    <h2 class="text-center">Horarios</h2>
+    <div class="list list-inset">
+      <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="search" placeholder=" Buscar por Curso" />
+      </div>
+    </div>
+    <ion-list class="bg-yellow-dark">
+      <div ng-repeat="nivel in horarios[0].niveles" id="promocion">
+        <ion-item class="item item-divider bg-yellow-dark" ng-click="toggleGroup(nivel)" ng-class="{active: isGroupShown(nivel)}" id="promocion">
+          <i class="icon" ng-class="isGroupShown(nivel) ? 'ion-minus' : 'ion-plus'"></i> &nbsp;
+          <b> Horarios {{nivel.nombre}} </b>
+        </ion-item>
+        <div ng-repeat="horario in nivel.horarios | filter:search" ng-show="isGroupShown(nivel)" class="item-accordion" id="promocion">
+          <ion-item class="item item-thumbnail-left item-icon-right" href="#/app/horarios/{{horario.id}}">
+            <img ng-src="{{url+''+horario.foto_horario}}" >
+            <h2 class="">{{horario.nombre_horario}}</h2>
+            <p>Horario de Clases</p>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

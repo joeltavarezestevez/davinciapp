@@ -1,0 +1,3296 @@
+[
+	{
+		"id": 1,
+		"nombre_promocion": "Primicias",
+		"ano_escolar": "94-95",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-94-95.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-94-95.jpg",
+		"integrantes": [
+			{
+				"nombre": "Disla Criprian, Juan Carlos"
+			},
+			{
+				"nombre": "García Almanzar, Larissa Maria"
+			},
+			{
+				"nombre": "Gutiérrez García, Simón Ariel"
+			},
+			{
+				"nombre": "Montalvo Bisonó, Marielle Gissel"
+			},
+			{
+				"nombre": "Olavarrieta Dubocq, Delia Maria"
+			},
+			{
+				"nombre": "Rodríguez Collado, Jean Rafael"
+			},
+			{
+				"nombre": "Rodríguez Collado, José Gregorio"
+			},
+			{
+				"nombre": "Rodríguez Girbes, Rodolfo"
+			},
+			{
+				"nombre": "Rodríguez Rodríguez, Rosarina"
+			},
+			{
+				"nombre": "Santamaría Francis, Lisbeth"
+			},
+			{
+				"nombre": "Vargas Hombla, Ronald"
+			},
+			{
+				"nombre": "Velásquez Ureña, Karina Maria"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"nombre_promocion": "Recorriendo Caminos",
+		"ano_escolar": "95-96",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-95-96.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-95-96.jpg",
+		"integrantes": [
+			{
+				"nombre": "Almonte Acosta, Fiordaliza"
+			},
+			{
+				"nombre": "Benedicto Caba, Olga Michelle De Js."
+			},
+			{
+				"nombre": "Díaz Caraballo, Elizabeth Del Carmen"
+			},
+			{
+				"nombre": "Estrella Pichardo, Oscar Eduardo"
+			},
+			{
+				"nombre": "Fernández Fermín, Marlen Aimée"
+			},
+			{
+				"nombre": "Fernández Rodríguez, Kelen Milagros"
+			},
+			{
+				"nombre": "Forbes Duncan, John"
+			},
+			{
+				"nombre": "Gil Ramírez, Esteban"
+			},
+			{
+				"nombre": "González Vásquez, Kieth Antony"
+			},
+			{
+				"nombre": "Jana Fondeur, Jorge Alberto"
+			},
+			{
+				"nombre": "Liranzo Feliciano, José Guillermo"
+			},
+			{
+				"nombre": "Molina Peña, Paula Del Milagro"
+			},
+			{
+				"nombre": "Robles Rodríguez, Franklyn Antonio"
+			},
+			{
+				"nombre": "Santiago Gomez, Javier Jose"
+			},
+			{
+				"nombre": "Sundnes, Frode"
+			},
+			{
+				"nombre": "Vargas Parra, Fanny"
+			}												
+		]
+	},
+	{
+		"id": 3,
+		"nombre_promocion": "Haciendo Historia",
+		"ano_escolar": "96-97",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-95-97.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-96-97.jpg",
+		"integrantes": [
+			{
+				"nombre": "Arias Madera, Lina Rafaela"
+			},
+			{
+				"nombre": "Espinal Rodríguez, Jagna Nulbia"
+			},
+			{
+				"nombre": "Montalvo Bisono, Federico Augusto"
+			},
+			{
+				"nombre": "Perdomo Grisanty, Carol Del Carmen"
+			},
+			{
+				"nombre": "Pimentel Liz, Ángel Gabriel"
+			},
+			{
+				"nombre": "Repiso Ramos, David Carlos"
+			},
+			{
+				"nombre": "Rodríguez Rodríguez, Enmanuel"
+			},
+			{
+				"nombre": "Rodríguez Rodríguez, Miriam Zunilda"
+			},
+			{
+				"nombre": "Rosario Fernández, Damarco"
+			},
+			{
+				"nombre": "Rosario Grullón, Rosa Maria"
+			},
+			{
+				"nombre": "Soriano Jáquez, Pedro Ramón"
+			},
+			{
+				"nombre": "Tomas López, Iván De Jesús"
+			},
+			{
+				"nombre": "Torres Fernández, Carmen Josefina"
+			},
+			{
+				"nombre": "Vizcaíno Familia, Alina"
+			},
+			{
+				"nombre": "Viñas Tomen, Frank Carlo"
+			}		
+		]
+	},
+	{
+		"id": 4,
+		"nombre_promocion": "Rastros",
+		"ano_escolar": "97-98",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-97-98.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-97-98.jpg",
+		"integrantes": [
+			{
+				"nombre": "Aquino Solano, Norberto Alfonso"
+			},
+			{
+				"nombre": "Crespo Alonso, David"
+			},
+			{
+				"nombre": "Dájer Duchatellier, Natalie Renée"
+			},
+			{
+				"nombre": "Guzmán Espaillat, Rayner"
+			},
+			{
+				"nombre": "Jiménez Escotto, Francina Alexandra"
+			},
+			{
+				"nombre": "Liranzo Feliciano, Rosa Lilian"
+			},
+			{
+				"nombre": "Luciano Dycha, Fernando Ernesto"
+			},
+			{
+				"nombre": "Palma Collado, David"
+			},
+			{
+				"nombre": "Rodríguez Alba, Carlos Manuel"
+			},
+			{
+				"nombre": "Rodríguez Collado, Erick Rafael"
+			},
+			{
+				"nombre": "Rodríguez Collado, Jacqueline"
+			},
+			{
+				"nombre": "Rodríguez Sued, Paola Fidelina"
+			},
+			{
+				"nombre": "Sang Ng, Alexis Wai Fung"
+			},
+			{
+				"nombre": "Torrents Franco, Jorge Eduardo"
+			},
+			{
+				"nombre": "Ureña Oriach, Paul Alberto"
+			},
+			{
+				"nombre": "Villamil Pichardo, Heidi Maria"
+			},
+			{
+				"nombre": "Wolters Goncalves, Martin"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"nombre_promocion": "Marcando El Siglo",
+		"ano_escolar": "98-99",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-98-99.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-98-99.jpg",
+		"integrantes": [
+			{
+				"nombre": "Balbuena Valerio, Scarlet Beatriz"
+			},
+			{
+				"nombre": "Casimiro Sánchez, Odette"
+			},
+			{
+				"nombre": "Corporan Lozano, Wendy Gisette"
+			},
+			{
+				"nombre": "Díaz Minier, Pedro Joel"
+			},
+			{
+				"nombre": "Díaz Paternina, Julio Rafael"
+			},
+			{
+				"nombre": "Perdomo Alba, Carlos Manuel"
+			},
+			{
+				"nombre": "Perelló Moscoso, Marco Manuel"
+			},
+			{
+				"nombre": "Pichardo Gobaira, Jorge Ramon"
+			},
+			{
+				"nombre": "Rodríguez Beltre, Mayobanex"
+			},
+			{
+				"nombre": "Valerio Mármol, Jarvis"
+			},
+			{
+				"nombre": "Veras Mena, Laura Isabel"
+			},
+			{
+				"nombre": "Verhoest, Jeremy"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"nombre_promocion": "Egregius",
+		"ano_escolar": "99-00",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-99-10.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-99-00.jpg",
+		"integrantes": [
+			{
+				"nombre": "Alba Veras, Elida Maria"
+			},
+			{
+				"nombre": "Calderón Ramírez, Karinna Angelly"
+			},
+			{
+				"nombre": "Dubocq Estrella, Margarita Maria"
+			},
+			{
+				"nombre": "Figueroa Abreu, Vincent"
+			},
+			{
+				"nombre": "Franco Cabrera, Víctor Darío"
+			},
+			{
+				"nombre": "Guzmán Saladín, Alfredo Antonio"
+			},
+			{
+				"nombre": "Libre Sánchez, Ronald"
+			},
+			{
+				"nombre": "López Núñez, Leidy Laura"
+			},
+			{
+				"nombre": "Muñiz Espinal, Norys Patricia"
+			},
+			{
+				"nombre": "Paulino Pichardo, Sbander Fernando"
+			},
+			{
+				"nombre": "Rodríguez Morel, Aldo George"
+			},
+			{
+				"nombre": "Santos Polanco, José Valentín"
+			},
+			{
+				"nombre": "Sverrisson, Ogmundlir"
+			},
+			{
+				"nombre": "Taveras Sánchez, Stephany"
+			},
+			{
+				"nombre": "Ureña Oriach, Claudia Denisse"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"nombre_promocion": "Gaia",
+		"ano_escolar": "00-01",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-00-01.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-00-01.jpg",
+		"integrantes": [
+			{
+				"nombre": "Alvarado De La Cruz, Raquel Amelia"
+			},
+			{
+				"nombre": "Batista Rodríguez, Manuel Enrique"
+			},
+			{
+				"nombre": "Caraballo Quezada, Carla Vanessa"
+			},
+			{
+				"nombre": "Caslini Nardo, Alice Natalie"
+			},
+			{
+				"nombre": "Dall’Omo Hadad, Elisa"
+			},
+			{
+				"nombre": "De Moya Santelises, Joel Arturo"
+			},
+			{
+				"nombre": "Decaluwe, Kevin David"
+			},
+			{
+				"nombre": "Díaz Marte, Annabel"
+			},
+			{
+				"nombre": "Dubocq Estrella, José Eduardo"
+			},
+			{
+				"nombre": "Figueroa Abreu, Allison Teofila"
+			},
+			{
+				"nombre": "Gómez Burgos, Luis Ariel"
+			},
+			{
+				"nombre": "Guzmán Saladín, Fabio José"
+			},
+			{
+				"nombre": "Haddad Baldassari, Jamie Michelle"
+			},
+			{
+				"nombre": "Jiménez Arias, Stephanie"
+			},
+			{
+				"nombre": "Luna Sued, Manuel José"
+			},
+			{
+				"nombre": "Peguero Moreno, Julio Gabriel"
+			},
+			{
+				"nombre": "Peralta Lajara, Valerie Indira"
+			},
+			{
+				"nombre": "Pérez Estrella, Maria Del Mar"
+			},
+			{
+				"nombre": "Rodríguez Beltre, Amaury Germán"
+			},
+			{
+				"nombre": "Rodríguez Lantigua, Sandra"
+			},
+			{
+				"nombre": "Rosa Caraballo, Elsy Maria"
+			},
+			{
+				"nombre": "Sahdala Santana, Laura Patricia"
+			},
+			{
+				"nombre": "Sánchez Bonilla, Adaisa"
+			},
+			{
+				"nombre": "Ureña Durán, Julissa Altagracia"
+			},
+			{
+				"nombre": "Ureña Espinosa, Yinet"
+			},
+			{
+				"nombre": "Valerio Battle, Valerie Bertha"
+			},
+			{
+				"nombre": "Wachsmann Fleischman, Rebecca"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"nombre_promocion": "Zen",
+		"ano_escolar": "01-02",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-01-02.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-01-02.jpg",
+		"integrantes": [
+			{
+				"nombre": "Casanova Caraballo , Michelle Maria"
+			},
+			{
+				"nombre": "Castillo Lirio, Dilia Maria"
+			},
+			{
+				"nombre": "Dájer Díaz, Patricia Altagracia"
+			},
+			{
+				"nombre": "Elivo Herrera, Carolina Mercedes"
+			},
+			{
+				"nombre": "Espaillat Bobadilla, Aída Amelia"
+			},
+			{
+				"nombre": "Espinal Domínguez, Edward José"
+			},
+			{
+				"nombre": "Fajardo Hernández, Crystal Marie"
+			},
+			{
+				"nombre": "Fernández Castro, Natali"
+			},
+			{
+				"nombre": "Genao Tapia, Melvin Joel"
+			},
+			{
+				"nombre": "Haddad Baldassari, Barbara Michelle"
+			},
+			{
+				"nombre": "López Rodríguez, Jorge Luis"
+			},
+			{
+				"nombre": "Martínez Noboa, Guillermo Marcial"
+			},
+			{
+				"nombre": "Riggio Fernández, Marco Giuseppe"
+			},
+			{
+				"nombre": "Rodríguez Estrella, Pedro Oscar"
+			},
+			{
+				"nombre": "Rosario De La Cruz, Vanessa"
+			},
+			{
+				"nombre": "Sahdala Bencosme, Estrellita Maria"
+			},
+			{
+				"nombre": "Santos Beliaev, Leonardo"
+			},
+			{
+				"nombre": "Siepelmeyer, Anna Lena"
+			},			
+			{
+				"nombre": "Taveras Sánchez, Hiclliff Leonardo"
+			},
+			{
+				"nombre": "Torres Cohen, Paola Maria"
+			},
+			{
+				"nombre": "Valdez Pichardo, Gabriela"
+			},
+			{
+				"nombre": "Yapor Valentín, Pedro Alberto"
+			},
+			{
+				"nombre": "Zouain Rodríguez, Eduardo José"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"nombre_promocion": "Tsade",
+		"ano_escolar": "02-03",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-02-03.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-02-03.jpg",
+		"integrantes": [
+			{
+				"nombre": "Álvarez Antonio, Amelia Maribel"
+			},
+			{
+				"nombre": "Álvarez Báez, Francisco Manuel"
+			},
+			{
+				"nombre": "Barro Díaz, José Alfonso"
+			},
+			{
+				"nombre": "Camilo Martínez, Pablo Manuel"
+			},
+			{
+				"nombre": "Caraballo Quezada, Christie Massiel"
+			},
+			{
+				"nombre": "Castaños Abreu, Alberto Josué"
+			},
+			{
+				"nombre": "Colón Cruz, Rafael Antonio"
+			},
+			{
+				"nombre": "Dubocq Estrella, Pedro Eduardo"
+			},
+			{
+				"nombre": "Franco Cabrera, Patricia"
+			},
+			{
+				"nombre": "Gómez Lama, Guillermo Eduardo"
+			},
+			{
+				"nombre": "Grommas, Julia"
+			},
+			{
+				"nombre": "Herrera García, Rosalía De Lourdes"
+			},
+			{
+				"nombre": "Ho Anico, Alfonso José"
+			},
+			{
+				"nombre": "Liriano Porras, Hannah Maria"
+			},
+			{
+				"nombre": "Llaverías Pugliese, Maria Alejandra"
+			},
+			{
+				"nombre": "Luciano Dycha, Debora Carolina"
+			},
+			{
+				"nombre": "Mauricio Paz, Aníbal Ariel"
+			},
+			{
+				"nombre": "Morrobel Alonso, Silvano Alfonso"
+			},
+			{
+				"nombre": "Oriach González, Dharma"
+			},			
+			{
+				"nombre": "Puig Bermúdez, Ana Carolina"
+			},
+			{
+				"nombre": "Quezada Reyes, Janice"
+			},
+			{
+				"nombre": "Reinoso Reyes, Luis Javier"
+			},
+			{
+				"nombre": "Sahdala Santana, Claudia Mariel"
+			},
+			{
+				"nombre": "Taveras Domínguez, Yariel Félix"
+			},
+			{
+				"nombre": "Torres Salcedo, Diana Maria"
+			},
+			{
+				"nombre": "Ureña Peralta, Marcos José"
+			},
+			{
+				"nombre": "Valdez Jacobo, Frank Arturo"
+			},
+			{
+				"nombre": "Veras Mena, Daniel Alberto"
+			},
+			{
+				"nombre": "Zouain Alonso, Christian Miguel"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"nombre_promocion": "Diex",
+		"ano_escolar": "03-04",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-03-04.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-03-04.jpg",
+		"integrantes": [
+			{
+				"nombre": "Agelán Fernández, Pablo"
+			},
+			{
+				"nombre": "Alba Olivares, Rita María"
+			},
+			{
+				"nombre": "Batista Batista, Cesar Júnior"
+			},
+			{
+				"nombre": "Casanova Caraballo, Teanllely"
+			},
+			{
+				"nombre": "Castaños Abreu, Indiana Paola"
+			},
+			{
+				"nombre": "Colón Rodríguez, Mario Alberto"
+			},
+			{
+				"nombre": "Duluc Vega, Otto Nicolás"
+			},
+			{
+				"nombre": "Estrella Gómez, Lenissa Alexandra"
+			},
+			{
+				"nombre": "Gutiérrez Lora, María Raquel"
+			},
+			{
+				"nombre": "Holmboe Hoibo, Siri"
+			},
+			{
+				"nombre": "López Rodríguez, Claudia María"
+			},
+			{
+				"nombre": "Luciano Dycha, Stefania Argentina"
+			},
+			{
+				"nombre": "Mattana Halls, Laura"
+			},
+			{
+				"nombre": "Mejia Polanco, Gabriel Elías"
+			},
+			{
+				"nombre": "Morales Rodríguez, Raquel María"
+			},
+			{
+				"nombre": "Morrobel Alonzo, Miguel Augusto"
+			},
+			{
+				"nombre": "Muñiz Espinal, Wendy Virginia"
+			},
+			{
+				"nombre": "Muñiz Hernández, Anselmo"
+			},
+			{
+				"nombre": "Peguero Moreno, Mariana Teresa"
+			},
+			{
+				"nombre": "Puig Grullón, Marcel"
+			},			
+			{
+				"nombre": "Rodríguez Espinal, Miriam"
+			},
+			{
+				"nombre": "Rodríguez Hidalgo, Priscilla Elizeth"
+			},
+			{
+				"nombre": "Román Cruz, Anya"
+			},
+			{
+				"nombre": "Saleta González, Claudia María"
+			},
+			{
+				"nombre": "Sánchez Díaz, María Antonieta"
+			},
+			{
+				"nombre": "Sánchez Souffront, Emmely"
+			},
+			{
+				"nombre": "Torres Pepín, Yasirys Altagracia"
+			},
+			{
+				"nombre": "Veras Ivanovich, Emilio Augusto"
+			},
+			{
+				"nombre": "Villegas Perez, Richard Anthony"
+			},
+			{
+				"nombre": "Zouain Rodríguez, Guillermo José"
+			}
+		]
+	},
+	{
+		"id": 11,
+		"nombre_promocion": "Bit",
+		"ano_escolar": "04-05",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-04-05.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-04-05.jpg",
+		"integrantes": [
+			{
+				"nombre": "Almonte Pichardo, Perla"
+			},
+			{
+				"nombre": "Álvarez Báez, Francisco Javier"
+			},
+			{
+				"nombre": "Ardila Gutiérrez, Juan Martín"
+			},
+			{
+				"nombre": "Arias Córdova, Gisel María"
+			},
+			{
+				"nombre": "Atiles Martínez, Natalia"
+			},
+			{
+				"nombre": "Brea Pérez, Luís Marcelo"
+			},
+			{
+				"nombre": "Castaños Abreu, Selva Paulette"
+			},
+			{
+				"nombre": "De Moya Santelises, Dionisio Valerio"
+			},
+			{
+				"nombre": "Estévez Núñez, Juan José"
+			},
+			{
+				"nombre": "Fernández Bojos, Lía"
+			},
+			{
+				"nombre": "Fernández Troncoso, Luís Eduardo"
+			},
+			{
+				"nombre": "Fondeur Anico, Laura Amelia"
+			},
+			{
+				"nombre": "Gonell Gómez, Aimée Patricia"
+			},
+			{
+				"nombre": "Hernández Peralta, Luís Arturo"
+			},
+			{
+				"nombre": "López Loyo, Persio David"
+			},
+			{
+				"nombre": "López Morrobel, Rafael Eduardo"
+			},
+			{
+				"nombre": "Molina Cordero, Rosa Marielle"
+			},
+			{
+				"nombre": "Muñiz Hernández, Amelia"
+			},
+			{
+				"nombre": "Perelló Bisonó, Ricardo José"
+			},
+			{
+				"nombre": "Pérez Candelario, Alfonso Antonio"
+			},			
+			{
+				"nombre": "Peña Haddad, Enmanuel"
+			},
+			{
+				"nombre": "Puig Grullón, Maryeline"
+			},
+			{
+				"nombre": "Ramos Deschamps, Jeanly Michelle"
+			},
+			{
+				"nombre": "Rodríguez Peña, Camilo José"
+			},
+			{
+				"nombre": "Rodríguez Redondo, Joan Manuel"
+			},
+			{
+				"nombre": "Rosa Caraballo, Elsa Carolina"
+			},
+			{
+				"nombre": "Rosario De la Cruz, Marcos José"
+			},
+			{
+				"nombre": "Sánchez Bisonó, Alsacia Massiel"
+			},
+			{
+				"nombre": "Sánchez Cabrera, Melody"
+			},
+			{
+				"nombre": "Vargas Jerez, José Arístides"
+			}
+		]
+	},
+	{
+		"id": 12,
+		"nombre_promocion": "Satz",
+		"ano_escolar": "05-06",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-05-06.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-05-06.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Acosta Morey, Rafael Ernesto"
+					},
+					{
+						"nombre": "Acosta Rosario, Candy Yanet"
+					},
+						{
+						"nombre": "Almonte Alejo, Brian Nicolás"
+					},
+					{
+						"nombre": "Casanova Caraballo, Luís Carlos"
+					},
+					{
+						"nombre": "Colón Cruz, Rodolfo Antonio"
+					},
+					{
+						"nombre": "Crespo Bejarán, Isabel María"
+					},
+					{
+						"nombre": "Deschamps Bermúdez, Lisbelle Marie"
+					},
+					{
+						"nombre": "Espinal De la Rosa, Jennifer"
+					},
+					{
+						"nombre": "Estévez Colón, Eduardo Manuel"
+					},
+					{
+						"nombre": "Estrella Andaluz, Fernando David"
+					},
+						{
+						"nombre": "Ferreiras Rojas, Patricia"
+					},
+					{
+						"nombre": "Herrera García, Karina Lissette"
+					},
+					{
+						"nombre": "Herrera Muñoz, Nicole"
+					},
+					{
+						"nombre": "Herrera Raful, Donald Augusto"
+					},
+					{
+						"nombre": "Jiménez Arias, Manuel Alejandro"
+					},
+					{
+						"nombre": "Lajud Báez, Yesmil Massiel"
+					},
+					{
+						"nombre": "López Loyo, Priscila Noemí"
+					},
+					{
+						"nombre": "Manzueta Moledo, Tiffany Marielle"
+					},
+					{
+						"nombre": "Pérez Jr. Paulino, Marino Antonio"
+					},
+					{
+						"nombre": "Pichardo Rodríguez, Carlina"
+					},
+					{
+						"nombre": "Poliné González, Lillybeth"
+					},
+					{
+						"nombre": "Puig Grullón, Marjorie"
+					},
+					{
+						"nombre": "Reyes Sánchez, Paola Massiel"
+					},
+					{
+						"nombre": "Rivera Silverio, Alexandra Melissa"
+					},
+					{
+						"nombre": "Rosa Sánchez, Pierina Adela"
+					},
+					{
+						"nombre": "Sánchez Cabrera, Adrián"
+					},
+					{
+						"nombre": "Sobrino Viñas, Juan Carlos"
+					},
+					{
+						"nombre": "Ureña Toribio, Darlines"
+					},
+					{
+						"nombre": "Vargas Jerez, Saúl"
+					},
+					{
+						"nombre": "Wachsmann Domínguez, David Alberto"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Álvarez Antonio, María Alejandra"
+					},
+					{
+						"nombre": "Batista Batista, Julissa Verónica"
+					},
+					{
+						"nombre": "Camilo Martínez, Paola Victoria"
+					},
+					{
+						"nombre": "Capellán Grullón, Aida Cristal"
+					},
+					{
+						"nombre": "Capellán Hernández, Rafael Bolívar"
+					},
+					{
+						"nombre": "Castro Herrera, Ashley"
+					},
+					{
+						"nombre": "Díaz Minier, Janel Joel"
+					},
+					{
+						"nombre": "Fernández Castro, Miguel Antonio"
+					},
+					{
+						"nombre": "Fondeur Bisonó, Victor José"
+					},
+					{
+						"nombre": "Genao Lawrence, William Augusto"
+					},
+					{
+						"nombre": "Gutiérrez Lora, Lisa María"
+					},
+					{
+						"nombre": "Ho Anico, Yamil Alfonso"
+					},
+					{
+						"nombre": "Lantigua Rosa, Laura Marie"
+					},
+					{
+						"nombre": "Llaverías Pugliese, Carlos Guillermo"
+					},
+					{
+						"nombre": "Lora Comprés, Ada Yadira"
+					},
+					{
+						"nombre": "Montoiro De León, Rocío"
+					},
+					{
+						"nombre": "Morrobel Alonso, Irah Carolina"
+					},
+					{
+						"nombre": "Núñez Mezón, Carol Estefanía"
+					},
+					{
+						"nombre": "Olivier Peralta, Estela María"
+					},
+					{
+						"nombre": "Peralta Peña, Elory"
+					},
+					{
+						"nombre": "Pérez Severino, Denisse Ariana"
+					},
+					{
+						"nombre": "Pimentel Rodríguez, Isabel"
+					},
+					{
+						"nombre": "Rodríguez Díaz, Patricia Nicolle"
+					},
+					{
+						"nombre": "Rodríguez Hidalgo, Shalmira Ivette"
+					},
+					{
+						"nombre": "Santana Ramos, Natalie"
+					},
+					{
+						"nombre": "Suriel Tavárez, Berit Luís"
+					},
+					{
+						"nombre": "Tactuk Mercado, Samuel"
+					},
+					{
+						"nombre": "Tejada Estévez, María Patricia"
+					},
+					{
+						"nombre": "Valdez Imbert, Ronald"
+					},
+					{
+						"nombre": "Valdez Jacobo, Magda Nicole"
+					},
+					{
+						"nombre": "Zouain Alonso, Simón Alfonso"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 13,
+		"nombre_promocion": "Aria",
+		"ano_escolar": "06-07",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2015/02/img-promocion-06-07.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-06-07.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Agelan Fernández, Carlos"
+					},
+					{
+						"nombre": "Álvarez Gell, Laura Michelle"
+					},
+						{
+						"nombre": "Amaro Francisco, Álvaro Rogelio"
+					},
+					{
+						"nombre": "Ángeles Estrella, Lucecita"
+					},
+					{
+						"nombre": "Batista Aristy, Luis Josep"
+					},
+					{
+						"nombre": "Bonnelly Fernández, Ana Gabriela"
+					},
+					{
+						"nombre": "Colon Rodríguez, Jorge Antonio"
+					},
+					{
+						"nombre": "Deluna Reynoso, Bryan Guillermo"
+					},
+					{
+						"nombre": "Fernández Bojos, Ana Lourdes"
+					},
+					{
+						"nombre": "Fernández Troncoso, Simón Eduardo"
+					},
+						{
+						"nombre": "García Portela, Luis Felipe"
+					},
+					{
+						"nombre": "Gómez Lama, Andrés Gustavo"
+					},
+					{
+						"nombre": "Grullón Rodríguez, Paloma Margarita"
+					},
+					{
+						"nombre": "Guerrero Duran, María de los Ángeles"
+					},
+					{
+						"nombre": "Henríquez Fernández, Marcela"
+					},
+					{
+						"nombre": "Liriano Porras, Nicolle"
+					},
+					{
+						"nombre": "Madera Reinoso, Stephanie"
+					},
+					{
+						"nombre": "Molina Pérez, Samuel"
+					},
+					{
+						"nombre": "Montes Esteva, Eduardo"
+					},
+					{
+						"nombre": "Núñez Batista, Luz Celeste"
+					},
+					{
+						"nombre": "Polanco Jiménez, Eric Manuel"
+					},
+					{
+						"nombre": "Reyes Francisco, José Ismael"
+					},
+					{
+						"nombre": "Rodríguez Peña, Silvia Elizabeth"
+					},
+					{
+						"nombre": "Sánchez Souffront, Jeannette"
+					},
+					{
+						"nombre": "Suazo Núñez, Vanessa Altagracia"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Báez Martínez, Víctor Miguel"
+					},
+					{
+						"nombre": "Bencosme Estrella, Massiel Argentina"
+					},
+					{
+						"nombre": "Concepción Toribio, María Gabriela"
+					},
+					{
+						"nombre": "Díaz Gardner, Amber Lily"
+					},
+					{
+						"nombre": "Espinal German, Gabriela"
+					},
+					{
+						"nombre": "Fadul Lora, Mirtha Miguelina"
+					},
+					{
+						"nombre": "Fernández Franco, Navil"
+					},
+					{
+						"nombre": "González Acevedo, Amelia"
+					},
+					{
+						"nombre": "Jorge Bascha, Manuel Salomón"
+					},
+					{
+						"nombre": "Lulo Hess, Marielle Paola"
+					},
+					{
+						"nombre": "Mera Zouain, Leticia"
+					},
+					{
+						"nombre": "Núñez Muñoz, Alexander Luís"
+					},
+					{
+						"nombre": "Peralta Suriel, Rafael Augusto"
+					},
+					{
+						"nombre": "Perelló Bisono, Luis Mauricio"
+					},
+					{
+						"nombre": "Pérez Severino, Alber Antonio"
+					},
+					{
+						"nombre": "Peña Martínez, Nicole"
+					},
+					{
+						"nombre": "Polanco Nicasio, Iván Joaquín"
+					},
+					{
+						"nombre": "Rosario De la Cruz, Patricia Valery"
+					},
+					{
+						"nombre": "Rosa Sánchez, Beatriz Pierina"
+					},
+					{
+						"nombre": "Saleta Barceló, Saulio José"
+					},
+					{
+						"nombre": "Sánchez Bonilla, Franchesca Ginette"
+					},
+					{
+						"nombre": "Suriel Tavárez, Jean Paúl"
+					},
+					{
+						"nombre": "Thomén Jiménez, José Carlos"
+					},
+					{
+						"nombre": "Trastullo Torres, Alessandro Ángelo"
+					},
+					{
+						"nombre": "Veloso Estor, Oriana"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 14,
+		"nombre_promocion": "Ti-Sek",
+		"ano_escolar": "07-08",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-07-08.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-07-08.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Acosta Morey, Gustavo Adolfo"
+					},
+					{
+						"nombre": "Álvarez Antonio,Luís Rodolfo"
+					},
+						{
+						"nombre": "Bergés Bobea, Gabriela"
+					},
+					{
+						"nombre": "Brito Hernández, Marcel"
+					},
+					{
+						"nombre": "Cabral Mena, Emil José"
+					},
+					{
+						"nombre": "Capellán Hernández, Yibet"
+					},
+					{
+						"nombre": "Castellanos Martínez, Yoly Angelina"
+					},
+					{
+						"nombre": "Collado Liriano, Johnny Emmanuelle"
+					},
+					{
+						"nombre": "Dall’Omo Haddad,Gianmarco"
+					},
+					{
+						"nombre": "Espaillat Tavárez, Pedro Alberto"
+					},
+						{
+						"nombre": "Espinal Martínez, Amra"
+					},
+					{
+						"nombre": "Ferreiras Rojas, Jorge Martín"
+					},
+					{
+						"nombre": "Franco Lizardo, Martín Alejandro"
+					},
+					{
+						"nombre": "Genao Lawrence, Rosalía"
+					},
+					{
+						"nombre": "Guzmán Viñas, Manuel de Jesús"
+					},
+					{
+						"nombre": "Ho Anico, Alfonsina"
+					},
+					{
+						"nombre": "Llaverías Pugliese, Daniel Iván"
+					},
+					{
+						"nombre": "Llaverías Ramia, Janet Matilde"
+					},
+					{
+						"nombre": "Mejía De los santos, Elly Patricia"
+					},
+					{
+						"nombre": "Moscoso Cáceres, Mabel Poinsettia"
+					},
+					{
+						"nombre": "Muñoz Estrella, Alba Maria"
+					},
+					{
+						"nombre": "Núñez Muñoz, Melissa Stephanie"
+					},
+					{
+						"nombre": "Pérez Paulino, Jumari"
+					},
+					{
+						"nombre": "Pérez Severino, Pedro José"
+					},
+					{
+						"nombre": "Pichardo Arias, Jonathan Antonio"
+					},
+					{
+						"nombre": "Riggio Martínez, María Laura"
+					},
+					{
+						"nombre": "Peña Reyes, Andy"
+					},
+					{
+						"nombre": "Sánchez Reyes, Ángel José"
+					},
+					{
+						"nombre": "Tavárez Morel, Anabell Maria"
+					},
+					{
+						"nombre": "Yapor Valentín, Laura Amalia"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Atiles Martínez , Camila"
+					},
+					{
+						"nombre": "Bergés Feliciano, Alejandro"
+					},
+					{
+						"nombre": "Cabrera Pérez , Scarlet"
+					},
+					{
+						"nombre": "Cantisano Jorge, Víctor Emmanuel"
+					},
+					{
+						"nombre": "Cordero Luciano, Anabella Ascensión"
+					},
+					{
+						"nombre": "Díaz Gardner, Alwyn Ambiorix"
+					},
+					{
+						"nombre": "Fajardo Hernández, Mariel Crystin"
+					},
+					{
+						"nombre": "Espinal De La rosa, Marcos Arturo"
+					},
+					{
+						"nombre": "Fermín Fermín, Pamela Libert"
+					},
+					{
+						"nombre": "Fernández Díaz-Granados, Simón Tomas"
+					},
+					{
+						"nombre": "Fernández Polanco, Eliana"
+					},
+					{
+						"nombre": "Franco Lizardo, Miguel Eduardo"
+					},
+					{
+						"nombre": "Galarza Fortuna, Gliceida Maria"
+					},
+					{
+						"nombre": "García Butler, Maria Jose"
+					},
+					{
+						"nombre": "Lora Compres, Laura Cristina"
+					},
+					{
+						"nombre": "Lovera salce, Marlenys"
+					},
+					{
+						"nombre": "Méndez Rincón, Luís Eduardo"
+					},
+					{
+						"nombre": "Molina Cordero, Carlos Eduardo"
+					},
+					{
+						"nombre": "Nuñez Mir, Vanessa Virginia"
+					},
+					{
+						"nombre": "Peralta Lajara, Jasmine Altagracia"
+					},
+					{
+						"nombre": "Peralta Peña, Silma"
+					},
+					{
+						"nombre": "Poline González, Laura Amelia"
+					},
+					{
+						"nombre": "Rodríguez Martínez, José Alejandro"
+					},
+					{
+						"nombre": "Saleta Barceló, José Manuel"
+					},
+					{
+						"nombre": "Sobrino Viñas, Víctor Elby"
+					},
+					{
+						"nombre": "Sued Caraballo, Edgar Julián"
+					},
+					{
+						"nombre": "Tejada Castillo, Carlos Eduardo"
+					},
+					{
+						"nombre": "Tejada Marichal, Yhazmin Lyzbeth"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 15,
+		"nombre_promocion": "Nova",
+		"ano_escolar": "08-09",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-07-08.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-07-08.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Arias Rodríguez, David Emilio"
+					},
+					{
+						"nombre": "Asjana Martínez, Alfredo Said"
+					},
+						{
+						"nombre": "Batista Fernández, Katherine Marie"
+					},
+					{
+						"nombre": "Castillo Cruz, Alejandra Mercedes"
+					},
+					{
+						"nombre": "Castro Veras, Cynthia"
+					},
+					{
+						"nombre": "Collado Estrella, Luis Miguel"
+					},
+					{
+						"nombre": "Comprés Hernández, Renata"
+					},
+					{
+						"nombre": "Cruz González, Caonabo Antonio"
+					},
+					{
+						"nombre": "De Respinis Alonso, Dominique Marie"
+					},
+					{
+						"nombre": "Durán Martínez, Manuel Alberto"
+					},
+						{
+						"nombre": "Estévez Núñez, Laura Yolanda"
+					},
+					{
+						"nombre": "Fernández Núñez, Karla Mishelle"
+					},
+					{
+						"nombre": "Fondeur Bisonó, Víctor Alfonso"
+					},
+					{
+						"nombre": "Garrido Peralta, Elvira María"
+					},
+					{
+						"nombre": "Henríquez Fernández, Natalia"
+					},
+					{
+						"nombre": "López Morrobel, Digna Stephanny"
+					},
+					{
+						"nombre": "Marten-Ellis Tejada, Geraldine Isabel"
+					},
+					{
+						"nombre": "Menicucci Marmolejos, Jean Alberto"
+					},
+					{
+						"nombre": "Molina Pérez, Patricia"
+					},
+					{
+						"nombre": "Morel Ovalle, Alain Marcel"
+					},
+					{
+						"nombre": "Núñez Mir, Luis Miguel"
+					},
+					{
+						"nombre": "Persia Paulino, Osiris Rafael"
+					},
+					{
+						"nombre": "Pimentel Ramírez, Regis Junior"
+					},
+					{
+						"nombre": "Polanco Alejo, Nicole"
+					},
+					{
+						"nombre": "Rodríguez Fernández, Chantal Alejandra"
+					},
+					{
+						"nombre": "Rodríguez Hernández, Ivan Emilio"
+					},
+					{
+						"nombre": "Tejada Santos, Sabella Cristina"
+					},
+					{
+						"nombre": "Villegas Pérez, Raquel Andrea"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Bidó Almonte, Andre Luis"
+					},
+					{
+						"nombre": "Cabral Mena, Alfonso Manuel"
+					},
+					{
+						"nombre": "Cantisano Jorge, Pedro Nicolás"
+					},
+					{
+						"nombre": "Castillo Lirio, Juan Manuel"
+					},
+					{
+						"nombre": "Ceballos Cáceres, Fernando"
+					},
+					{
+						"nombre": "De Los Santos Rosario, Emely Eliana"
+					},
+					{
+						"nombre": "Franco Cabrera, Laura"
+					},
+					{
+						"nombre": "Genao Lawrence, José Julio"
+					},
+					{
+						"nombre": "Guzmán Guzmán, Jannio"
+					},
+					{
+						"nombre": "Lora Ferreira, Gabriel José"
+					},
+					{
+						"nombre": "Marcus Tavárez, Jay Lawrence"
+					},
+					{
+						"nombre": "Marra Pérez, Ilka Susana"
+					},
+					{
+						"nombre": "Mencía Fernández, Sarah María"
+					},
+					{
+						"nombre": "Montoiro de León, Raquel"
+					},
+					{
+						"nombre": "Morel Grullón, Larissa"
+					},
+					{
+						"nombre": "Morel Ovalle, Laurent Marcel"
+					},
+					{
+						"nombre": "Peña Martínez, Jessica Mercedes"
+					},
+					{
+						"nombre": "Polanco Herrera, Rosa Herminia"
+					},
+					{
+						"nombre": "Ramos Deschamps, Jeantel Marie"
+					},
+					{
+						"nombre": "Ricart Objío, Paulette Lucía"
+					},
+					{
+						"nombre": "Riggio Martínez, Vito José"
+					},
+					{
+						"nombre": "Rodríguez García, Sara María"
+					},
+					{
+						"nombre": "Rojas Mena, Laura Virginia"
+					},
+					{
+						"nombre": "Tactuk Mercado, Iván"
+					},
+					{
+						"nombre": "Valdez Jacobo, Rafael Arturo"
+					},
+					{
+						"nombre": "Veloz Morillo, Euler Enmanuel"
+					},
+					{
+						"nombre": "Ynfante Abreu, Ana Paula"
+					},
+					{
+						"nombre": "Zouain Estévez, Moisés"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 16,
+		"nombre_promocion": "Last Shot",
+		"ano_escolar": "09-10",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-09-10.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-09-10.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Alba Fernández, Gustavo Adolfo"
+					},
+					{
+						"nombre": "Arias Llaverías, Iván Arturo"
+					},
+						{
+						"nombre": "Batista Batista, Cesarina Altagracia"
+					},
+					{
+						"nombre": "Bencosme Estrella, Carolin Victoria"
+					},
+					{
+						"nombre": "Collado Liviano, George Alberto"
+					},
+					{
+						"nombre": "Crespo Bejarán, José Juan"
+					},
+					{
+						"nombre": "Cruz Rodríguez, Enmanuel Eduardo"
+					},
+					{
+						"nombre": "De Moya Santelises, Aida Lorena"
+					},
+					{
+						"nombre": "Espínola Sánchez, Karla Virginia"
+					},
+					{
+						"nombre": "Fondeur Hernández, Mario Augusto"
+					},
+						{
+						"nombre": "Frómeta García, Luis Emilio"
+					},
+					{
+						"nombre": "Galarza Fortuna, José Antonio"
+					},
+					{
+						"nombre": "Gómez Espinal, Víctor Enrique"
+					},
+					{
+						"nombre": "Grullón Iglesias, Rafael José"
+					},
+					{
+						"nombre": "Guzmán Viñas, Denisse Marie"
+					},
+					{
+						"nombre": "López Corominas, Carolina"
+					},
+					{
+						"nombre": "Lora Rodríguez, Claudia"
+					},
+					{
+						"nombre": "Martínez, Alfonsina Mary"
+					},
+					{
+						"nombre": "Molina Pérez, José Augusto"
+					},
+					{
+						"nombre": "Montoiro De León, Raysa"
+					},
+					{
+						"nombre": "Pantaleón Batista, Pedro Rafael"
+					},
+					{
+						"nombre": "Pérez Díaz, Jonathan Omar"
+					},
+					{
+						"nombre": "Pérez Tavera, Digno Augusto"
+					},
+					{
+						"nombre": "Saba Martínez, Laura Mariel"
+					},
+					{
+						"nombre": "Santana Reyes, Aurie Miguelina"
+					},
+					{
+						"nombre": "Suero Nin, Nelson Andrés"
+					},
+					{
+						"nombre": "Tineo López, Francis Alexander"
+					},
+					{
+						"nombre": "Ureña Fernández, Junior Arsenio"
+					},
+					{
+						"nombre": "Vallejo Mariano, Denisse"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Abud García, Bismarck Ramón"
+					},
+					{
+						"nombre": "Alonzo Fernández,Wilber Josué"
+					},
+					{
+						"nombre": "Arias Córdova, Philip Adolfo"
+					},
+					{
+						"nombre": "Batista Aristy, María Del Pilar"
+					},
+					{
+						"nombre": "Casanova Caraballo, Gustavo David"
+					},
+					{
+						"nombre": "Concepción Toribio, María Fernanda"
+					},
+					{
+						"nombre": "Cordero Luciano, Jimena Emilia"
+					},
+					{
+						"nombre": "De Marchena Reyes, Rosa Eugenia"
+					},
+					{
+						"nombre": "Durán Almonte, Tomy Rafael"
+					},
+					{
+						"nombre": "Fernández Bojos, Mirtha María"
+					},
+					{
+						"nombre": "Fernández Deschamps, Navil"
+					},
+					{
+						"nombre": "Fernández Romero, Carlos José"
+					},
+					{
+						"nombre": "Fondeur Bisonó, Sarah Sibel"
+					},
+					{
+						"nombre": "González Díaz, Mónica Amelia"
+					},
+					{
+						"nombre": "Haddad Baldassari, Jashua"
+					},
+					{
+						"nombre": "Hernández Peralta, Gabriel"
+					},
+					{
+						"nombre": "Herrera Raful, Marco André"
+					},
+					{
+						"nombre": "Jiménez Álvarez, Laura Mercedes"
+					},
+					{
+						"nombre": "Lora Rodríguez, Omar"
+					},
+					{
+						"nombre": "Mazzilli Rodríguez, Marcello Matteo"
+					},
+					{
+						"nombre": "Mejía De Los Santos, Lissette Eloisa"
+					},
+					{
+						"nombre": "Morel Bueno, Oscar Alberto"
+					},
+					{
+						"nombre": "Peralta De León, Carla Mercedes"
+					},
+					{
+						"nombre": "Peralta Martínez, Luis Rafael"
+					},
+					{
+						"nombre": "Perelló Bisonó, Aida Amelia"
+					},
+					{
+						"nombre": "Persia Paulino, Yvan Rafael"
+					},
+					{
+						"nombre": "Polanco Nicasio, Omar Joaquín"
+					},
+					{
+						"nombre": "Reynoso Reyes, Raúl"
+					},
+					{
+						"nombre": "Rodríguez Vivoni, Gustavo Manuel"
+					},
+					{
+						"nombre": "Thomén Jiménez ,Sarah Isabel"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 17,
+		"nombre_promocion": "K-oz",
+		"ano_escolar": "10-11",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-10-11.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-10-11.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Alvarez Castellanos, María Emilia"
+					},
+					{
+						"nombre": "Amaro Viera, Apolinar"
+					},
+						{
+						"nombre": "Bidó Almonte, Carla Patricia"
+					},
+					{
+						"nombre": "Brito Hernández, Laura"
+					},
+					{
+						"nombre": "Cantisano Nachón, María Natalia"
+					},
+					{
+						"nombre": "Capellán Grullón, María José"
+					},
+					{
+						"nombre": "Castro León, Hilkania Guillermina"
+					},
+					{
+						"nombre": "Ciman Torres, Ashley"
+					},
+					{
+						"nombre": "Cruz Capellán, Randy"
+					},
+					{
+						"nombre": "Díaz Caba, Fernando Arturo"
+					},
+						{
+						"nombre": "Durán Cabrera, Silvia Yvelisse"
+					},
+					{
+						"nombre": "Espinal Guerrero, Klidia Karolina"
+					},
+					{
+						"nombre": "Espinal Yunén, Juan Luis"
+					},
+					{
+						"nombre": "Fadul Núñez, María Amalia"
+					},
+					{
+						"nombre": "González Ureña, Enmanuel Alexander"
+					},
+					{
+						"nombre": "Grullón Díaz, Sagrario"
+					},
+					{
+						"nombre": "Guzmán Viñas, Eduardo Manuel"
+					},
+					{
+						"nombre": "Hernández Vargas, Marian Altagracia"
+					},
+					{
+						"nombre": "Jiménez Jerez, Deborah Michelle"
+					},
+					{
+						"nombre": "Jiménez Rivera, Nathalie Patricia"
+					},
+					{
+						"nombre": "López Ramírez, Paula Natalia"
+					},
+					{
+						"nombre": "Martínez Espaillat, Marcel Enrique"
+					},
+					{
+						"nombre": "Mera Zouain, Juan Alfonso"
+					},
+					{
+						"nombre": "Pantaleón Batista, Marian Alexandra"
+					},
+					{
+						"nombre": "Rodríguez Estévez, Joseph"
+					},
+					{
+						"nombre": "Trastullo Torres, Antonio Manuel Stefano"
+					},
+					{
+						"nombre": "Zouain Estévez, Damaris Amelia"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Acosta Morey, Víctor Alfonso"
+					},
+					{
+						"nombre": "Bonnelly Fernández, Isabella"
+					},
+					{
+						"nombre": "Candelario Genao, Carmen Rita"
+					},
+					{
+						"nombre": "Ciman Torres, Naisha"
+					},
+					{
+						"nombre": "Cruz Rodríguez, Lissa María"
+					},
+					{
+						"nombre": "Delgado Pérez, Miguel De Jesús"
+					},
+					{
+						"nombre": "Espinal Santana, Leanny"
+					},
+					{
+						"nombre": "Genao Hernández, Brianna Alexandra"
+					},
+					{
+						"nombre": "Gutiérrez Lora, Simón Manuel"
+					},
+					{
+						"nombre": "Lovera Salcé, Melissa"
+					},
+					{
+						"nombre": "Luciano Rodríguez, Mabel Patricia"
+					},
+					{
+						"nombre": "Menicucci Marmolejos, Jordi Alessandro"
+					},
+					{
+						"nombre": "Pichardo Mendoza, Guillermo Eleazar"
+					},
+					{
+						"nombre": "Polanco Romano, Heidy"
+					},
+					{
+						"nombre": "Ramírez Santos, Víctor Eduardo"
+					},
+					{
+						"nombre": "Rodríguez Capella, Camila Virginia"
+					},
+					{
+						"nombre": "Rodríguez Martínez, Sahilly Adelina"
+					},
+					{
+						"nombre": "Rodríguez Reyes, Erik Armando"
+					},
+					{
+						"nombre": "Román Hernández, Lisbeth Amelia"
+					},
+					{
+						"nombre": "Saleta Barceló, Manuel José"
+					},
+					{
+						"nombre": "Sang Hess, John Samuel"
+					},
+					{
+						"nombre": "Santana Santos, Liliana Carolina"
+					},
+					{
+						"nombre": "Suriel Tavárez, María Alejandra"
+					},
+					{
+						"nombre": "Toribio Candelario, Dennise Emilé"
+					},
+					{
+						"nombre": "Torres Troncoso, Luis Orlando"
+					},
+					{
+						"nombre": "Yapor Valentín, Paula Alejandra"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 18,
+		"nombre_promocion": "Edge",
+		"ano_escolar": "11-12",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-11-12.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-11-12.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Alba Fernandez, Francisco José"
+					},
+					{
+						"nombre": "Amparo Reyes, Anasol"
+					},
+						{
+						"nombre": "Batlle Brugal, Ricardo Louis"
+					},
+					{
+						"nombre": "Bencosme Olaechea, Ian Gabriel"
+					},
+					{
+						"nombre": "Burgos Jimenez, Carlos Alfonso"
+					},
+					{
+						"nombre": "Calderon Anico, Shantal Victoria"
+					},
+					{
+						"nombre": "Capellan Grullon, Maria Angeles"
+					},
+					{
+						"nombre": " Castellanos Martinez, Cesar Orlando"
+					},
+					{
+						"nombre": "De Los Santos De Leon, Vilmary Joselyn"
+					},
+					{
+						"nombre": "Diaz Nin, Ambar Maria"
+					},
+						{
+						"nombre": "Espinal Martinez, Thara"
+					},
+					{
+						"nombre": "Estrella Lora, Federico Joaquin"
+					},
+					{
+						"nombre": "Ferreiras Rojas, Emilio Martin"
+					},
+					{
+						"nombre": "Gomez Herrera, Carolina"
+					},
+					{
+						"nombre": "Grullon Iglesias, Pablo"
+					},
+					{
+						"nombre": "Guerrero Taveras, Maria Alejandra"
+					},
+					{
+						"nombre": "Jimenez Jose, Wesley"
+					},
+					{
+						"nombre": "Lafontaine Reyes, Pamela"
+					},
+					{
+						"nombre": "Mercado Dominguez, Aimee Michelle"
+					},
+					{
+						"nombre": "Minaya Carbonell, Katherine Ayleen"
+					},
+					{
+						"nombre": "Montalvo Portes, Carlos Julio"
+					},
+					{
+						"nombre": "Nuñez Guzman, Catherine"
+					},
+					{
+						"nombre": "Peguero Valerio, Julio Angel"
+					},
+					{
+						"nombre": "Peña Reyes, Rudy"
+					},
+					{
+						"nombre": "Saleta Cruz, Marcel Eduardo"
+					},
+					{
+						"nombre": "Santana Santana, Moises"
+					},
+					{
+						"nombre": "Senior D Mesa, Arturo Eduardo"
+					},
+					{
+						"nombre": "Tavera Fonseca, Lissette Maria"
+					},
+					{
+						"nombre": "Tejada Marichal, Miguel Leonel"
+					},
+					{
+						"nombre": "Veloz Morillo, Lizbeth"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Alba Diaz, Maria Raquel"
+					},
+					{
+						"nombre": "Aleman Gutierrez, Roiny William"
+					},
+					{
+						"nombre": "Atiles Martinez, Sarah Lina"
+					},
+					{
+						"nombre": "Batista Diaz Valdepares, Priscila Miguelina"
+					},
+					{
+						"nombre": "Brito Hernandez, Estela Patricia"
+					},
+					{
+						"nombre": "Burgos Jimenez, Alfonsina Marie"
+					},
+					{
+						"nombre": "Collado Jorge, Jean Louis"
+					},
+					{
+						"nombre": "Espaillat Bobadilla, Jean Rene"
+					},
+					{
+						"nombre": "Fadul Nuñez, Fernando Arturo"
+					},
+					{
+						"nombre": "Fernandez Romero, Jose Rafael"
+					},
+					{
+						"nombre": "Genao Lawrence, Rosa Julia"
+					},
+					{
+						"nombre": "Genao Martinez, Gabriela Elvira"
+					},
+					{
+						"nombre": "Gonzalez Hieronimus, Hanns Peter Homero"
+					},
+					{
+						"nombre": "Henriquez Ureña, Scarlet Patricia"
+					},
+					{
+						"nombre": "Herrera Bloise, Camila Desiree"
+					},
+					{
+						"nombre": "Martinez Noboa, Nura Maria"
+					},
+					{
+						"nombre": "Minaya Carbonell, Ruben Dario"
+					},
+					{
+						"nombre": "Minier Diaz, Jael Mabel"
+					},
+					{
+						"nombre": "Morel Fernandez, Shesary Aimee"
+					},					
+					{
+						"nombre": "Morel Ferreira, Raul"
+					},
+					{
+						"nombre": "Moscoso Caceres, Carlos Jose"
+					},
+					{
+						"nombre": "Nuñez Hernandez, Karla Maria"
+					},
+					{
+						"nombre": "Pérez Filpo, Aimee Giselle"
+					},
+					{
+						"nombre": "Perez Rodriguez, Jose Alejandro"
+					},
+					{
+						"nombre": "Peña Dominguez, Kimberly"
+					},
+					{
+						"nombre": "Rodriguez Caba, Diego Alberto"
+					},
+					{
+						"nombre": "Rosa De Leon, Oscar Alejandro"
+					},
+					{
+						"nombre": "Sanchez Sagredo, Natalie Mari"
+					},
+					{
+						"nombre": "Taule Fiallo, Isabel Marie"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 19,
+		"nombre_promocion": "Revês",
+		"ano_escolar": "12-13",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-12-13.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-12-13.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Adames, Maria Isabel"
+					},				
+					{
+						"nombre": "Bencome Estrella, Katherine Victoria"
+					},
+						{
+						"nombre": "Cabral Mena, Sabrina Saint"
+					},
+					{
+						"nombre": "Camacho Luciano, Carlos Jose"
+					},
+					{
+						"nombre": "Ceballos Caceres, Vivian"
+					},
+					{
+						"nombre": "Collado Liriano, Elsie Genesis"
+					},
+					{
+						"nombre": "Colon Silfa, Lisbeth"
+					},
+					{
+						"nombre": " Dominguez Vargas, Erwin Hedder"
+					},
+					{
+						"nombre": "Franco Lizardo, Maria Del Pilar"
+					},
+					{
+						"nombre": "Garcia Rodriguez, Ysidro Eduardo"
+					},
+						{
+						"nombre": "Gonzalez Diaz, Danilo Antonio"
+					},
+					{
+						"nombre": "Mendez Torres, Sheralen"
+					},
+					{
+						"nombre": "Mercedes Inoa, Racheli"
+					},
+					{
+						"nombre": "Molina Lora, Jean Antonio"
+					},
+					{
+						"nombre": "Nuñez Peña, Sarah Patricia"
+					},
+					{
+						"nombre": "Paulino Porter, Edith Amelia"
+					},
+					{
+						"nombre": "Ramirez Santos, Arnaldo De Jesus"
+					},
+					{
+						"nombre": "Rodriguez Garcia, Irwin"
+					},
+					{
+						"nombre": "Rodriguez Garcia, Sebastian Jose"
+					},
+					{
+						"nombre": "Rodriguez Jimenez, Maria Del Mar"
+					},
+					{
+						"nombre": "Romano Bourdierd, Emmanuel De Jesus"
+					},
+					{
+						"nombre": "Sanchez Cruz, Antonio Jose"
+					},
+					{
+						"nombre": "Sang Hess, Jean Paul"
+					},
+					{
+						"nombre": "Santana Ramos, Jesus Miguel"
+					},
+					{
+						"nombre": "Tejada Castillo, Katherine Beatriz De Las Mercedes"
+					},
+					{
+						"nombre": "Valdez Jacobo, Fernando Arturo"
+					},
+					{
+						"nombre": "Veloso Estor, Julian"
+					},
+					{
+						"nombre": "Veloz Regalado, Yara"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Amaro Viera, Juan Jose"
+					},	
+					{
+						"nombre": "Batlle Brugal, Arleen Amelia"
+					},
+					{
+						"nombre": "Ceverino Lorenzo, Amelia"
+					},
+					{
+						"nombre": "Dajer Peralta, Maria Jose"
+					},
+					{
+						"nombre": "Diaz Parra, Kevin Alexander"
+					},
+					{
+						"nombre": "Dominguez Henriquez, Gianny Del Carmen"
+					},
+					{
+						"nombre": "Espaillat Alejo, Diego Arturo"
+					},
+					{
+						"nombre": "Fadul Lora, Paola"
+					},
+					{
+						"nombre": "Fernandez Garcia, Luis Alejandro"
+					},
+					{
+						"nombre": "Fernandez Nuñez, Eduardo De Jesus"
+					},
+					{
+						"nombre": "Fernandez Polanco, Nicolas Belarminio"
+					},
+					{
+						"nombre": "Fondeur Hernandez, Luis Daniel"
+					},
+					{
+						"nombre": "Garcia Crespo, Bolivar Andres"
+					},
+					{
+						"nombre": "Lopez Roman, Yancely Brunilda"
+					},
+					{
+						"nombre": "Martinez Hernandez, Caonabo"
+					},
+					{
+						"nombre": "Martinez Santiago, Robert Jose"
+					},
+					{
+						"nombre": "Montalvo Portes, Carlos Alberto"
+					},
+					{
+						"nombre": "Morel Bueno, Nicole"
+					},
+					{
+						"nombre": "Nuñez De Lancer, Luis Arturo"
+					},
+					{
+						"nombre": "Oriach Gonzalez, Dyadha"
+					},					
+					{
+						"nombre": "Peña Coste, Leslie Carolina"
+					},
+					{
+						"nombre": "Peña Martinez, Jose Sully"
+					},
+					{
+						"nombre": "Rivas Maria, Gabriel"
+					},
+					{
+						"nombre": "Rodriguez Cabrera, Sheyla"
+					},
+					{
+						"nombre": "Romano Bourdierd, Erick Rafael"
+					},
+					{
+						"nombre": "Suero Jimenez, Ronald"
+					},
+					{
+						"nombre": "Tavarez Reyes, Rafael Arturo"
+					},
+					{
+						"nombre": "Maria Chiara Trastullo Torres"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 20,
+		"nombre_promocion": "Blitz",
+		"ano_escolar": "13-14",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promociones-13-14.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2014/11/img-promo-collage-13-14.jpg",
+		"integrantes": [
+			{
+				"seccion": "4to. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Alonzo Fernandez, Oliver De Jesus"
+					},				
+					{
+						"nombre": "Antuña Diaz, Manuel Enrique"
+					},
+						{
+						"nombre": "Arias Garcia, Lucero Obed"
+					},
+					{
+						"nombre": "Ceballos Soriano, Joy Marielle"
+					},
+					{
+						"nombre": "De Marchena Reyes, Rafael Eugenio"
+					},
+					{
+						"nombre": "Delgado Perez, Olivert"
+					},
+					{
+						"nombre": "Diaz Mejia, Karla Priscilla"
+					},
+					{
+						"nombre": " Fernandez Madera, Khistary Jair"
+					},
+					{
+						"nombre": "Garcia De La Rosa, Dahiana Nicole"
+					},
+					{
+						"nombre": "Garcia Rodriguez, Ysidro Eduardo"
+					},
+					{
+						"nombre": "Genao Cabrera, Manuel Alejandro"
+					},
+					{
+						"nombre": "Henriquez Cabrera, Daniella Marie"
+					},
+					{
+						"nombre": "Herrero Fonseca, Alejandra Camila"
+					},
+					{
+						"nombre": "Inoa Nuñez, Guillermo Jose"
+					},
+					{
+						"nombre": "Martinez Fernandez, Alexa Maria"
+					},
+					{
+						"nombre": "Morales Rodriguez, Santiago Alberto"
+					},
+					{
+						"nombre": "Morel Almonte, Cristian"
+					},
+					{
+						"nombre": "Perello Arias, Laura Mercedes"
+					},
+					{
+						"nombre": "Rodriguez Almonte, Shanell Alexandra"
+					},
+					{
+						"nombre": "Rodriguez Piña, Arantxa"
+					},
+					{
+						"nombre": "Rodriguez Reinoso, Virginia"
+					},
+					{
+						"nombre": "Rodriguez Vivoni, Joyce Marie"
+					},
+					{
+						"nombre": "Torres Troncoso, Paolina"
+					},
+					{
+						"nombre": "Ureña Fernandez, Jonathan Jose"
+					},
+					{
+						"nombre": "Zapata Rodriguez, Jose Neris"
+					},
+					{
+						"nombre": "Zorrilla Jaquez, Camila"
+					}
+				]
+			},
+			{
+				"seccion": "4to. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Badia Thomen, Franz Emilio"
+					},
+					{
+						"nombre": "Bencosme Cruz, Talia Nicole"
+					},						
+					{
+						"nombre": "Bencosme Olaechea, Ilan Jose"
+					},
+					{
+						"nombre": "Castro Veras, Nicole"
+					},
+					{
+						"nombre": "Cordero Gil, Aulio Luis"
+					},
+					{
+						"nombre": "De Leon Garcia, Emilio"
+					},
+					{
+						"nombre": "Diaz Jimenez, Kelery Maria"
+					},
+					{
+						"nombre": "Espinal Yunen, Laura Maria"
+					},
+					{
+						"nombre": "Fernandez Diaz Granados, Tania"
+					},
+					{
+						"nombre": "Fuchu, Genesis"
+					},
+					{
+						"nombre": "Garcia Guzman, Sophia"
+					},
+					{
+						"nombre": "Gil Martinez, Leticia Maria"
+					},
+					{
+						"nombre": "Gomez Francisco, Kency Gaelle"
+					},
+					{
+						"nombre": "Guzman Rosario, Diego Rafael"
+					},
+					{
+						"nombre": "Henriquez Ureña, Carlos Alfonso"
+					},
+					{
+						"nombre": "Lopez Castro, Desiree Del Pilar"
+					},
+					{
+						"nombre": "Martinez Beltran, Dewill Yovank"
+					},
+					{
+						"nombre": "Martinez Fernandez, Erik Alfredo"
+					},
+					{
+						"nombre": "Mercado Puig, Graciela"
+					},
+					{
+						"nombre": "Muñoz Minier, Natacha Margarita"
+					},
+					{
+						"nombre": "Pereira Dominguez, Nicholas Andrew"
+					},					
+					{
+						"nombre": "Peña Alba, Karla Maria"
+					},
+					{
+						"nombre": "Tavarez Bisono, Graciela Maria"
+					},
+					{
+						"nombre": "Tavera Fonseca, Maria Fernanda"
+					},
+					{
+						"nombre": "Taveras Marichal, Hector Kildere"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 21,
+		"nombre_promocion": "Noüs",
+		"ano_escolar": "14-15",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promociones-14-15.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promo-collage-14-15.jpg",
+		"integrantes": [
+			{
+				"seccion": "12do. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Almanzar Rodríguez, Emil Emmanuel"
+					},				
+					{
+						"nombre": "Angeles Manuel, Natividad Natalia"
+					},
+						{
+						"nombre": "Arias LLaverías, Nidia María"
+					},
+					{
+						"nombre": "Bisiaux Quiñones Louis Philippe Francois"
+					},
+					{
+						"nombre": "Cestero Aude, Camila Marie"
+					},
+					{
+						"nombre": "Ceverino Lorenzo, Anthony Alberto"
+					},
+					{
+						"nombre": "Cruz Arroyo, Julio Angel"
+					},
+					{
+						"nombre": " Fermín López, Elisandra Patricia"
+					},
+					{
+						"nombre": "Fernández Díaz Granados, Julia"
+					},
+					{
+						"nombre": "Garcia Geraldino, Luis Roberto De Jesús"
+					},
+					{
+						"nombre": "Gómez Herrera, Iván Darío"
+					},
+					{
+						"nombre": "Hernández Núñez, Alejandro José"
+					},
+					{
+						"nombre": "Jiménez Lora, Tammy"
+					},
+					{
+						"nombre": "Jiménez Olivares, Ayreli"
+					},
+					{
+						"nombre": "Lantigua Estrella, José Mauricio"
+					},
+					{
+						"nombre": "Manzueta Moledo, Denny Maxell"
+					},
+					{
+						"nombre": "Martínez Hernández, Mayobanex"
+					},
+					{
+						"nombre": "Martínez Santiago, Joysie Viannette"
+					},
+					{
+						"nombre": "Morel Suero, Carlos Eduardo"
+					},
+					{
+						"nombre": "Moronta Suriel, José Manuel"
+					},
+					{
+						"nombre": "Peña Domínguez, Jennifer"
+					},
+					{
+						"nombre": "Rivera Moronta, Luis De Jesús"
+					},
+					{
+						"nombre": "Rodríguez Gómez, Stephanie Marie"
+					},
+					{
+						"nombre": "Rodríguez Pérez, Olga María"
+					},
+					{
+						"nombre": "Rodríguez Vivoni, Camilla Maureen"
+					},
+					{
+						"nombre": "Sánchez Martínez, José Osvaldo"
+					},
+					{
+						"nombre": "Taulé Fiallo, Amelia Elizabeth María"
+					},
+					{
+						"nombre": "Taveras Tejada, Joselmi Claudia M."
+					},
+					{
+						"nombre": "Ventura Almánzar, Sara Camila"
+					},
+					{
+						"nombre": "Zouain Estévez, Moisés Javier"
+					}
+				]
+			},
+			{
+				"seccion": "12do. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Alba Cabrera, Paul"
+					},
+					{
+						"nombre": "Amaro Genao, Marcos Rafael"
+					},						
+					{
+						"nombre": "Austrich Coutinho, Angélica María"
+					},
+					{
+						"nombre": "Badía Thomen, José Fernando"
+					},
+					{
+						"nombre": "Burgos Jiménez, Alejandro"
+					},
+					{
+						"nombre": "Cabrera Zapata, Lilibeth"
+					},
+					{
+						"nombre": "Comprés Rojas, Victor Arturo"
+					},
+					{
+						"nombre": "Espaillat Rodríguez, Ashley Marie"
+					},
+					{
+						"nombre": "Fernández Espino, Raiza Nicole"
+					},					
+					{
+						"nombre": "Genao Hernández, Ivana María"
+					},
+					{
+						"nombre": "Grullón Rodríguez, Helio Manuel"
+					},
+					{
+						"nombre": "Guenther Bonilla, Ebba Warinka"
+					},
+					{
+						"nombre": "Guevara González, Andrés Arturo"
+					},
+					{
+						"nombre": "Guzmán Jiménez, Carlos Alberto"
+					},
+					{
+						"nombre": "Jiménez Alvarez, Gloria María"
+					},
+					{
+						"nombre": "Liriano Taveras, Stella María"
+					},
+					{
+						"nombre": "López Arias, Laurent Beatriz"
+					},
+					{
+						"nombre": "López Castro, Carlos Gustavo"
+					},
+					{
+						"nombre": "Lora Rodríguez, Joaquín Francisco"
+					},
+					{
+						"nombre": "Martínez Contreras, Camila Melannea"
+					},
+					{
+						"nombre": "Medina Peña, Diego"
+					},
+					{
+						"nombre": "Morillo Espinal, Astrid"
+					},					
+					{
+						"nombre": "Núñez Guzmán, Sabrina Del Carmen"
+					},
+					{
+						"nombre": "Pérez Filpo, Amelia Camille"
+					},
+					{
+						"nombre": "Pérez Rodríguez, Oliver José"
+					},
+					{
+						"nombre": "Rodríguez Caba, Gabriel Eduardo"
+					},					
+					{
+						"nombre": "Rodríguez Reyes, Leyla Cesarina"
+					},
+					{
+						"nombre": "Ruíz López, Perla Patricia"
+					},
+					{
+						"nombre": "Sánchez Hidalgo, Sarah"
+					},
+					{
+						"nombre": "Santana Marte, Diana Elvira"
+					},					
+					{
+						"nombre": "Santana Ramos, Emelli Natasha"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 22,
+		"nombre_promocion": "CASS",
+		"ano_escolar": "15-16",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promociones-15-16.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promo-collage-15-16.jpg",
+		"integrantes": [
+			{
+				"seccion": "12do. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Almánzar Rodríguez, Livan Ronaldo"
+					},				
+					{
+						"nombre": "Bergés Genao, Jean Alejandro"
+					},
+						{
+						"nombre": "Camacho Portes, Noé Sixto"
+					},
+					{
+						"nombre": "Castillo Zacarías, Paola Aymee"
+					},
+					{
+						"nombre": "Cerda de Jesús, Nicolle"
+					},
+					{
+						"nombre": "Cordero Candelario, Karla Beatriz"
+					},
+					{
+						"nombre": "Cruz Arroyo, Carlos David"
+					},
+					{
+						"nombre": "Domínguez´Peralta, Álvaro José"
+					},
+					{
+						"nombre": "Domínguez Rodríguez, Karla Marie"
+					},
+					{
+						"nombre": "Espinal Cruz, Oliver"
+					},
+					{
+						"nombre": "Fadul Valerio, Nubeluz"
+					},
+					{
+						"nombre": "Frometa García, Anna Emilia Elisa"
+					},
+					{
+						"nombre": "Gandini Taveras, Armando"
+					},
+					{
+						"nombre": "García Rosario, Omar Felipe"
+					},
+					{
+						"nombre": "Gell Hernández, Gabriela Nicole"
+					},
+					{
+						"nombre": "Guzmán García, Joan Manuel"
+					},
+					{
+						"nombre": "Guzmán López, Sharina"
+					},
+					{
+						"nombre": "Luna Estévez, Marcel"
+					},
+					{
+						"nombre": "Martínez García, Emyl Americo"
+					},
+					{
+						"nombre": "Martínez Paz, Marcelle Cristina"
+					},
+					{
+						"nombre": "Mercado Rodríguez, Carlos David"
+					},
+					{
+						"nombre": "Montan Pichardo, George Thomas"
+					},
+					{
+						"nombre": "Ortiz Sánchez, Juan Rafael"
+					},
+					{
+						"nombre": "Ovalles Martínez, Samuel"
+					},
+					{
+						"nombre": "Polanco Diloné, Franccesca"
+					},
+					{
+						"nombre": "Rodríguez Martínez, Wendy Alisamel"
+					},
+					{
+						"nombre": "Rodríguez Vela, Huascar Antonio"
+					},
+					{
+						"nombre": "Rondón García, Raul Alfonso"
+					},
+					{
+						"nombre": "Rosario Reyes, Gisela María"
+					},
+					{
+						"nombre": "Tejada Santos, Carlos Miguel"
+					},
+					{
+						"nombre": "Ureña Castro, Alvin"
+					},
+					{
+						"nombre": "Vargas Rosario, Rosa Ivette"
+					}
+				]
+			},
+			{
+				"seccion": "12do. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Álvarez Núñez, Lisbell Marie"
+					},
+					{
+						"nombre": "Álvarez Vigil, Fernando Sebastian"
+					},						
+					{
+						"nombre": "Aschkar Dominique, Hassym"
+					},
+					{
+						"nombre": "Balestrucci Basora, Kiara"
+					},
+					{
+						"nombre": "Batista Colón, José Daniel"
+					},
+					{
+						"nombre": "Batista García, Domingo Miguel"
+					},					
+					{
+						"nombre": "Bojos Smester, Carlos Arturo"
+					},
+					{
+						"nombre": "Calderón Cots, Reyni Manuel"
+					},
+					{
+						"nombre": "Carvajal Colón, Merary"
+					},					
+					{
+						"nombre": "Checo Bernard, Laura Marie"
+					},
+					{
+						"nombre": "Colón Silfa, Daniela"
+					},
+					{
+						"nombre": "Díaz Caba, Lynette Adel"
+					},
+					{
+						"nombre": "Espinal Genao, Juan Emilio"
+					},
+					{
+						"nombre": "Estrella Lora, Fernando Arturo"
+					},
+					{
+						"nombre": "García Rosario, Lorena María"
+					},
+					{
+						"nombre": "González Díaz, July Maria del Pilar"
+					},
+					{
+						"nombre": "Guzmán Camilo, Cristina"
+					},
+					{
+						"nombre": "Guzmán Chavez, Carolyn"
+					},
+					{
+						"nombre": "Guzmán Rodríguez, Edgar Arturo"
+					},
+					{
+						"nombre": "Lafontaine Reyes, Eduardo Arturo"
+					},
+					{
+						"nombre": "Leon Franco, Michelle Amelia"
+					},
+					{
+						"nombre": "Martínez Medina, Iván Eduardo"
+					},					
+					{
+						"nombre": "Núñez Estrella, Juan Felipe"
+					},
+					{
+						"nombre": "Perelló Cordero, Laura Amelia"
+					},
+					{
+						"nombre": "Rodríguez Díaz, Nicole Camila"
+					},
+					{
+						"nombre": "Rodríguez Hernández, Oliver José"
+					},					
+					{
+						"nombre": "Rodríguez Reinoso, Virgilio"
+					},
+					{
+						"nombre": "Rodríguez Roman, Allyson"
+					},
+					{
+						"nombre": "Sánchez Polanco, Jacmel Josefina"
+					},
+					{
+						"nombre": "Torres Bueno, Liv Alejandra"
+					},					
+					{
+						"nombre": "Veloz Morillo, Isaac"
+					},					
+					{
+						"nombre": "Vila Cestero, Eduardo Miguel"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 23,
+		"nombre_promocion": "GENUS",
+		"ano_escolar": "16-17",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promociones-16-17.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promo-collage-16-17.jpg",
+		"integrantes": [
+			{
+				"seccion": "12do. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Abreu Rodríguez, Natalio Alberto"
+					},				
+					{
+						"nombre": "Agelán Fernández, Alfonso"
+					},
+					{
+						"nombre": "Alvarado Díaz, Norma Paola"
+					},
+					{
+						"nombre": "Batista García, David Eduardo"
+					},
+					{
+						"nombre": "Comprés Hernández, Maria Eugenia"
+					},
+					{
+						"nombre": "Comprés Toribio, Adrienne"
+					},
+					{
+						"nombre": "Cruz Díaz, Fernando Divaris"
+					},
+					{
+						"nombre": "De Marchena Reyes, Marina Eugenia"
+					},
+					{
+						"nombre": "Díaz Mejía, Federico Eduardo"
+					},
+					{
+						"nombre": "Díaz Nin, José Oscar"
+					},
+					{
+						"nombre": "Domínguez Moronta, Pedro Luis"
+					},
+					{
+						"nombre": "Estévez Taveras, Miguel Alejandro"
+					},
+					{
+						"nombre": "Genao Cabrera, Sebastian Alfonso"
+					},
+					{
+						"nombre": "Hernández Burgos, Sarah Inés"
+					},
+					{
+						"nombre": "Hernando Carrau, Gabriela"
+					},
+					{
+						"nombre": "Jiménez Jerez, Guillermo Augusto"
+					},
+					{
+						"nombre": "Laraque De Castro, Jean Paul"
+					},
+					{
+						"nombre": "Martínez Grullón, Iván Gabriel"
+					},
+					{
+						"nombre": "Medina Peña, Yamilka"
+					},
+					{
+						"nombre": "Molina Cordero, Yesmin Ayleen"
+					},
+					{
+						"nombre": "Perello Arias, Juan José"
+					},
+					{
+						"nombre": "Polanco Romano, Carlos Alfonso"
+					},
+					{
+						"nombre": "Ramírez Santos, Luis Arturo"
+					},
+					{
+						"nombre": "Rivas María, Daniel"
+					},
+					{
+						"nombre": "Rodríguez Piña, Aleix"
+					},
+					{
+						"nombre": "Santos Ruíz, Laura Marie"
+					},
+					{
+						"nombre": "Spaans Duran, Yari"
+					},
+					{
+						"nombre": "Valentín Domínguez, Sebastian"
+					},
+					{
+						"nombre": "Yang De La Cruz, Jim Soo"
+					}
+				]
+			},
+			{
+				"seccion": "12do. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Ángeles Estrella, Lucelix"
+					},
+					{
+						"nombre": "Batista Fernández, Adrian Enrique"
+					},						
+					{
+						"nombre": "Calderón Anico, Robert"
+					},
+					{
+						"nombre": "Castillo Almánzar, Kirsy"
+					},
+					{
+						"nombre": "Domínguez Díaz, Carlos Elías"
+					},
+					{
+						"nombre": "Estévez Rodríguez, Giselle Marie"
+					},					
+					{
+						"nombre": "Francisco Betances, Luis Emilio"
+					},
+					{
+						"nombre": "García Burgos, María Alicia"
+					},
+					{
+						"nombre": "García Crespo, Ashley"
+					},					
+					{
+						"nombre": "Gómez González, Miguel Alejandro Adalberto"
+					},
+					{
+						"nombre": "González Gutiérrez, Leomary"
+					},
+					{
+						"nombre": "Inoa Núñez, Francisco José"
+					},
+					{
+						"nombre": "Jiménez Taveras, Karina"
+					},
+					{
+						"nombre": "Lazala De Lara, Ricardo Arturo"
+					},
+					{
+						"nombre": "Lora Rodríguez, Daniel Ernesto"
+					},
+					{
+						"nombre": "Martínez Acosta, Monica"
+					},
+					{
+						"nombre": "Martínez Beltran, Willie"
+					},
+					{
+						"nombre": "Mendieta Mendieta, Ferdy Michael"
+					},
+					{
+						"nombre": "Mezrahi Jiménez, Leah"
+					},
+					{
+						"nombre": "Muñoz Minier, Fidel Alberto"
+					},
+					{
+						"nombre": "Pérez Rodríguez, Emely Victoria"
+					},
+					{
+						"nombre": "Ramírez Fernández, Nidia Leticia"
+					},					
+					{
+						"nombre": "Rivas Guzmán, Janna Paola"
+					},
+					{
+						"nombre": "Rodríguez Hernández, Diego Manuel"
+					},
+					{
+						"nombre": "Santana Santana, Isaac"
+					},
+					{
+						"nombre": "Tavárez Bisonó, Máximo Augusto"
+					},					
+					{
+						"nombre": "Torres Troncoso, Orlando Manuel"
+					},
+					{
+						"nombre": "Urbaez Martínez, Moisés"
+					},
+					{
+						"nombre": "Ureña Liriano, David"
+					},
+					{
+						"nombre": "Vigo Espaillat, Daniel Eduardo"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 24,
+		"nombre_promocion": "LIIT",
+		"ano_escolar": "17-18",
+		"foto_cuadro": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promociones-17-18.jpg",
+		"foto_collage": "http://www.leonardo-da-vinci.edu.do/wp-content/uploads/2018/08/img-promo-collage-17-18.jpg",
+		"integrantes": [
+			{
+				"seccion": "12do. A",
+				"show": false,
+				"integrantes": [
+					{
+						"nombre": "Abreu Rodríguez, Jean Paul"
+					},				
+					{
+						"nombre": "Alba Pérez, José Armando"
+					},
+					{
+						"nombre": "Alonzo Fernández, Willian Noel"
+					},
+					{
+						"nombre": "Batista Álvarez, Jhon Manuel"
+					},
+					{
+						"nombre": "Bisiaux Quiñones, Marie Sophie Chantal"
+					},
+					{
+						"nombre": "Bisonó Sánchez, Leslie Edith"
+					},
+					{
+						"nombre": "Castellanos Martínez, Luis Manuel"
+					},
+					{
+						"nombre": "Castillo Taveras, Gregory"
+					},
+					{
+						"nombre": "Colón Silfa, Diana"
+					},
+					{
+						"nombre": "Cruz Arroyo, Camila Jackeline"
+					},
+					{
+						"nombre": "Espaillat Rodríguez, Victor Manuel"
+					},
+					{
+						"nombre": "García Guzmán, Catherine"
+					},
+					{
+						"nombre": "Guzmán Jiménez, Karla Valentina"
+					},
+					{
+						"nombre": "Lalane Perdomo, Cesar Alfredo"
+					},
+					{
+						"nombre": "Marte Guaba, Shamis Paola"
+					},
+					{
+						"nombre": "Marte Ortiz, Christopher"
+					},
+					{
+						"nombre": "Méndez Germán, Gianna Fabieny"
+					},
+					{
+						"nombre": "Moscoso Caceres, Karla Marie"
+					},
+					{
+						"nombre": "Pariente Cobo, Beatriz"
+					},
+					{
+						"nombre": "Pérez Abreu, Rafael Armando"
+					},
+					{
+						"nombre": "Peña Martínez, Vanessa"
+					},
+					{
+						"nombre": "Pichardo Arias, Angie, Altagracia"
+					},
+					{
+						"nombre": "Pichardo Estévez, Juan José"
+					},
+					{
+						"nombre": "Rodríguez Estévez Britney"
+					},
+					{
+						"nombre": "Rodríguez Llaverías, Eliana"
+					},
+					{
+						"nombre": "Romano Bourdierd, Eduardo José"
+					},
+					{
+						"nombre": "Rosa De Leon, Amanda Mercedes"
+					},
+					{
+						"nombre": "Tavárez Bisonó, Pedro José"
+					},
+					{
+						"nombre": "Tupete Rodríguez, Paula Yamel"
+					},
+					{
+						"nombre": "Zorrilla Jaquez, Estefanie"
+					}
+				]
+			},
+			{
+				"seccion": "12do. B",
+				"show": false,				
+				"integrantes": [
+					{
+						"nombre": "Acevedo Ramos, Yaritza"
+					},
+					{
+						"nombre": "Alba Taveras, Lisbeth Marie"
+					},						
+					{
+						"nombre": "Almánzar Bisonó, Annalia"
+					},
+					{
+						"nombre": "Camilo Carlo, Natalia De Jesús"
+					},
+					{
+						"nombre": "Comprés Rojas, Odille Marie"
+					},
+					{
+						"nombre": "Cordero Tineo, Otto"
+					},					
+					{
+						"nombre": "Diloné Pérez, Ransay Radhames"
+					},
+					{
+						"nombre": "Domínguez Tineo, Roberto Rafael"
+					},
+					{
+						"nombre": "Espinal Fernández, Sebastian"
+					},					
+					{
+						"nombre": "Espinal Santana, Leandro Rafael"
+					},
+					{
+						"nombre": "Espino Arias, Masiel Patricia"
+					},
+					{
+						"nombre": "Gil Venegas, Isabella"
+					},
+					{
+						"nombre": "Gómez Rodríguez, Antonio Miguel De Jesús"
+					},
+					{
+						"nombre": "Gutiérrez Díaz, Winnie Marie"
+					},
+					{
+						"nombre": "Gutiérrez Polanco, Manuel Arturo"
+					},
+					{
+						"nombre": "Guzmán García, Andrea"
+					},
+					{
+						"nombre": "Guzmán Inoa, Luis Antonio"
+					},
+					{
+						"nombre": "Guzmán Rosario, Ana Laura"
+					},
+					{
+						"nombre": "Hernando Carrau, Fernando Arturo"
+					},
+					{
+						"nombre": "Jiménez Díaz, Nathalie Marie"
+					},
+					{
+						"nombre": "Mallol Toledo, Danny Luciano"
+					},
+					{
+						"nombre": "Martínez García, Amell Marie"
+					},					
+					{
+						"nombre": "Nolasco Ramírez, Jennifer Mercedes"
+					},
+					{
+						"nombre": "Núñez Estévez, Natacha Nicole"
+					},
+					{
+						"nombre": "Peralta Guzmán, Rean"
+					},
+					{
+						"nombre": "Quezada Barrientos, Manuel Eduardo"
+					},					
+					{
+						"nombre": "Ramírez Muñoz, Keisy Yaritza"
+					},
+					{
+						"nombre": "Ruíz Bencosme, Mabel"
+					},
+					{
+						"nombre": "Solano Díaz, Laurelle Dianne"
+					},
+					{
+						"nombre": "Torres Aracena, Luis Carlos"
+					},
+					{
+						"nombre": "Zapata Rodríguez, Alvaro José"
+					}
+				]
+			}
+		]
+	}
+]

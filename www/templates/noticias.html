@@ -1,0 +1,19 @@
+<ion-view view-title="Noticias">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>  
+  <ion-content ng-init="init()" class="bg-yellow">
+      <ion-refresher pulling-text="Arrastre para refrescar..." on-refresh="doRefresh()"></ion-refresher>
+      &nbsp;
+      <h2 class="text-center">Noticias</h2>
+      <ion-list class="list card">
+          <ion-item ng-repeat="entry in entries" class="item row-content bg-yellow-dark">
+            <span class="item-note energized"><small><b>{{entry.publishedDate | date: 'dd/MM/yyyy'}}</b></small></span>
+              <a ng-click="openURL('{{entry.permalink}}')">
+                  <h3 style="color: #031d7c;" class=""><b>{{entry.title | limitTo: 25}}</b></h3>
+              </a>
+              <span class="dark" >{{entry.excerpt}}</span>
+          </ion-item>
+      </ion-list>      
+  </ion-content>
+</ion-view>

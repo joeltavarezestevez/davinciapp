@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <ion-header-bar align-title="center" class="bar-energized">
+        <h1 class="title">Enviar Mensaje</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeMensaje()"><i class="icon ion-ios-close-outline" ></i></button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="has-header padding">        
+      <form>
+            <div class="list card">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Su Nombre</span>
+                    <input type="text" ng-model="contact.name" placeholder="Escriba su nombre" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Correo Electr&oacute;nico</span>
+                    <input type="text" ng-model="contact.email" placeholder="nombre@ejemplo.com" required>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Mensaje</span>
+                    <textarea type="text" rows="5" ng-model="contact.message" placeholder="Escriba aqu&iacute; su mensaje" required></textarea>
+                </label>
+            </div>
+      </form>
+      <button class="button button-energized button-block" ng-click="sendContact()">Enviar</button>      
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"circular_nombre":"Circular No. 1 - 2018-2019",
+		"circular_descripcion": "Bienvenida Año Escolar 2018-2019",
+		"circular_foto": "img/circulares/circular_bienvenida_2018.png"
+	},
+	{
+		"id": 2,
+		"circular_nombre": "Circular No. 2 - 2018-2019",
+		"circular_descripcion": "Invitación Reunión de Padres",
+		"circular_foto": "img/circulares/circular_2_2018_2019.png"
+	},
+	{
+		"id": 3,
+		"circular_nombre":"Juzgar: un arma de doble filo para nuestros niños",
+		"circular_descripcion": "Mensaje de Bienvenida Departamento de Orientación",
+		"circular_foto": "img/circulares/lectura_bienvenida_2018_2019.jpg"
+	},
+	{
+		"id": 4,
+		"circular_nombre": "Recordando Aspectos de Interés",
+		"circular_descripcion": "Recordando Aspectos de Interés",
+		"circular_foto": "img/circulares/recordando_aspectos_interes.jpg"
+	}	
+]
