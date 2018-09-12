@@ -19,7 +19,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-
     // Enable to debug issues.
     // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
   
@@ -27,11 +26,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
     };
 
-    /*window.plugins.OneSignal
-      .startInit("101f4c41-0c4a-40a7-9845-4ee3c926e827")
+    window.plugins.OneSignal
+      .startInit("235f314d-64d9-4615-87d6-f7dbef0ae4ff")
       .handleNotificationOpened(notificationOpenedCallback)
-      .endInit();*/
-      
+      .endInit();
     // Sync hashed email if you have a login system or collect it.
     //   Will be used to reach the user at the most optimal time of day.
     // window.plugins.OneSignal.syncHashedEmail(userEmail);
