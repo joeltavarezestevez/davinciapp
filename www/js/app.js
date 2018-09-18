@@ -173,11 +173,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'DashboardController'
     })
 
-    .state('institucion', {
-      url: '/app/institucion',
-      templateUrl: 'templates/institucion.html',
-      controller: 'ComunidadCtrl'
-    });
+    .state('apadavi', {
+      url: '/app/apadavi',
+      templateUrl: 'templates/apadavi.html',
+      controller: 'ApadaviCtrl'
+    })
+
+    .state('deportivas', {
+      url: '/app/deportivas',
+      templateUrl: 'templates/deportivas.html',
+      controller: 'DeportivasCtrl'
+    });    
     
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');

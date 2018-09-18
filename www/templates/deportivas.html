@@ -1,0 +1,24 @@
+<ion-view view-title="Actividades Deportivas" class="bg-yellow"> 
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>   
+  <ion-content class="padding bg-yellow">
+    <h2 class="text-center">Actividades Deportivas</h2>
+    <div class="list list-inset">
+      <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="search" placeholder=" Buscar por nombre/descripción" />
+      </div>
+    </div>
+    <div ng-if="deportivas.length <= 0" class="text-center">No hay actividades deportivas disponibles</div>
+    <ion-list class="bg-yellow-dark" ng-if="deportivas.length > 0">
+      <div ng-repeat="deportiva in deportivas | filter:search" id="promocion">
+      <ion-item class="item item-thumbnail-left item-icon-right item-text-wrap" href="#/app/deportivas/{{deportiva.id}}">
+        <img ng-src="{{url+''+deportiva.deportiva_foto}}" >
+        <h2 class="">{{deportiva.deportiva_nombre}}</h2>
+        <p>{{deportiva.deportiva_descripcion}}</p>
+        <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
