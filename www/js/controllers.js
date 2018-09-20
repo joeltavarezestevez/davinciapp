@@ -17,6 +17,26 @@ angular.module('starter.controllers', [])
     $ionicSideMenuDelegate.toggleLeft();
   };
 
+    $scope.apadavi = [];
+    $scope.url = "http://leonardo-da-vinci.edu.do/";
+    $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
+        $scope.apadavi = data;
+    });  
+
+}])
+
+.controller('DeportivasCtrl', ['$scope', '$http', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
+
+ $scope.openMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+
+    $scope.deportivas = [];
+    $scope.url = "http://leonardo-da-vinci.edu.do/";
+    $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
+        $scope.deportivas = data;
+    });
+
 }])
 
 .controller('FilosofiaCtrl', ['$scope', '$http', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {

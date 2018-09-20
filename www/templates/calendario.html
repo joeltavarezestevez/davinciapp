@@ -17,7 +17,7 @@
               <b> {{c.mes}} </b>
             </div>
             <div ng-repeat="actividad in c.actividades | filter:search" class="padding bg-yellow">
-              <h3 style="color: #031d7c;" ng-if="actividad.fecha"><b>{{actividad.fecha}}</b></h3>
+              <h4 style="color: #031d7c;" ng-if="actividad.fecha"><b>{{actividad.fecha}}</b></h3>
               <ul ng-repeat="cc in actividad.eventos">
                   <li ng-if="cc.evento">
                     <span class="energized item-text-wrap" >- {{cc.evento}}</span>
