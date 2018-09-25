@@ -35,12 +35,12 @@ angular.module('starter.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
     $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
         $scope.deportivas = data;
+        console.log($scope.deportivas);
     });
 
 }])
 
 .controller('FilosofiaCtrl', ['$scope', '$http', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
-    console.log('Aqui Toy!');
  $scope.openMenu = function () {
     $ionicSideMenuDelegate.toggleLeft();
   };
@@ -237,6 +237,27 @@ angular.module('starter.controllers', [])
         $scope.modalCircular.hide();
     };
 }])
+
+.controller('DeportivaDetailCtrl', ['$scope', '$http', '$stateParams', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $stateParams, $ionicModal, $ionicSideMenuDelegate) {
+
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+
+    $scope.deportivas = [];
+    $scope.deportiva = {};
+    $scope.url = "http://leonardo-da-vinci.edu.do/";
+    $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {
+        $scope.deportivas = data;
+        for (var i = 0; i < $scope.deportivas.length; i++) {
+            if ($scope.deportivas[i].id === parseInt($stateParams.Id)) {
+                $scope.deportiva = $scope.deportivas[i];
+                console.log($scope.deportiva);
+            }
+        }        
+    });
+}])
+
 .controller('ContactoCtrl', ['$scope','$ionicPlatform', '$location', '$ionicModal', '$timeout', '$http', '$ionicSideMenuDelegate', function($scope, $ionicPlatform, $location, $ionicModal, $timeout, $http, $ionicSideMenuDelegate) {
 
 

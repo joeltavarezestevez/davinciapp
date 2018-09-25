@@ -14,9 +14,9 @@
     <ion-list class="bg-yellow-dark" ng-if="deportivas.length > 0">
       <div ng-repeat="deportiva in deportivas | filter:search" id="promocion">
       <ion-item class="item item-thumbnail-left item-icon-right item-text-wrap" href="#/app/deportivas/{{deportiva.id}}">
-        <img ng-src="{{url+''+deportiva.deportiva_foto}}" >
-        <h2 class="">{{deportiva.deportiva_nombre}}</h2>
-        <p>{{deportiva.deportiva_descripcion}}</p>
+        <img ng-src="{{url+''+deportiva.actividad_deportiva_foto}}" >
+        <h2 class="">{{deportiva.actividad_deportiva_nombre}}</h2>
+        <p>{{deportiva.actividad_deportiva_descripcion}}</p>
         <i class="icon ion-ios-arrow-right"></i>
       </ion-item>
     </ion-list>

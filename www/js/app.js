@@ -22,7 +22,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     // Enable to debug issues.
     // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
   
-    var notificationOpenedCallback = function(jsonData) {
+   /* var notificationOpenedCallback = function(jsonData) {
       console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
     };
 
@@ -32,7 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       .endInit();
     // Sync hashed email if you have a login system or collect it.
     //   Will be used to reach the user at the most optimal time of day.
-    // window.plugins.OneSignal.syncHashedEmail(userEmail);
+    // window.plugins.OneSignal.syncHashedEmail(userEmail);*/
   });
 })
 
@@ -143,6 +143,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'HorariosCtrl'
   })
 
+  .state('horarios-detalle', {
+    url: '/app/horarios/:Id',
+    templateUrl: 'templates/horario-detail.html',
+    controller: 'HorarioDetailCtrl'
+  })   
+
   .state('circulares', {
     url: '/app/circulares',
     templateUrl: 'templates/circulares.html',
@@ -155,12 +161,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'CircularDetailCtrl'
   })   
 
-  .state('horarios-detalle', {
-    url: '/app/horarios/:Id',
-    templateUrl: 'templates/horario-detail.html',
-    controller: 'HorarioDetailCtrl'
-  })   
-  
   .state('noticias', {
     url: '/app/noticias',
     templateUrl: 'templates/noticias.html',
@@ -183,7 +183,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/app/deportivas',
       templateUrl: 'templates/deportivas.html',
       controller: 'DeportivasCtrl'
-    });    
+    })
+
+  .state('deportivas-detalle', {
+    url: '/app/deportivas/:Id',
+    templateUrl: 'templates/deportiva-detail.html',
+    controller: 'DeportivaDetailCtrl'
+  });     
     
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');

@@ -1,1 +1,58 @@
-[]
+[
+	{
+		"id": 1,
+		"actividad_deportiva_nombre": "Futsal Masculino Claro 2018",
+		"actividad_deportiva_descripcion": "Calendario de Juegos Copa Intercolegial Claro 2018",
+		"actividad_deportiva_foto": "img/deportivas/futsalMasculinoClaro2018.png",
+		"actividad_deportiva_calendario": [
+			{
+				"fecha": "03 de Octubre",
+				"hora": "04:00 p.m.",
+				"equipos": [
+					{
+						"equipo_nombre": "Instituto Leonardo Da Vinci",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					},
+					{
+						"equipo_nombre": "San José",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					}
+				]
+			},
+			{
+				"fecha": "04 de Octubre",
+				"hora": "04:00 p.m.",
+				"equipos": [
+					{
+						"equipo_nombre": "Instituto Leonardo Da Vinci",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					},
+					{
+						"equipo_nombre": "Dominicano",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					}
+				]
+			},
+			{
+				"fecha": "05 de Octubre",
+				"hora": "04:00 p.m.",
+				"equipos": [
+					{
+						"equipo_nombre": "Instituto Leonardo Da Vinci",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					},
+					{
+						"equipo_nombre": "La Salle",
+						"equipo_anotaciones": "-",
+						"equipo_ganador": false
+					}
+				]
+			}
+		]
+	}
+]
