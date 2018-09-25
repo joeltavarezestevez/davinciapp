@@ -4,8 +4,9 @@
       <button class="button button-icon icon ion-ios-close-outline energized" ng-click="closeModalCuadro()"></button>
     </ion-header-bar>	
 	<ion-content class="padding bg-yellow image-modal transparent">
-		<ion-scroll direction="xy" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false" zooming="true" min-zoom="1" style="width: 100%; height: 100%" >
-			 <div class="image" style="background-image: url({{promocion.foto_cuadro}});"></div>
+		<ion-scroll direction="xy" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false" zooming="true" min-zoom="1" style="width: 100%; height: 100%">
+			<img style="margin-top: 12%;" ng-src="{{url+''+promocion.foto_cuadro}}" alt="{{url+''+promocion.foto_cuadro}}">
+			 <!--<div class="image" style="background: url({{promocion.foto_cuadro}}) no-repeat fixed center center transparent;"></div>-->
 		</ion-scroll>
 	</ion-content>
 </ion-modal-view>
