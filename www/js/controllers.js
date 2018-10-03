@@ -19,9 +19,19 @@ angular.module('starter.controllers', [])
 
     $scope.apadavi = [];
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
-        $scope.apadavi = data;
-    });  
+
+    $scope.getApadavi = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
+            $scope.apadavi = data;
+        }); 
+    }
+
+    $scope.getApadavi();
+
+    $scope.doRefresh = function() {
+        $scope.getApadavi();
+        $scope.$broadcast('scroll.refreshComplete');
+    }
 
 }])
 
@@ -33,10 +43,20 @@ angular.module('starter.controllers', [])
 
     $scope.deportivas = [];
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
-        $scope.deportivas = data;
-        console.log($scope.deportivas);
-    });
+
+    $scope.getDeportivas = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
+            $scope.deportivas = data;
+            console.log($scope.deportivas);
+        }); 
+    }
+
+    //$scope.getDeportivas();
+
+    $scope.doRefresh = function() {
+        $scope.getDeportivas();
+        $scope.$broadcast('scroll.refreshComplete');
+    }    
 
 }])
 
@@ -59,18 +79,37 @@ angular.module('starter.controllers', [])
 
     $scope.circulares = [];
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/circulares.json').success(function(data) {    
-        $scope.circulares = data;
-    });
+
+    $scope.getCirculares = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/circulares.json').success(function(data) {    
+            $scope.circulares = data;
+        });        
+    }
+
+    $scope.getCirculares();
+
+    $scope.doRefresh = function() {
+        $scope.getCirculares();
+        $scope.$broadcast('scroll.refreshComplete');
+    }
 }])
 
 .controller('PromocionesCtrl', ['$scope', '$http', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
 
     $scope.promociones = [];
-    
-    $http.get('data/promociones.json').success(function(data) {
-        $scope.promociones = data;
-    });
+
+    $scope.getPromociones = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/promociones.json').success(function(data) {    
+            $scope.promociones = data;
+        });        
+    }
+
+    $scope.getPromociones();
+
+    $scope.doRefresh = function() {
+        $scope.getPromociones();
+        $scope.$broadcast('scroll.refreshComplete');
+    }    
 }])
 
 .controller('HorariosCtrl', ['$scope', '$http', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
@@ -247,15 +286,25 @@ angular.module('starter.controllers', [])
     $scope.deportivas = [];
     $scope.deportiva = {};
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {
-        $scope.deportivas = data;
-        for (var i = 0; i < $scope.deportivas.length; i++) {
-            if ($scope.deportivas[i].id === parseInt($stateParams.Id)) {
-                $scope.deportiva = $scope.deportivas[i];
-                console.log($scope.deportiva);
-            }
-        }        
-    });
+
+    $scope.getCalendario = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {
+            $scope.deportivas = data;
+            for (var i = 0; i < $scope.deportivas.length; i++) {
+                if ($scope.deportivas[i].id === parseInt($stateParams.Id)) {
+                    $scope.deportiva = $scope.deportivas[i];
+                    console.log($scope.deportiva);
+                }
+            }        
+        })
+    }
+
+    $scope.getCalendario();
+
+    $scope.doRefresh = function() {
+        $scope.getCalendario();
+        $scope.$broadcast('scroll.refreshComplete');
+    }
 }])
 
 .controller('ContactoCtrl', ['$scope','$ionicPlatform', '$location', '$ionicModal', '$timeout', '$http', '$ionicSideMenuDelegate', function($scope, $ionicPlatform, $location, $ionicModal, $timeout, $http, $ionicSideMenuDelegate) {

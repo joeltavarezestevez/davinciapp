@@ -2,7 +2,8 @@
   <ion-nav-buttons side="left">
     <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
   </ion-nav-buttons>   
-  <ion-content class="padding bg-yellow">
+  <ion-content ng-init="getDeportivas()" class="padding bg-yellow">
+    <ion-refresher on-refresh="doRefresh()" pulling-text="Recargar..." refreshing-text="Cargando..."></ion-refresher>
     <h2 class="text-center">Actividades Deportivas</h2>
     <div class="list list-inset">
       <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">

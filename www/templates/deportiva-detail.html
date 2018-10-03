@@ -3,17 +3,16 @@
     <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
   </ion-nav-buttons>	
 	<ion-content class="padding bg-yellow">
-		<div class="">
-			<h2 class="text-center">{{deportiva.actividad_deportiva_descripcion}}</h2>		
-			<div class="card" ng-repeat="juego in deportiva.actividad_deportiva_calendario">
-				<div class="item item-text-wrap" ng-repeat="equipo in juego.equipos" ng-class="equipo.equipo_ganador ? 'energized' : ''">
-					{{equipo.equipo_nombre}}
-					<span class="badge" ng-class="equipo.equipo_ganador ? 'badge-energized' : 'badge-stable'">		{{equipo.equipo_anotaciones}}
-					</span>
-				</div>
-				<div class="item item-divider">
-					<b>{{juego.fecha}} - {{juego.hora}}</b>
-				</div>
+    <ion-refresher on-refresh="doRefresh()" pulling-text="Recargar..." refreshing-text="Cargando..."></ion-refresher>
+		<h2 class="text-center">{{deportiva.actividad_deportiva_descripcion}}</h2>		
+		<div class="card" ng-repeat="juego in deportiva.actividad_deportiva_calendario">
+			<div class="item item-text-wrap" ng-repeat="equipo in juego.equipos" ng-class="equipo.equipo_ganador ? 'energized' : ''">
+				{{equipo.equipo_nombre}}
+				<span class="badge" ng-class="equipo.equipo_ganador ? 'badge-energized' : 'badge-stable'">		{{equipo.equipo_anotaciones}}
+				</span>
+			</div>
+			<div class="item item-divider">
+				<b>{{juego.fecha}} - {{juego.hora}}</b>
 			</div>
 		</div>
 	</ion-content>
