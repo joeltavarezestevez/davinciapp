@@ -1,5 +1,17 @@
 [
 	{
+		"id": 7,
+		"circular_nombre": "Nota Informativa No. 1 - Nivel Primario",
+		"circular_descripcion": "Calendario de Ex\u00E1menes de la Primera Evaluaci\u00F3n",
+		"circular_foto": "img/circulares/nota_informativa_primera_evaluacion_primaria.png"
+	},	
+	{
+		"id": 6,
+		"circular_nombre": "Nota Informativa No. 1 - Nivel Secundario",
+		"circular_descripcion": "Horario de Ex\u00E1menes para Primera Evaluaci\u00F3n",
+		"circular_foto": "img/circulares/nota_informativa_primera_evaluacion_secundaria.png"
+	},
+	{
 		"id": 5,
 		"circular_nombre": "Circular No. 3 - 2018-2019",
 		"circular_descripcion": "Consejo Estudiantil y Consejos de Cursos 2018-2019",
@@ -30,3 +42,4 @@
 		"circular_foto": "img/circulares/circular_bienvenida_2018.png"
 	}
 ]
+

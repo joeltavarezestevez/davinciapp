@@ -241,6 +241,40 @@ angular.module('starter.controllers', [])
     };
 }])
 
+.controller('ApadaviDetailCtrl', ['$scope', '$http', '$stateParams', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $stateParams, $ionicModal, $ionicSideMenuDelegate) {
+
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+
+    $scope.apadavi = [];
+    $scope.informacion = {};
+    $scope.url = "http://leonardo-da-vinci.edu.do/";
+    $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {
+        $scope.apadavi = data;
+        for (var i = 0; i < $scope.apadavi.length; i++) {
+            if ($scope.apadavi[i].id === parseInt($stateParams.Id)) {
+                $scope.informacion = $scope.apadavi[i];
+                console.log($scope.informacion);
+            }
+        }        
+    });
+
+    $ionicModal.fromTemplateUrl('templates/modal-fotoApadavi.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function(modal) {
+        $scope.modalApadavi = modal;
+    });
+
+    $scope.openModalApadavi = function() {
+        $scope.modalApadavi.show();
+    };
+
+    $scope.closeModalApadavi = function() {
+        $scope.modalApadavi.hide();
+    };
+}])
 
 .controller('CircularDetailCtrl', ['$scope', '$http', '$stateParams', '$ionicModal', '$ionicSideMenuDelegate', function ($scope, $http, $stateParams, $ionicModal, $ionicSideMenuDelegate) {
 

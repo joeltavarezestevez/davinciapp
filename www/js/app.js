@@ -179,6 +179,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'ApadaviCtrl'
     })
 
+  .state('apadavi-detalle', {
+    url: '/app/apadavi/:Id',
+    templateUrl: 'templates/apadavi-detail.html',
+    controller: 'ApadaviDetailCtrl'
+  })      
+
     .state('deportivas', {
       url: '/app/deportivas',
       templateUrl: 'templates/deportivas.html',
