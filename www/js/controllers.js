@@ -450,7 +450,7 @@ angular.module('starter.controllers', [])
  
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $http, md5, $ionicPopup) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -479,16 +479,63 @@ angular.module('starter.controllers', [])
     $scope.modal.show();
   };
 
+  $scope.showAlert = function(message) {
+    var alertPopup = $ionicPopup.alert({
+        title: 'Aviso',
+        template: message,
+        buttons: [{
+            text: 'OK',
+            type: 'button-energized'
+        }]
+    })
+    alertPopup.then(function(res) { console.log('showing alert'); });
+  }
+
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
+    
+    if(!$scope.loginData.username) {
+        $scope.showAlert('Debe ingresar el codigo de la familia.');
+        return;
+    }
 
-    // Simulate a login delay. Remove this and replace with your login
+    if(!$scope.loginData.password) {
+        $scope.showAlert('Debe ingresar la contraseña.');
+        return;
+    }    
+
+    $scope.query = "http://50.116.97.38:8000/api/Usuarios?_where=((NombreUsuario,eq," + $scope.loginData.username +")~and(Contrase%C3%B1a,eq," + md5.createHash($scope.loginData.password) + "))";
+    console.log($scope.query);
+    $http.get($scope.query)
+    .success(function(data) {
+        $scope.user = data;
+        if($scope.user.length > 0) {
+            console.log($scope.user[0]);
+            if($scope.user[0].NombreUsuario == $scope.loginData.username && $scope.user[0].Contraseña == md5.createHash($scope.loginData.password)) {
+                console.log('login correcto');
+                $timeout(function() {
+                  $scope.closeLogin();
+                }, 1000);
+            }
+            else {
+                $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
+                return;
+            }       
+        }
+        else {
+            $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
+            return;
+        }              
+    })
+}
+
+    /*// Simulate a login delay. Remove this and replace with your login
     // code if using a login system
     $timeout(function() {
       $scope.closeLogin();
     }, 1000);
-  };
+  };*/
 })
 
 .controller('DashboardController', function($scope, $state, $ionicHistory) {

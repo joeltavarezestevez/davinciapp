@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -60,20 +60,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-  
-// setup an abstract state for the tabs directive
-/*  .state('comunidad', {
-    url: '/comunidad',
-    abstract: true,
-    templateUrl: 'templates/comunidad.html'
-  })*/
 
-/*      .state('comunidad', {
-      url: '/comunidad',
-      templateUrl: 'templates/comunidad.html',
-      controller: 'ComunidadCtrl'
-    })
-*/
   .state('comunidad', {
     url: '/app/comunidad',
     templateUrl: 'templates/comunidad.html',
@@ -339,3 +326,4 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			} // end of link:
 		}; // end of return
 });
+

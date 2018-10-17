@@ -6,6 +6,8 @@
     <title></title>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/util.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -16,6 +18,7 @@
     <!-- your app's js -->   
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="js/angular-md5.min.js"></script>
   </head>
   <body ng-app="starter">
     <ion-side-menus>
@@ -37,7 +40,7 @@
             <a class="item icon-left ion-ios-time noborder bg-yellow" menu-close href="#/app/horarios"> <b>Horarios</b></a>
             <a class="item icon-left ion-calendar noborder bg-yellow" menu-close href="#/app/calendario"> <b>Calendario Escolar</b></a>
             <a class="item icon-left ion-email noborder bg-yellow" menu-close href="#/app/contacto"> <b>Cont&aacute;ctenos</b></a>
-            <!--<a class="item icon-left ion-power noborder" menu-close ng-click="login()"> <b>Login</b></a>-->
+            <a class="item icon-left ion-power noborder bg-yellow" menu-close ng-click="login()"> <b>Login</b></a>
           </ul>
           <hr style="color:#D3D3D3; margin: 6%;">
           <div class="text-center">

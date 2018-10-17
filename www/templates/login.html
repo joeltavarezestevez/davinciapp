@@ -1,11 +1,14 @@
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title energized">Acceso para Familias</h1>
+  <ion-header-bar class="bg-yellow">
+    <h1 class="title energized"></h1>
     <div class="buttons">
       <button class="button button-icon energized icon ion-close-round" ng-click="closeLogin()"></button>
     </div>
   </ion-header-bar>
   <ion-content>
+    <!--<span class="login100-form-title p-t-5 p-b-5">
+      Bienvenido
+    </span>    
     <div class="text-center">
       <img src="img/davinci-logo.png" width="120px">
     </div>
@@ -23,6 +26,57 @@
           <button class="button button-block button-energized" type="submit">Entrar</button>
         </label>
       </div>
-    </form>
+    </form>-->
+    <div class="limiter content-wrapper bg-yellow">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <form class="login100-form validate-form" ng-submit="doLogin()">
+            <span class="login100-form-title p-b-5">
+              Bienvenido
+            </span>
+            <span class="login100-form-avatar">
+              <img src="img/davinci-logo.png" alt="logo">
+            </span>
+
+            <div class="wrap-input100 validate-input m-t-25 m-b-25" data-validate = "Escriba su Codigo de Familia">
+              <input class="input100" type="text" name="username" ng-model="loginData.username">
+              <span class="focus-input100" data-placeholder="Codigo de Familia"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-50" data-validate="Escriba su Contraseña">
+              <input class="input100" type="password" name="pass" ng-model="loginData.password">
+              <span class="focus-input100" data-placeholder="Contraseña"></span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button id="btnlogin" class="login100-form-btn" type="submit">Entrar</button>
+            </div>
+
+            <ul class="login-more p-t-50">
+              <li class="m-b-25">
+                <span class="txt1">
+                  Olvidaste tu
+                </span>
+
+                <a href="#" class="txt2">
+                  Usuario / Contraseña?
+                </a>
+              </li>
+              <li class="m-b-8">
+                <span class="txt1">
+                  Si tiene problemas para restablecer su contraseña, escriba a
+                </span>
+
+                <a href="#" class="txt2">
+                  soporte@leonardo-da-vinci.edu.do
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>-->    
   </ion-content>
 </ion-modal-view>
+
+
