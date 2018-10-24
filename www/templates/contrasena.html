@@ -1,0 +1,37 @@
+<ion-view ng-init="getUserData()" hide-nav-bar="true">
+  <ion-header-bar class="bg-yellow">
+    <h1 class="title energized">Cambiar Contrase&ntilde;a</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="limiter content-wrapper bg-yellow">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <form class="login100-form validate-form" ng-submit="cambiarContrasena()">
+            <span class="login100-form-title p-b-5">
+              Bienvenido, <br> {{user.NombrePublico}}
+            </span>
+            <span class="login100-form-avatar">
+              <img src="img/davinci-logo.png" alt="logo">
+            </span>
+            <div class="text-center">
+              <h4 class="text-blue">Por seguridad, al acceder por primera vez a la aplicaci&oacute;n le solicitamos que cambie su contrase&ntilde;a</h4>
+            </div>
+            <div class="wrap-input100 validate-input m-t-25 m-b-25">
+              <input class="input100" type="password" name="password" ng-model="passForm.password">
+              <span class="focus-input100" data-placeholder="Escriba una nueva contraseña"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-50">
+              <input class="input100" type="password" name="confirmPassword" ng-model="passForm.confirmPassword">
+              <span class="focus-input100" data-placeholder="Confirme su Contraseña"></span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button id="btnlogin" class="login100-form-btn" type="submit">Cambiar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+  </ion-content>
+</ion-view>

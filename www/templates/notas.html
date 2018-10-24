@@ -1,62 +1,71 @@
-<ion-view title="Notas">
+<ion-view view-title="Calificaciones" class="bg-yellow">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+    </ion-nav-buttons>
     <ion-content overflow-scroll="true" scroll="true" class="content has-header">
+        <ion-refresher on-refresh="doRefresh()" pulling-text="Recargar..." refreshing-text="Cargando..."></ion-refresher>
         <h5 class="energized text-center"><b>REPORTE DE CALIFICACIONES</b></h5>
-        <h5 class="energized text-center"><b>Segundo Semestre</b></h5>
+        <h5 class="energized text-center"><b>A&ntilde;o Escolar 2018-2019</b></h5>
         <div class="card">
-            <div class="item item-divider">
-                <h3><b>Datos del Estudiante</b></h3>
+            <div class="item item-divider item-energized">
+                <h3 style="color: white !important;"><b>Datos del Estudiante</b></h3>
             </div>
-            <div>
+            <div class="bg-yellow">
                 <div class="row responsive-sm">
-                    <p class="col small-line"><small>Alumno(a): <b>{{ alumno }}</b></small></p>
+                    <p class="col small-line"><small>Alumno(a): <b>{{ estudiante.Nombre1 }} {{ estudiante.Nombre2 }} {{ estudiante.Apellido1 }} {{ estudiante.Apellido2 }}</b></small></p>
                 </div>
                 <div class="row responsive-sm">
-                    <p class="col small-line"><small>Matrícula: <b>{{ matricula }}</b></small></p>
-                    <p class="col small-line"><small>Curso: <b>{{ curso }}</b></small></p>
+                    <p class="col small-line"><small>Matrícula: <b>{{ estudiante.Matricula }}</b></small></p>
+                    <p class="col small-line"><small>Curso: <b>{{ estudiante.Curso }}</b></small></p>
                 </div>
                 <div class="row responsive-sm">
-                    <p class="col small-line"><small>Sección: <b>{{ seccion }}</b></small></p>
-                    <p class="col small-line"><small>Nivel: <b>{{ nivel }}</b></small></p>
-                    <p class="col small-line"><small>Año Escolar: <b>{{ ano_escolar }}</b></small></p>
+                    <p class="col small-line"><small>Sección: <b>{{ estudiante.Seccion }}</b></small></p>
+                    <p class="col small-line"><small>Nivel: <b>{{ estudiante.Nivel }}</b></small></p>
+                    <p class="col small-line"><small>Año Escolar: <b>2018-2019</b></small></p>
                 </div>                   
             </div>
         </div>
-        <div class="card">
+        <div class="card bg-yellow">
             <ion-scroll direction="x" class="padding wide-as-needed">
                 <div class="item item-header item-energized row row-item min-500">
-                    <div class="col col-left min-150">Asignatura</div>
-                    <div class="col col-right min-10">1EV</div>
-                    <div class="col col-right min-10">2EV</div>
-                    <div class="col col-right min-10">3EV</div>
-                    <div class="col col-right min-10">4EV</div>
-                    <div class="col col-right min-10">PROM<br>SEM</div>
-                    <div class="col col-right min-10">70%<br>PROM</div>
-                    <div class="col col-right min-10">PRU<br>SEM</div>
-                    <div class="col col-right min-10">30%<br>PRU</div>
-                    <div class="col col-right min-10">CFS</div>
-                    <div class="col col-right min-10">ASI</div>    
+                    <div class="col col-left min-175">Asignatura</div>
+                    <div class="col col-right min-10" ng-if="publicada.ev1">EV1</div>
+                    <div class="col col-right min-10" ng-if="publicada.ev2">EV2</div>
+                    <div class="col col-right min-10" ng-if="publicada.prom1">PROM <br>SEM 1</div>
+                    <div class="col col-right min-10" ng-if="publicada.ev3">EV3</div>
+                    <div class="col col-right min-10" ng-if="publicada.ev4">EV4</div>
+                    <div class="col col-right min-10" ng-if="publicada.prom2">PROM <br>SEM 2</div>
+                    <div class="col col-right min-10" ng-if="publicada.promf">PROM<br>FINAL</div>
+                    <div class="col col-right min-10" ng-if="publicada.prom70">70%<br>PROM</div>
+                    <div class="col col-right min-10" ng-if="publicada.pru">PRU</div>
+                    <div class="col col-right min-10" ng-if="publicada.pru30">30%<br>PRU</div>
+                    <div class="col col-right min-10" ng-if="publicada.cf">CF</div>
+                    <div class="col col-right min-10" ng-if="publicada.asi">ASI</div>    
                 </div>
-                <div class="item row row-item min-500" ng-repeat="row in data | orderBy:predicate:desc">
-                    <div class="col col-left min-150">{{ row.asignatura | limitTo: 23 }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.ev1 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.ev2 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.ev3 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.ev4 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.promsem | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.prom70 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.prusem | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.pru30 | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.cfs | number }}</div>
-                    <div class="col col-right col-sep min-10">{{ row.asi | number }}</div>
+                <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay notas publicadas para este estudiante.</div>
+                <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="row in notas | orderBy:predicate:desc">
+                    <div class="col col-left min-175">{{ row.Asignatura }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.ev1">{{ row.EV1 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.ev2">{{ row.EV2 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.prom1">{{ row.promsem1 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.ev3">{{ row.EV3 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.ev4">{{ row.EV4 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.prom2">{{ row.promsem2 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.promf">{{ row.promf | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.prom70">{{ row.prom70 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.pru">{{ row.pru | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.pru30">{{ row.pru30 | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.cf">{{ row.cf | number }}</div>
+                    <div class="col col-right col-sep min-10" ng-if="publicada.asi">{{ row.asi | number }}</div>
                 </div>
                 <div></div>
             </ion-scroll>
         </div>
         <div class="card">
-            <div class="item item-divider" >
-                <h3><b>Leyenda</b></h3>
+            <div class="item item-divider item-energized">
+                <h3 style="color: white !important;"><b>Leyenda</b></h3>
             </div>
-            <div>
+            <div class="bg-yellow">
                 <div class="row">
                     <p class="col col-50 small-line"><small><b>EV</b> = Evaluación </small></p>
                     <p class="col col-50 small-line"><small><b>SEM</b> = Semestre</small></p>
@@ -66,7 +75,7 @@
                     <p class="col col-50 small-line"><small><b>PRU</b> = Prueba</small></p>
                 </div>
                 <div class="row">
-                    <p class="col col-50 small-line"><small><b>CFS</b> = Calif. Fin Sem</small></p>
+                    <p class="col col-50 small-line"><small><b>CF</b> = Calif. Final</small></p>
                     <p class="col col-50 small-line"><small><b>ASI</b> = Asistencia</small></p>
                 </div>
             </div>

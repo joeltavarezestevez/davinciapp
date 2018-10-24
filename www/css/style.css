@@ -68,8 +68,8 @@
   padding: 1px 3px 1px 3px !important;
 }
 
-.min-10 { min-width: 10px; }
-.min-150 { min-width: 150px; }
+.min-10 { min-width: 10px; font-size: 8px; text-align: center; }
+.min-175 { min-width: 175px; font-size: 8px; }
 .min-500 { min-width: 500px; }
 
 .small-line {line-height: 20%; }
@@ -89,6 +89,10 @@
   padding-top: 30px;
   border-bottom: 1px ridge;
   /*padding: 50px 0px 50px 0px;*/
+}
+
+.text-blue {
+  color: #001e7b;
 }
 ion-scroll {
   width: 100%;

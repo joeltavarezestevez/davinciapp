@@ -4,9 +4,9 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
+angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.services', 'angular-md5'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, $state, $location, Auth) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -19,6 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
     // Enable to debug issues.
     // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
   
@@ -39,7 +40,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('app', {
+  .state('app', {
     url: '/app',
     abstract: true,
     templateUrl: 'index.html',
@@ -52,7 +53,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
     controller: 'ContactoCtrl'
   })
 
-    .state('facebook', {
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+  })
+
+  .state('facebook', {
     url: '/app/facebook',
     views: {
       'menuContent': {
@@ -66,6 +73,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
     templateUrl: 'templates/comunidad.html',
     controller: 'ComunidadCtrl'
   })
+
+  .state('estudiantes', {
+    url: '/app/estudiantes',
+    templateUrl: 'templates/estudiantes.html',
+    controller: 'EstudiantesCtrl'
+  })
+
+  .state('app.contrasena', {
+    url: '/contrasena/:Id',
+    templateUrl: 'templates/contrasena.html',
+    controller: 'ContrasenaCtrl'
+  })  
+
+.state('estudiantes-detail', {
+    url: '/app/estudiantes/:Id',
+    templateUrl: 'templates/notas.html',
+    controller: 'EstudiantesDetailCtrl'
+  })
+
   // Each tab has its own nav history stack:
 
   .state('comunidad.filosofia', {
@@ -182,12 +208,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-md5'])
     url: '/app/deportivas/:Id',
     templateUrl: 'templates/deportiva-detail.html',
     controller: 'DeportivaDetailCtrl'
-  });     
+  })
+
+  .state('configuracion', {
+    url: '/app/configuracion',
+    templateUrl: 'templates/configuracion.html',
+    controller: 'ConfiguracionCtrl'
+  })  ;     
     
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');
 })
-
 /**
  * Handle Google Maps API V3+
  */
