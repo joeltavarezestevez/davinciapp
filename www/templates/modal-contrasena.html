@@ -1,0 +1,35 @@
+<ion-modal-view on-swipe-down="closeModalPassword()" ng-init="getUserData()">
+  <ion-header-bar class="bar bar-energized">
+    <h1 class="title energized">Cambiar Contrase&ntilde;a</h1>
+    <button class="button button-icon icon ion-ios-close-outline energized" ng-click="closeModalPassword()"></button>
+  </ion-header-bar>
+  <ion-content>
+    <div class="limiter content-wrapper bg-yellow">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <form class="login100-form validate-form">
+            <span class="login100-form-title p-b-5">
+              Bienvenido, <br> {{user.NombrePublico}}
+            </span>
+            <span class="login100-form-avatar">
+              <img src="img/davinci-logo.png" alt="logo">
+            </span>
+            <div class="wrap-input100 validate-input m-t-25 m-b-25">
+              <input class="input100" type="password" name="password" ng-model="passForm.password">
+              <span class="focus-input100" data-placeholder="Escriba una nueva contraseña"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input m-b-50">
+              <input class="input100" type="password" name="confirmPassword" ng-model="passForm.confirmPassword">
+              <span class="focus-input100" data-placeholder="Confirme su Contraseña"></span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button id="btnlogin" class="login100-form-btn" ng-click="cambiarContrasena()">Cambiar Contrase&ntilde;a</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+  </ion-content>
+</ion-modal-view>

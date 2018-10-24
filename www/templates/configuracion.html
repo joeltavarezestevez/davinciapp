@@ -4,17 +4,15 @@
 	</ion-nav-buttons>  
 	<ion-content class="padding bg-yellow">    
     <h2 class="text-center">Configuraci&oacute;n</h2>
-    <div class="list list-inset">
-      <div class="item item-card bg-yellow-dark" style="border-color: #A10461;">
-        <a ng-click="openModalPassword()"><i class="icon ion-locked"></i> Cambiar Contrase&ntilde;a</a>
-      </div>
+
+    <div class="card bg-yellow-dark">
+      <div id="promocion">
+        <div class="item item-icon-left item-icon-right item-text-wrap bg-yellow text-blue" ng-click="openModalPassword()">
+          <i class="icon ion-locked"></i> Cambiar Contrase&ntilde;a <i class="icon ion-ios-arrow-right"></i>
+        </div>
+        <div class="item item-icon-left item-icon-right item-text-wrap bg-yellow text-blue" ng-click="logout()">
+          <i class="icon ion-power"></i> Cerrar Sesi&oacute;n <i class="icon ion-ios-arrow-right"></i>
+        </div>
     </div>
-    <ion-list class="bg-yellow-dark" ng-if="estudiantes.length > 0">
-      <div ng-repeat="estudiante in estudiantes | filter:search" id="promocion">
-      <ion-item class="item item-icon-right item-text-wrap" href="#/app/estudiantes/{{estudiante.Id}}">
-        <h3 class=""><b>{{$index+1}}. {{estudiante.Nombre1}} {{estudiante.Nombre2}} {{estudiante.Apellido1}} {{estudiante.Apellido2}}</b></h3>
-        <i class="icon ion-ios-arrow-right"></i>
-      </ion-item>
-    </ion-list>
   </ion-content>
 </ion-view>

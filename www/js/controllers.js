@@ -6,10 +6,90 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
-.controller('ConfiguracionCtrl',  function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
+.controller('ConfiguracionCtrl',  function ($scope, $http, $ionicModal, $ionicPopup, $ionicSideMenuDelegate, Auth, md5, $ionicHistory, $state) {
+    
     $scope.openMenu = function () {
         $ionicSideMenuDelegate.toggleLeft();
     };
+
+    $scope.usuario = {};
+    $scope.passForm = {};
+
+     $scope.$on('$ionicView.enter', function() {
+         
+    $scope.usuario = Auth.getLoggedInUser();
+        console.log($scope.usuario);
+    })        
+
+    $scope.showAlert = function(message) {
+        var alertPopup = $ionicPopup.alert({
+            title: 'Aviso',
+            template: message,
+            buttons: [{
+                text: 'OK',
+                type: 'button-energized'
+            }]
+        })
+        alertPopup.then(function(res) { console.log('showing alert'); });
+    }
+
+    
+    $ionicModal.fromTemplateUrl('templates/modal-contrasena.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function(modal) {
+        $scope.modalContrasena = modal;
+    });
+
+    $scope.openModalPassword = function() {
+        $scope.modalContrasena.show();
+    };
+
+    $scope.closeModalPassword = function() {
+        $scope.modalContrasena.hide();
+    };    
+
+
+    $scope.cambiarContrasena = function() {
+        console.log($scope.usuario);
+        console.log($scope.passForm);
+        if($scope.passForm.password == $scope.passForm.confirmPassword) {
+            console.log('Contrasena correcta');
+            $scope.usuario.Contraseña = md5.createHash($scope.passForm.password);
+            //$scope.usuario.Accesado = 1;
+            console.log($scope.usuario);
+            $http({
+                method: 'PATCH',
+                url: 'http://leonardo-da-vinci.edu.do:8000/api/Usuarios/'+$scope.usuario.Id,
+                headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
+                data: $.param($scope.usuario)
+            })
+            .success(function(data) {
+                console.log('exito'); 
+                $scope.showAlert('Su contraseña ha sido actualizada.');
+                $scope.closeModalPassword();              
+            })
+            .error(function(data) {
+                console.log('error');
+                console.log(data);
+                $scope.showAlert('Hubo un error al intentar cambiar su contraseña.' + data);
+                return;
+            })
+        }
+        else {
+            console.log('Contrasena incorrecta');
+            $scope.showAlert('Las contraseñas no coinciden.');
+            return;
+        }
+    }
+
+    $scope.logout = function() {
+        Auth.setLoggedInUser(null);
+        $ionicHistory.nextViewOptions({
+            disableBack: true
+        });        
+        $state.go('login');
+    }
 })
 
 .controller('ApadaviCtrl', function ($scope, $http, $ionicModal, $rootScope, $location, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
