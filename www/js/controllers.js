@@ -655,7 +655,22 @@ angular.module('davinciapp.controllers', [])
 })
 
 .controller('DashboardController', function($scope, $state, $rootScope, $ionicHistory, $state, Auth) {
+    
     console.log(Auth.isLoggedIn());
+
+    $scope.verifyLogin = function() {
+        if(!Auth.isLoggedIn()) {
+            console.log('is not loggedin');
+            $ionicHistory.nextViewOptions({
+                disableBack: true
+            }); 
+            $state.go('login');        
+        }
+        else {
+            console.log('is loggedin');
+        }
+    }
+
     if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
         $ionicHistory.nextViewOptions({
@@ -675,6 +690,11 @@ angular.module('davinciapp.controllers', [])
       });        
       $state.go('app.notas');
     }
+
+     $scope.$on('$ionicView.enter', function() {
+         
+        $scope.verifyLogin();
+    })     
 })
 
 .controller('CalendarioCtrl', function($scope, $ionicSideMenuDelegate, $http) {
