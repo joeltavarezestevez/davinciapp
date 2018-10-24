@@ -6,6 +6,12 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
+.controller('SolicitudesCtrl',  function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+})
+
 .controller('ConfiguracionCtrl',  function ($scope, $http, $ionicModal, $ionicPopup, $ionicSideMenuDelegate, Auth, md5, $ionicHistory, $state) {
     
     $scope.openMenu = function () {
@@ -156,7 +162,7 @@ angular.module('davinciapp.controllers', [])
 .controller('FilosofiaCtrl', function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
  $scope.openMenu = function () {
     $ionicSideMenuDelegate.toggleLeft();
-  };
+ };
   
 })
 
@@ -169,6 +175,11 @@ angular.module('davinciapp.controllers', [])
 })
 
 .controller('CircularesCtrl', function ($scope, $http, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+    
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+
   if(!Auth.isLoggedIn()) {
     console.log('is not loggedin');
     $ionicHistory.nextViewOptions({

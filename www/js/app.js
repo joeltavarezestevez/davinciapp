@@ -214,7 +214,13 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
     url: '/app/configuracion',
     templateUrl: 'templates/configuracion.html',
     controller: 'ConfiguracionCtrl'
-  })  ;     
+  })
+
+  .state('solicitudes', {
+    url: '/app/solicitudes',
+    templateUrl: 'templates/solicitudes.html',
+    controller: 'SolicitudesCtrl'
+  });     
     
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');
