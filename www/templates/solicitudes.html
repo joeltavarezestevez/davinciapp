@@ -2,8 +2,17 @@
   <ion-nav-buttons side="left">
     <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
   </ion-nav-buttons>  
-  <ion-content class="padding bg-yellow">
-    <ion-refresher on-refresh="doRefresh()" pulling-text="Recargar..." refreshing-text="Cargando..."></ion-refresher>    
+  <ion-content class="padding bg-yellow">  
     <h2 class="text-center">Solicitudes</h2>
+
+    <div class="card bg-yellow-dark">
+      <div id="promocion">
+        <div class="item item-icon-left item-icon-right item-text-wrap bg-yellow text-blue">
+          <i class="icon ion-ios-paper"></i> Solicitar Record de Notas<i class="icon ion-ios-arrow-right"></i>
+        </div>
+        <a class="item item-icon-left item-icon-right item-text-wrap bg-yellow text-blue" href="#/app/excusasEstudiantes">
+          <i class="icon ion-power"></i> Enviar Excusa <i class="icon ion-ios-arrow-right"></i>
+        </a>
+    </div>    
   </ion-content>
 </ion-view>

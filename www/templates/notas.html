@@ -1,4 +1,4 @@
-<ion-view view-title="Calificaciones" class="bg-yellow">
+<ion-view view-title="Calificaciones" class="bg-yellow" ng-init="init()">
     <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
     </ion-nav-buttons>
@@ -29,7 +29,7 @@
             <ion-scroll direction="x" class="padding wide-as-needed">
                 <div class="item item-header item-energized row row-item min-500">
                     <div class="col col-left min-175">Asignatura</div>
-                    <div class="col col-right min-10" ng-if="publicada.ev1">EV1</div>
+                    <div class="col col-right min-10">EV1</div>
                     <div class="col col-right min-10" ng-if="publicada.ev2">EV2</div>
                     <div class="col col-right min-10" ng-if="publicada.prom1">PROM <br>SEM 1</div>
                     <div class="col col-right min-10" ng-if="publicada.ev3">EV3</div>

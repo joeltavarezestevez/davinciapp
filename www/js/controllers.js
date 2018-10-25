@@ -12,6 +12,20 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
+
+.controller('ExcusasCtrl',  function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+})
+
+
+.controller('ExcusasEstudiantesCtrl',  function ($scope, $http, $ionicModal, $ionicSideMenuDelegate) {
+    $scope.openMenu = function () {
+        $ionicSideMenuDelegate.toggleLeft();
+    };
+})
+
 .controller('ConfiguracionCtrl',  function ($scope, $http, $ionicModal, $ionicPopup, $ionicSideMenuDelegate, Auth, md5, $ionicHistory, $state) {
     
     $scope.openMenu = function () {
@@ -833,7 +847,7 @@ angular.module('davinciapp.controllers', [])
 
     $scope.getEstudiantes = function() {
         console.log($scope.familia);
-        $scope.query = 'select Estudiantes.Id, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Estudiantes.IdCurso From Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante where Estudiantes.IdCurso > 12 and Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia;
+        $scope.query = 'select Estudiantes.Id, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Estudiantes.IdCurso From Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante INNER JOIN Secciones ON Inscripciones.IdSeccion = Secciones.Id INNER JOIN Cursos ON Secciones.IdCurso = Cursos.Id and Cursos.Id > 12 INNER JOIN Niveles ON Cursos.IdNivel = Niveles.Id where Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia;
         console.log($scope.query);
         $scope.result = $http({
             method: 'POST',
@@ -898,7 +912,7 @@ angular.module('davinciapp.controllers', [])
 
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Datos del Estudiante...'});
 
-        $scope.query = 'select Estudiantes.Id, Estudiantes.Matricula, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Cursos.Descripcion as Curso, Secciones.Codigo as Seccion, Niveles.Id as IdNivel, Niveles.Descripcion as Nivel from Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante INNER JOIN Cursos ON Estudiantes.IdCurso = Cursos.Id and Cursos.Id > 12 INNER JOIN Secciones ON Inscripciones.IdSeccion = Secciones.Id INNER JOIN Niveles ON Cursos.IdNivel = Niveles.Id where Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia + ' and Estudiantes.Id = ' + $stateParams.Id;
+        $scope.query = 'select Estudiantes.Id, Estudiantes.Matricula, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Cursos.Descripcion as Curso, Secciones.Codigo as Seccion, Niveles.Id as IdNivel, Niveles.Descripcion as Nivel from Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante INNER JOIN Secciones ON Inscripciones.IdSeccion = Secciones.Id INNER JOIN Cursos ON Secciones.IdCurso = Cursos.Id and Cursos.Id > 12 INNER JOIN Niveles ON Cursos.IdNivel = Niveles.Id where Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia + ' and Estudiantes.Id = ' + $stateParams.Id;
         console.log($scope.query);
         $scope.result = $http({
             method: 'POST',
@@ -978,7 +992,7 @@ angular.module('davinciapp.controllers', [])
     $scope.getNotas = function() {
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
 
-        $scope.query = "SELECT e.matricula,sc1.promedio AS EV1, sc2.promedio as EV2, sc3.promedio as EV3, sc4.Promedio as EV4, a.Nombre as Asignatura FROM Evaluaciones ev LEFT JOIN SubCalificacionesNumericas sc1 ON ev.Id = sc1.IdEvaluacion and sc1.IdEvaluacion =" + $scope.evaluaciones.ev1 + " LEFT JOIN SubCalificacionesNumericas sc2 ON ev.Id = sc2.IdEvaluacion and sc2.IdEvaluacion = " + $scope.evaluaciones.ev2 + " LEFT JOIN SubCalificacionesNumericas sc3 ON ev.Id = sc3.IdEvaluacion and sc3.IdEvaluacion = " + $scope.evaluaciones.ev3 + " LEFT JOIN SubCalificacionesNumericas sc4 ON ev.Id = sc4.IdEvaluacion and sc4.IdEvaluacion = " + $scope.evaluaciones.ev4 + " LEFT JOIN CalificacionesNumericasSemestrales cns ON sc1.IdCalificacionSemestral = cns.Id LEFT JOIN CalificacionesNumericas cn ON cns.IdCalificacionNumerica = cn.Id INNER JOIN Asignaturas a ON cn.IdAsignatura = a.Id and a.Estado = 1 LEFT JOIN Inscripciones ins ON cn.IdInscripcion = ins.Id and ins.IdAnio = 1 LEFT JOIN Estudiantes e ON ins.IdEstudiante = e.Id LEFT JOIN Secciones s ON ins.IdSeccion = s.Id LEFT JOIN Cursos c ON s.IdCurso = c.Id WHERE e.IdFamilia = " + $scope.familia.IdFamilia + " and e.Id = " + $stateParams.Id;
+        $scope.query = "SELECT e.matricula,sc1.promedio AS EV1, sc2.promedio as EV2, sc3.promedio as EV3, sc4.Promedio as EV4, a.Nombre as Asignatura FROM Evaluaciones ev LEFT JOIN SubCalificacionesNumericas sc1 ON ev.Id = sc1.IdEvaluacion and sc1.IdEvaluacion =" + $scope.evaluaciones.ev1 + " LEFT JOIN SubCalificacionesNumericas sc2 ON ev.Id = sc2.IdEvaluacion and sc2.IdEvaluacion = " + $scope.evaluaciones.ev2 + " LEFT JOIN SubCalificacionesNumericas sc3 ON ev.Id = sc3.IdEvaluacion and sc3.IdEvaluacion = " + $scope.evaluaciones.ev3 + " LEFT JOIN SubCalificacionesNumericas sc4 ON ev.Id = sc4.IdEvaluacion and sc4.IdEvaluacion = " + $scope.evaluaciones.ev4 + " LEFT JOIN CalificacionesNumericasSemestrales cns ON sc1.IdCalificacionSemestral = cns.Id LEFT JOIN CalificacionesNumericas cn ON cns.IdCalificacionNumerica = cn.Id INNER JOIN Asignaturas a ON cn.IdAsignatura = a.Id and a.Estado = 1 LEFT JOIN Inscripciones ins ON cn.IdInscripcion = ins.Id and ins.IdAnio = 1 LEFT JOIN Estudiantes e ON ins.IdEstudiante = e.Id LEFT JOIN Secciones s ON ins.IdSeccion = s.Id LEFT JOIN Cursos c ON s.IdCurso = c.Id WHERE e.IdFamilia = " + $scope.familia.IdFamilia + " and e.Id = " + $stateParams.Id + " order by a.Orden";
         console.log($scope.query);
         $scope.result = $http({
             method: 'POST',
@@ -1007,7 +1021,7 @@ angular.module('davinciapp.controllers', [])
         $scope.getNotas();
     }
 
-    $scope.init(); 
+    //$scope.init(); 
 
     $scope.$on('$ionicView.enter', function() {
          
