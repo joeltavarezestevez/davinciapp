@@ -51,7 +51,7 @@
                 "fecha": "Jueves 16 de Agosto",
                 "eventos": [
                     {
-                        "evento": "Día de la Restauración de la R.D.",
+                        "evento": "Dí­a de la Restauración de la R.D.",
                         "modalidad": "-Asueto-"
                     }
                 ]
@@ -65,7 +65,7 @@
                         "modalidad": "Lugar: Cancha Techada"
                     },
                     {
-                        "evento": "Día de la Tierra"
+                        "evento": "Dí­a de la Tierra"
                     }
                 ]
             },
@@ -73,7 +73,7 @@
                 "fecha": "Viernes 24 de Agosto",
                 "eventos": [
                     {
-                        "evento": "Fecha límite cambio electivas"
+                        "evento": "Fecha lí­mite cambio electivas"
                     }
                 ]
             },
@@ -117,7 +117,7 @@
                         "evento": "Elección Consejo de Cursos"
                     },
                     {
-                        "evento": "Fecha Límite Descuento 1ra. Cuota"
+                        "evento": "Fecha Lí­mite Descuento 1ra. Cuota"
                     }
                 ]
             }
@@ -175,13 +175,13 @@
                 ]
             }, 
             {
-                "fecha": "Sábado 8 de Septiembre",
+                "fecha": "Sí¡bado 8 de Septiembre",
                 "eventos": [
                     {
                         "evento": "Natalicio de Gregorio Luperón"
                     },
                     {
-                        "evento": "Día Internacional de la Alfabetización"
+                        "evento": "Dí­a Internacional de la Alfabetización"
                     }
                 ]
             }, 
@@ -189,7 +189,7 @@
                 "fecha": "Viernes 14 de Septiembre",
                 "eventos": [
                     {
-                        "evento": "Fecha Límite Saldo 1ra. Cuota"
+                        "evento": "Fecha Lí­mite Saldo 1ra. Cuota"
                     }
                 ]
             }, 
@@ -197,7 +197,7 @@
                 "fecha": "Domingo 16 de Septiembre",
                 "eventos": [
                     {
-                        "evento": "Natalicio Federico Henríquez y Carvajal"
+                        "evento": "Natalicio Federico Henrí­quez y Carvajal"
                     }
                 ]
             }, 
@@ -205,7 +205,7 @@
                 "fecha": "Viernes 21 de Septiembre",
                 "eventos": [
                     {
-                        "evento": "Día Internacional de la Paz"
+                        "evento": "Dí­a Internacional de la Paz"
                     },
                     {
                         "evento": "Merienda Despedida Consejo Estudiantil"
@@ -222,7 +222,7 @@
                 ]
             }, 
             {
-                "fecha": "Martes 25 al Sábado 29 de Septiembre",
+                "fecha": "Martes 25 al Sí¡bado 29 de Septiembre",
                 "eventos": [
                     {
                         "evento": "Excursión 6to. A-B N.S."
@@ -230,7 +230,7 @@
                 ]
             }, 
             {
-                "fecha": "Miércoles 26 al Sábado 29 de Septiembre",
+                "fecha": "Miércoles 26 al Sí¡bado 29 de Septiembre",
                 "eventos": [
                     {
                         "evento": "Excursión 5to. A-B N.S."
@@ -241,19 +241,1409 @@
                 "fecha": "Jueves 27 de Septiembre",
                 "eventos": [
                     {
-                        "evento": "Día de Enriquillo"
+                        "evento": "Dí­a de Enriquillo"
                     }
                 ]
             }, 
             {
-                "fecha": "Sábado 29 de Septiembre",
+                "fecha": "Sí¡bado 29 de Septiembre",
                 "eventos": [
                     {
-                        "evento": "Día Nacional de los Derechos de la Niñez"
+                        "evento": "Dí­a Nacional de los Derechos de la Nií±ez"
                     }
                 ]
             }
 
         ]
-    }  
+    },
+    { 
+        "mes": "Octubre 2018",
+        "actividades": [
+            {
+                "fecha": "Lunes 1 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a de la Vejez"
+                    },
+                    {
+                        "evento": "Fecha Lí­mite Descuento 2da. Cuota"
+                    }                    
+                ]
+            },
+            {
+                "fecha": "Martes 2 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Excursiones 1ro.A-B y 2do. A-B N.S."
+                    },
+                    {
+                        "evento": "Excursiones 4to.A-B, 5to. A-B y 6to A-B N.P."
+                    },
+                    {
+                        "evento": "Dí­a del Odontólogo"
+                    },
+                    {
+                        "evento": "Dí­a del Agrónomo"
+                    }                    
+                ]
+            }, 
+            {
+                "fecha": "Miércoles 3 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Excursiones 1ro.A-B, 2do. A-B y 3ro A-B N.P."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Jueves 4 al Sí¡bado 6 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Excursión 4to. A-B N.S."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Viernes 5 al Sí¡bado 6 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Excursión 3ro. A-B  N.S."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Sí¡bado 6 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a Internacional de la Infancia"
+                    },
+                    {
+                        "evento": "Dí­a de los Animales"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Martes 9 al Miércoles 17 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "1er. Perí­odo Evaluación  N.P. N.S."
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Miércoles 10 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a de los Clubes Deportivos y Culturales"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Viernes 12 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a de la Hispanidad"
+                    },
+                    {
+                        "evento": "Encuentro entre dos culturas"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Lunes 15 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Fecha Lí­mite Saldo 2da. Cuota"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Martes 16 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a Mundial de la Alimentación"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Domingo 21 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a del Poeta"
+                    },
+                    {
+                        "evento": "Natalicio Salomé Ureí±a"
+                    }
+                ]
+            }, 
+            {
+                "fecha": "Miércoles 24 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a de las Naciones Unidas"
+                    },
+                    {
+                        "evento": "Entrega de Notas N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 26 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Entrega de Notas N.P."
+                    }
+                ]
+            },
+            {
+                "fecha": "Sí¡bado 27 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "XXXIII Aniversario del Instituto Leonardo Da Vinci"
+                    },
+                    {
+                        "evento": "Dí­a de la Escuela y la Universidad"
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Domingo 28 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a de la Fundación UASD"
+                    },
+                    {
+                        "evento": "Pasadí­a Familiar",
+                        "hora": "11:00 a.m."
+
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Lunes 29 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "ASUETO"
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Miércoles 31 de Octubre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a del Ahorro Escolar"
+                    },
+                    {
+                        "evento": "Fecha Lí­mite Descuento 3ra. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Noviembre 2018",
+        "actividades": [
+            {
+                "fecha": "Jueves 1 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día de Todos los Santos"
+                    },
+                    {
+                        "evento": "Día de la muerte de Mamá Tingó"
+                    }                    
+                ]
+            },
+            {
+                "fecha": "Viernes 2 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Dia de los Difuntos"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 6 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día de la Constitución Dominicana"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 7 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día del Deporte"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 12 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Dí­a del Servicio Postal y Telegráfico"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 14 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Saldo 3ra. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 15 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de José Reyes (Autor música Himno Nacional)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 18 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Natalicio del libertador de Cuba Máximo Gómez (dominicano)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 22 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día del Músico"
+                    },
+                    {
+                        "evento": "Christmas Fest"
+                    },
+                    {
+                        "evento": "Thanksgiving (Acción de Gracias)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 23 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Agasajo Guardia de Honor"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 25 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día de la No Violencia Contra la Mujer"
+                    },
+                    {
+                        "evento": "Aniversario muerte Hermanas Mirabal"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 30 de Noviembre",
+                "eventos": [
+                    {
+                        "evento": "Día de San Andrés"
+                    },
+                    {
+                        "evento": "Fecha Límite Descuento 4ta. Cuota"
+                    },
+                    {
+                        "evento": "Nochecita"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Diciembre 2018",
+        "actividades": [
+            {
+                "fecha": "Domingo 2 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día Internacional de la Abolición de la Esclavitud"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 3 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Dia Internacional de la Discapacidad"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 4 al Miércoles 12 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "2do. Período de Evaluación N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 5 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día del Descubrimiento de Nuestra Isla"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 7 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Cierre de Electivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 10 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día de los Derechos Humanos"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 11 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Cierre Tardes Deportivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 12 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Velada Navideña N.I."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 13 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día del No Vidente"
+                    },
+                    {
+                        "evento": "Fiesta Navideña en los cursos",
+                        "modalidad": "N.I. y N.P."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 14 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Saldo 4ta. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 19 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Entrega de Notas N.I., N.P. y N.S."
+                    },
+                    {
+                        "evento": "Vacaciones Colectivas"
+                    },
+                    {
+                        "evento": "Fecha Límite Descuento 5ta. Cuota"
+                    },
+                    {
+                        "evento": "Fecha Límite Saldo 1er. Período"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 20 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día del Turismo y Dominicano Ausente"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 25 de Diciembre",
+                "eventos": [
+                    {
+                        "evento": "Día de Navidad"
+                    }
+                ]
+            }
+        ]
+    },    
+    { 
+        "mes": "Enero 2019",
+        "actividades": [
+            {
+                "fecha": "Martes 1 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día de Año Nuevo"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 3 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Reintegro Personal Administrativo y Docente"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 6 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día de Reyes"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Lunes 7 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día del Poder Judicial"
+                    },
+                    {
+                        "evento": "Día del Poeta Domingo Moreno Jiménez"
+                    },
+                    {
+                        "evento": "Reinicio Docencia"
+                    },
+                    {
+                        "evento": "Reinicio Tardes Deportivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 9 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Reinicio de Electivas"
+                    },
+                    {
+                        "evento": "1era. Ronda Olimpíada de Matemática N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 10 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Reinicio Catecismo"
+                    },
+                    {
+                        "evento": "Preparación Confirmación"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Viernes 11 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Natalicio Eugenio María de Hostos"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 13 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día Nacional de la Alfabetización"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 14 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de Francisco Henríquez y Carvajal"
+                    },
+                    {
+                        "evento": "2da. Ronda Olimpíada de Matemática N.P. y N.S."
+                    },
+                    {
+                        "evento": "Fecha Límite Saldo 5ta. Cuota"
+                    }
+
+                ]
+            },
+            {
+                "fecha": "Martes 15 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 6to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 3ro. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 16 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 5to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 4to. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 17 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 4to. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 2do. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 18 de Enero",
+                "eventos": [
+                    {
+                        "evento": "1era. Ronda Olimpíada Ortografía N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 21 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día de Nuestra Señora de la Altagracia",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 22 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 3ro. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 1ro. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 23 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 2do. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 5to. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 24 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia 1ro. A-B N.P."
+                    },
+                    {
+                        "evento": "Convivencia 6to. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 25 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día del Servidor Público"
+                    },
+                    {
+                        "evento": "Acto Conmemorativo Día de Duarte",
+                        "hora": "8:00 a.m.",
+                        "modalidad": "Abierto al público"
+                    }
+                ]
+            },
+            {
+                "fecha": "Sabado 26 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Natalicio Juan Pablo Duarte",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 28 de Enero",
+                "eventos": [
+                    {
+                        "evento": "2da. Ronda Olimpíada Ortografía N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 29 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Spelling bee Cat. I (1ro. y 2do. N.S.)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 31 de Enero",
+                "eventos": [
+                    {
+                        "evento": "Día Nacional de la Juventud"
+                    },
+                    {
+                        "evento": "Spelling bee Cat. I (5to. y 6to. N.P.)"
+                    },
+                    {
+                        "evento": "Fecha Límite Descuento 6ta. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Febrero 2019",
+        "actividades": [
+            {
+                "fecha": "Viernes 1 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Spelling bee Cat. III (5to. y 6to. N.S.)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 4 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Spelling bee Cat. II (3ro. y 4to. N.S.)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 7 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Convivencia N.I."
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 9 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Natalicio Ulises Francisco Espaillat"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 14 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Día de la Amistad"
+                    },
+                    {
+                        "evento": "Celebración Día de la Amistad"
+                    },
+                    {
+                        "evento": "Celebración Carnaval Da Vinci"
+                    },
+                    {
+                        "evento": "Fecha Límite Saldo 6ta. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 18 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Día del Estudiante"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 25 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de Matías Ramon Mella"
+                    },
+                    {
+                        "evento": "Día Nacional de la Bandera"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 26 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Acto Conmemorativo Día de la Independencia Nacional",
+                        "hora": "8:00 a.m.",
+                        "modalidad": "Abierto al Público"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 27 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Día Independencia Nacional",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 28 de Febrero",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Descuento 7ma. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Marzo 2019",
+        "actividades": [
+            {
+                "fecha": "Viernes 1 al Lunes 11 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "3er. Período Evaluación N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 7 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Jardín de Padres N.I."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 8 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Reunión de Padres N.P.",
+                        "hora": "12:30 p.m.",
+                        "modalidad": "Lugar: Salón de Conferencias"
+                    },
+                    {
+                        "evento": "Día Internacional de la Mujer"
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 9 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de Francisco del Rosario Sánchez"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 11 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Día de los Bomberos"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Martes 12 y Miércoles 13 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Inscripción Año Escolar 2019-2020"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 12 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Excursión 1ro. A-B, 2do. A-B, 3ro. A-B N.P."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 13 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Excursión 4to. A-B, 5to. A-B, 6to. A-B N.P."
+                    },
+                    {
+                        "evento": "Excursión 1ro. A-B y 2do. A-B N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 14 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Saldo 7ma. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 17 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Día de San Patricio"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 19 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Aniversario Batalla 19 de Marzo"
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Miércoles 20 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Celebración Día Panamericano (Exhibición Paises)",
+                        "hora": "8:30 a.m. - 1:00 p.m.",
+                        "modalidad": "Abierto al Público"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 21 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Celebración Día Panamericano (Presentación Artística Escuelas Amigas)",
+                        "hora": "8:30 a.m."
+                    },
+                    {
+                        "evento": "Día Mundial de la Foresta"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 22 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Celebración Día Panamericano (Presentación Artística para todas las familias)",
+                        "hora": "8:15 a.m.",
+                        "modalidad": "Abierto al Público"
+                    },
+                    {
+                        "evento": "Día Mundial del Agua"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Martes 26 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Día Mundial del Clima"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 28 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Reunión de Padres N.S.",
+                        "hora": "12:30 p.m.",
+                        "modalidad": "Lugar: Salón de Conferencias"
+                    },
+                    {
+                        "evento": "Dí­a de la Tierra"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 29 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "2da. Entrega de Notas N.P."
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 30 de Marzo",
+                "eventos": [
+                    {
+                        "evento": "Aniversario Batalla 30 de Marzo"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Abril 2019",
+        "actividades": [
+            {
+                "fecha": "Lunes 1 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Descuento 8va. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 5 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Feria del Libro",
+                        "hora": "9:00 a.m. - 12:30 p.m."
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 6 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Día del Psicólogo (a)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 7 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Día Mundial de la Salud"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 12 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Festival de Ciencia y Arte",
+                        "hora": "08:30 a.m. - 12:30 p.m.",
+                        "modalidad": "Abierto al Público"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Lunes 15 al Viernes 19 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Semana Santa",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 22 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Reintegro Personal Docente"
+                    },
+                    {
+                        "evento": "Claustro de Profesores"
+                    },
+                    {
+                        "evento": "Día de la Tierra"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 23 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Reinicio Docencia"
+                    },
+                    {
+                        "evento": "Día del Libro"
+                    },
+                    {
+                        "evento": "Día del Bibliotecario"
+                    },
+                    {
+                        "evento": "Fecha Límite Saldo 8va. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 24 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Aniversario Revolución Abril de 1965"
+                    },
+                    {
+                        "evento": "Día de los Ayuntamientos"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 26 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Despedida Promoción/Entrega de Collages"
+                    },
+                    {
+                        "evento": "Día de la Secretaria"  
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 29 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Día Nacional de la Ética Ciudadana"
+                    },
+                    {
+                        "evento": "Celebración Día del Trabajo",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Martes 30 de Abril",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Descuento 9na. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "mes": "Mayo 2019",
+        "actividades": [
+            {
+                "fecha": "Miércoles 1 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día del Trabajo"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 2 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Saludo a la calidad para 1ro., 2do. y 3ro. N.P.",
+                        "hora": "7:45 a.m."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 3 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día de la Mujer de las Américas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 4 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Celebración Confirmación y Primera Comunión"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 5 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día del Árbol"
+                    }
+                ]
+            },            
+            {
+                "fecha": "Miércoles 8 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día de la Cruz Roja"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 14 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Saldo 9na. Cuota"
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 15 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día del Agricultor"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 17 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día del Contador"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 24 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Celebración Día de las Madres",
+                        "modalidad": "N. Inicial 8:30 a 9:15 a.m. \n N. Primario 9:15 a 10:00 a.m. 1ro. - 3ro. \n 10:00 a 10:45 a.m. 4to. - 6to."
+                    },
+                    {
+                        "evento": "Día de la Secretaria"  
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 26 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día de las Madres"
+                    }
+                ]
+            },                        
+            {
+                "fecha": "Miércoles 29 de Mayo al Jueves 6 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Período de Evaluación N.P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 30 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Día de la Libertad"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 31 de Mayo",
+                "eventos": [
+                    {
+                        "evento": "Fecha Límite Descuento 10ma. Cuota"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "mes": "Junio 2019",
+        "actividades": [
+            {
+                "fecha": "Miércoles 5 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Cierre Electivas"
+                    },
+                    {
+                        "evento": "Día Mundial del Medio Ambiente"
+                    },
+                    {
+                        "evento": "Cierre Tardes Deportivas"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 6 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Despedida de Pre-Primario N.I."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 7 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Fiesta Fin de Año N.I. y N.P."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 7 al Jueves 13 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Pruebas Completivas N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Miércoles 12 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Misa Acción de Gracias N.S."
+                    },
+                    {
+                        "evento": "Entrega de Notas Finales  N.I., N. P. y N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 14 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Graduación N.S."
+                    },
+                    {
+                        "evento": "Entrega de Notas Completivas"
+                    },
+                    {
+                        "evento": "Gesta Heroica de Constanza, Maimón y Estero Hondo"
+                    },
+                    {
+                        "evento": "Fecha Límite Saldo 2do. Período"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 17 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Celebración Día del Maestro"
+                    },
+                    {
+                        "evento": "Vacaciones Colectivas Personal Docente"
+                    }
+                ]
+            },
+            {
+                "fecha": "Jueves 20 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Corpus Christi",
+                        "modalidad": "-Asueto-"
+                    },
+                    {
+                        "evento": "Día del Orientador (a)"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 21 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Día de la Educación No Sexista"
+                    }
+                ]
+            },
+            {
+                "fecha": "Lunes 24 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Vacaciones Colectivas Personal Administrativo"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 25 al Viernes 28 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Pruebas Nacionales de 6to. N.S."
+                    }
+                ]
+            },
+            {
+                "fecha": "Sábado 29 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Natalicio de Pedro Henríquez Ureña"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 30 de Junio",
+                "eventos": [
+                    {
+                        "evento": "Día del Maestro (a)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "mes": "Julio 2019",
+        "actividades": [
+            {
+                "fecha": "Lunes 8 de Julio",
+                "eventos": [
+                    {
+                        "evento": "Reintegro Personal Administrativo"
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 12 de Julio",
+                "eventos": [
+                    {
+                        "evento": "Reintegro Equipo Directivo"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 16 de Julio",
+                "eventos": [
+                    {
+                        "evento": "Reintegro Personal Docente"
+                    },
+                    {
+                        "evento": "Día Mundial de la Población"
+                    }
+                ]
+            },
+            {
+                "fecha": "Domingo 28 de Julio",
+                "eventos": [
+                    {
+                        "evento": "Día del Padre"
+                    }
+                ]
+            }                                    
+        ]
+    },
+    {
+        "mes": "Agosto 2019",
+        "actividades": [
+            {
+                "fecha": "Jueves 1 al Jueves 8 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Pruebas Extraordinarias"
+                    }
+                ]
+            },
+            {
+                "fecha": "Martes 13 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "INICIO AÑO ESCOLAR 2019-2020",
+                        "horario": "Escuela Abierta. De 8:00 a.m. - 9:20 a.m. \n - Jornada de Ambientación. De 9:20 a.m. - 1:30 p.m.",
+                        "modalidad": "Inicio Horario Regular \n Horarios: 7:45  a.m.-  1:30 p.m.  N.P. \n 7:45  a.m.-  2:00 p.m. N.S. \n 8:00 a.m.-  9:20 a.m.  Corralito y Párvulo N.I. \n 8:00 a.m.-12:30 p.m. Maternal, Kinder y Preprimario N.I."
+                    }
+                ]
+            },
+            {
+                "fecha": "Viernes 16 de Agosto",
+                "eventos": [
+                    {
+                        "evento": "Día de la Restauración de la R.D.",
+                        "modalidad": "-Asueto-"
+                    }
+                ]
+            }                        
+        ]
+    }
 ]

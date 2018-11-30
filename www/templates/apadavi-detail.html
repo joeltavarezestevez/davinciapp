@@ -4,8 +4,14 @@
   </ion-nav-buttons>	
 	<ion-content class="padding bg-yellow">
 		<div class="text-center">
-			<h2>{{informacion.apadavi_descripcion}}</h2>			
-			<a ng-click="openModalApadavi({{informacion.id}})">
+			<h2>{{informacion.apadavi_descripcion}}</h2>
+	        <video controls ng-show="informacion.apadavi_tipo_recurso == 'video'" width="500" style="margin-top: 10px;">
+	          <source ng-src="{{url+informacion.apadavi_video}}" type="video/mp4">
+	        </video>
+            <div class="video-container">
+                <iframe ng-src="{{url+''+informacion.apadavi_video}}" frameborder="0" width="560" height="315"></iframe>
+            </div>	        
+			<a ng-click="openModalApadavi({{informacion.id}})" ng-show="informacion.apadavi_tipo_recurso == 'imagen'">
 				<img ng-src="{{url+''+informacion.apadavi_foto}}" alt="{{url+''+informacion.apadavi_foto}}" width="500">
 			</a>
 		</div>

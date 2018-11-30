@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.services', 'angular-md5'])
 
-.run(function($ionicPlatform, $rootScope, $state, $location, Auth) {
+.run(function($ionicPlatform, $rootScope, $location, $state, $location, Auth) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -24,7 +24,24 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
     // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
   
     var notificationOpenedCallback = function(jsonData) {
-      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+      console.log('notificationOpenedCallback: ');
+      console.log(jsonData);
+      if(jsonData.action.type == 0) {
+        console.log(jsonData.notification.payload.additionalData.url);
+        var url = jsonData.notification.payload.additionalData.url;
+        $location.path(url);        
+      }
+      else {
+        if(jsonData.action.actionID =="exit") {
+          ionic.Platform.exitApp();
+        }
+        else {
+          console.log(jsonData.notification.payload.additionalData.url);
+          var url = jsonData.notification.payload.additionalData.url;
+          $location.path(url);   
+        }
+      }
+
     };
 
     window.plugins.OneSignal

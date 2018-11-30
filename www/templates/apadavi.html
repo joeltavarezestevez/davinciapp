@@ -10,12 +10,12 @@
         <i class="icon ion-search placeholder-icon"></i>
         <input type="search" ng-model="search" placeholder=" Buscar por nombre/descripción" />
       </div>
-    </div>
+    </div>  
     <div ng-if="apadavi.length <= 0" class="text-center">No hay informaciones disponibles</div>
     <ion-list class="bg-yellow-dark" ng-if="apadavi.length > 0">
       <div ng-repeat="informacion in apadavi | filter:search" id="promocion">
       <ion-item class="item item-thumbnail-left item-icon-right item-text-wrap" href="#/app/apadavi/{{informacion.id}}">
-        <img ng-src="{{url+''+informacion.apadavi_foto}}" >
+        <img ng-src="{{url+''+informacion.apadavi_foto}}">       
         <h2 class="">{{informacion.apadavi_nombre}}</h2>
         <p>{{informacion.apadavi_descripcion}}</p>
         <i class="icon ion-ios-arrow-right"></i>

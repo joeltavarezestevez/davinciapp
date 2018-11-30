@@ -131,6 +131,7 @@ angular.module('davinciapp.controllers', [])
     $scope.getApadavi = function() {
         $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
             $scope.apadavi = data;
+            console.log($scope.apadavi);
         }); 
     }
 
@@ -623,7 +624,7 @@ angular.module('davinciapp.controllers', [])
  
 })
 
-.controller('AppCtrl', function($scope, $ionicHistory, $state, Auth) {
+.controller('AppCtrl', function($scope, $ionicHistory, $state, Auth, $location) {
 
      $scope.$on('$ionicView.enter', function() {
          
