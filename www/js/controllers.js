@@ -129,7 +129,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getApadavi = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
+        $http.get('data/recetas.json').success(function(data) {    
             $scope.apadavi = data;
             console.log($scope.apadavi);
         }); 

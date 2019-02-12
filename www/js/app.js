@@ -181,12 +181,14 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
 
   .state('circulares', {
     url: '/app/circulares',
+    cache: false,    
     templateUrl: 'templates/circulares.html',
     controller: 'CircularesCtrl'
   }) 
 
-     .state('circulares-detalle', {
+  .state('circulares-detalle', {
     url: '/app/circulares/:Id',
+    cache: false,
     templateUrl: 'templates/circular-detail.html',
     controller: 'CircularDetailCtrl'
   })   
@@ -205,6 +207,7 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
 
     .state('apadavi', {
       url: '/app/apadavi',
+      cache: false,
       templateUrl: 'templates/apadavi.html',
       controller: 'ApadaviCtrl'
     })
@@ -217,6 +220,7 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
 
     .state('deportivas', {
       url: '/app/deportivas',
+      cache: false,      
       templateUrl: 'templates/deportivas.html',
       controller: 'DeportivasCtrl'
     })
