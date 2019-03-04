@@ -85,7 +85,6 @@ angular.module('davinciapp.controllers', [])
                 data: $.param($scope.usuario)
             })
             .success(function(data) {
-                console.log('exito'); 
                 $scope.showAlert('Su contraseña ha sido actualizada.');
                 $scope.closeModalPassword();              
             })
@@ -129,9 +128,8 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getApadavi = function() {
-        $http.get('data/recetas.json').success(function(data) {    
+        $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
             $scope.apadavi = data;
-            console.log($scope.apadavi);
         }); 
     }
 
@@ -163,7 +161,6 @@ angular.module('davinciapp.controllers', [])
     $scope.getDeportivas = function() {
         $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
             $scope.deportivas = data;
-            console.log($scope.deportivas);
         }); 
     }
 
@@ -256,7 +253,6 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
     $http.get('http://leonardo-da-vinci.edu.do/horarios.json').success(function(data) {
         $scope.horarios = data;
-        console.log($scope.horarios[0].niveles);
     });
 
     $ionicModal.fromTemplateUrl('templates/modal-fotoHorario.html', {
@@ -370,7 +366,6 @@ angular.module('davinciapp.controllers', [])
             for(var j = 0; j < $scope.horarios[0].niveles[i].horarios.length; j++)
             if ($scope.horarios[0].niveles[i].horarios[j].id === parseInt($stateParams.Id)) {
                 $scope.horario = $scope.horarios[0].niveles[i].horarios[j];
-                console.log($scope.horario);
             }
         }        
     });
@@ -413,7 +408,6 @@ angular.module('davinciapp.controllers', [])
         for (var i = 0; i < $scope.apadavi.length; i++) {
             if ($scope.apadavi[i].id === parseInt($stateParams.Id)) {
                 $scope.informacion = $scope.apadavi[i];
-                console.log($scope.informacion);
             }
         }        
     });
@@ -456,7 +450,6 @@ angular.module('davinciapp.controllers', [])
         for (var i = 0; i < $scope.circulares.length; i++) {
             if ($scope.circulares[i].id === parseInt($stateParams.Id)) {
                 $scope.circular = $scope.circulares[i];
-                console.log($scope.circular);
             }
         }        
     });
@@ -501,7 +494,6 @@ angular.module('davinciapp.controllers', [])
             for (var i = 0; i < $scope.deportivas.length; i++) {
                 if ($scope.deportivas[i].id === parseInt($stateParams.Id)) {
                     $scope.deportiva = $scope.deportivas[i];
-                    console.log($scope.deportiva);
                 }
             }        
         })
@@ -541,7 +533,6 @@ angular.module('davinciapp.controllers', [])
   // Open the login modal
   $scope.mensaje = function() {
     $scope.modal.show();
-    console.log('modal open');
   };
 
   // Perform the login action when the user submits the login form
@@ -581,18 +572,11 @@ angular.module('davinciapp.controllers', [])
     $scope.init = function() {
         $http.jsonp("http://www.leonardo-da-vinci.edu.do/feed/json", {cache: true, params: {callback: 'JSON_CALLBACK'}})
             .success(function(data) {
-                console.log(data);
                 $scope.rss = data;
                 angular.forEach($scope.rss, function(entry) {
                     entry.publishedDate = new Date(entry.date);
                     $scope.entries.push(entry);
                 })
-
-                console.log($scope.entries);
-               /* $scope.rssTitle = data.title;
-                $scope.rssUrl = data.responseData.feed.feedUrl;
-                $scope.rssSiteUrl = data.responseData.feed.link;
-                $scope.entries = data.responseData.feed.entries;*/
             })
             .error(function(data) {
                 console.log("ERROR: " + data);
@@ -626,13 +610,10 @@ angular.module('davinciapp.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicHistory, $state, Auth, $location) {
 
-     $scope.$on('$ionicView.enter', function() {
-         
+    $scope.$on('$ionicView.enter', function() {   
         $scope.user = Auth.getLoggedInUser();
     })
-    
-    console.log('reloaded');
-    console.log($scope.user);
+
     $scope.logout = function() {
         Auth.setLoggedInUser(null);
         $ionicHistory.nextViewOptions({
@@ -676,9 +657,7 @@ angular.module('davinciapp.controllers', [])
         then(function(response) {
             $scope.user = response.data;
             if($scope.user.length > 0) {
-                console.log($scope.user[0]);
                 if($scope.user[0].NombreUsuario == $scope.loginData.username && $scope.user[0].Contraseña == md5.createHash($scope.loginData.password)) {
-                    console.log('login correcto');
                     Auth.setLoggedInUser($scope.user[0]);
                     if($scope.user[0].Accesado !== 0) {
                         $ionicHistory.nextViewOptions({
@@ -722,8 +701,7 @@ angular.module('davinciapp.controllers', [])
 
     $scope.getUserData = function() {
         $http.get('http://leonardo-da-vinci.edu.do:8000/api/Usuarios/'+$stateParams.Id).success(function(data) {
-            $scope.usuario = data[0];
-            console.log($scope.usuario);
+            $scope.usuario = data[0]
         });
     }
 
@@ -904,8 +882,8 @@ angular.module('davinciapp.controllers', [])
 
     $scope.getPublicaciones = function() {
         $http.get('http://leonardo-da-vinci.edu.do/publicaciones.json').success(function(data) {
-            $scope.publicaciones = data;
-            console.log($scope.publicaciones);    
+            $scope.publicaciones = data; 
+            $scope.getEstudiante();
         })
     }
 
@@ -923,9 +901,8 @@ angular.module('davinciapp.controllers', [])
 
         })
         .success(function(data) {
-            console.log('exito');
             $scope.estudiante = data[0];
-              console.log($scope.estudiante);
+              console.log($scope.publicaciones);
 
             if($scope.estudiante.IdNivel == 5) {
                 $scope.evaluaciones.ev1 = 1;
@@ -977,9 +954,7 @@ angular.module('davinciapp.controllers', [])
                 $scope.publicada.cf = $scope.publicaciones.evaluaciones_np.cf;
                 $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
                 $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
-            }            
-            console.log($scope.publicada);
-            console.log($scope.evaluaciones);
+            }
             $scope.getNotas();          
         })
         .error(function(data) {
@@ -987,6 +962,7 @@ angular.module('davinciapp.controllers', [])
             console.log(data);
             console.log($scope.query);
         })
+
         $ionicLoading.hide();
     }
 
@@ -1003,8 +979,6 @@ angular.module('davinciapp.controllers', [])
 
         })
         .success(function(data) {
-            console.log('exito'); 
-            console.log(data);
             $scope.notas = data;
         })
         .error(function(data) {
@@ -1015,14 +989,9 @@ angular.module('davinciapp.controllers', [])
         $ionicLoading.hide();
     }
 
-    $scope.init = function() {   
-        $scope.getEstudiante();
-        console.log($scope.estudiante);
-        $scope.getPublicaciones();        
-        $scope.getNotas();
+    $scope.init = function() { 
+        $scope.getPublicaciones();
     }
-
-    //$scope.init(); 
 
     $scope.$on('$ionicView.enter', function() {
          

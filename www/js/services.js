@@ -15,7 +15,6 @@ angular.module('davinciapp.services', [])
           $rootScope.user = angular.fromJson(userStr);
         }
       }
-      console.log($rootScope.user);
       return $rootScope.user;
     },
     isLoggedIn: function () {
