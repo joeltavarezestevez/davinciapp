@@ -31,28 +31,26 @@
                     <div class="col col-left min-175">Asignatura</div>
                     <div class="col col-right min-10">EV1</div>
                     <div class="col col-right min-10">EV2</div>
+                    <div class="col col-right min-10">PROM<br>SEM1</div>
                     <div class="col col-right min-10">EV3</div>
                     <div class="col col-right min-10">EV4</div>
+                    <div class="col col-right min-10">PROM<br>SEM2</div>
                     <div class="col col-right min-10">PROM<br>FINAL</div>
-                    <div class="col col-right min-10">70%<br>PROM</div>
-                    <div class="col col-right min-10">PRU</div>
-                    <div class="col col-right min-10">30%<br>PRU</div>
-                    <div class="col col-right min-10">CF</div>
-                    <div class="col col-right min-10">ASI</div>    
+                    <div class="col col-right min-10">COMPL</div>
+                    <div class="col col-right min-10">EXT</div>  
                 </div>
                 <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay notas publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="row in notas | orderBy:predicate:desc">
                     <div class="col col-left min-175">{{ row.Asignatura }}</div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV1 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV2 | number }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ row.EV2 | number }}</span></div>
+                    <div class="col col-right col-sep min-10"><span>{{ (row.EV1+row.EV2)/2 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev3">{{ row.EV3 | number }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev4">{{ row.EV4 | number }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ row.promf | number }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.prom70">{{ row.prom70 | number }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.pru">{{ row.pru | number }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.pru30">{{ row.pru30 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.cf">{{ row.cf | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.asi">{{ row.asi | number }}</span></div>
                 </div>
                 <div></div>
             </ion-scroll>
@@ -68,11 +66,10 @@
                 </div>
                 <div class="row">
                     <p class="col col-50 small-line"><small><b>PROM</b> = Promedio </small></p>
-                    <p class="col col-50 small-line"><small><b>PRU</b> = Prueba</small></p>
+                    <p class="col col-50 small-line"><small><b>COMPL</b> = Completivo</small></p>
                 </div>
                 <div class="row">
-                    <p class="col col-50 small-line"><small><b>CF</b> = Calif. Final</small></p>
-                    <p class="col col-50 small-line"><small><b>ASI</b> = Asistencia</small></p>
+                    <p class="col col-50 small-line"><small><b>EXT</b> = Extraordinario</small></p>
                 </div>
             </div>
         </div>

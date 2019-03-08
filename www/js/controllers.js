@@ -968,8 +968,7 @@ angular.module('davinciapp.controllers', [])
 
     $scope.getNotas = function() {
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
-
-        $scope.query = "SELECT e.matricula,sc1.promedio AS EV1, sc2.promedio as EV2, sc3.promedio as EV3, sc4.Promedio as EV4, a.Nombre as Asignatura FROM Evaluaciones ev LEFT JOIN SubCalificacionesNumericas sc1 ON ev.Id = sc1.IdEvaluacion and sc1.IdEvaluacion =" + $scope.evaluaciones.ev1 + " LEFT JOIN SubCalificacionesNumericas sc2 ON ev.Id = sc2.IdEvaluacion and sc2.IdEvaluacion = " + $scope.evaluaciones.ev2 + " LEFT JOIN SubCalificacionesNumericas sc3 ON ev.Id = sc3.IdEvaluacion and sc3.IdEvaluacion = " + $scope.evaluaciones.ev3 + " LEFT JOIN SubCalificacionesNumericas sc4 ON ev.Id = sc4.IdEvaluacion and sc4.IdEvaluacion = " + $scope.evaluaciones.ev4 + " LEFT JOIN CalificacionesNumericasSemestrales cns ON sc1.IdCalificacionSemestral = cns.Id LEFT JOIN CalificacionesNumericas cn ON cns.IdCalificacionNumerica = cn.Id INNER JOIN Asignaturas a ON cn.IdAsignatura = a.Id and a.Estado = 1 LEFT JOIN Inscripciones ins ON cn.IdInscripcion = ins.Id and ins.IdAnio = 1 LEFT JOIN Estudiantes e ON ins.IdEstudiante = e.Id LEFT JOIN Secciones s ON ins.IdSeccion = s.Id LEFT JOIN Cursos c ON s.IdCurso = c.Id WHERE e.IdFamilia = " + $scope.familia.IdFamilia + " and e.Id = " + $stateParams.Id + " order by a.Orden";
+        $scope.query = "SELECT sn1.Promedio as EV1, sn2.Promedio as EV2, sn3.Promedio as EV3,  sn4.Promedio as EV4, Asignaturas.Nombre as Asignatura FROM CalificacionesNumericas INNER JOIN CalificacionesNumericasSemestrales cs1 ON CalificacionesNumericas.Id = cs1.IdCalificacionNumerica and cs1.Semestre = 1 INNER JOIN CalificacionesNumericasSemestrales cs2 ON CalificacionesNumericas.Id = cs2.IdCalificacionNumerica and cs2.Semestre = 2 RIGHT JOIN SubCalificacionesNumericas sn1 ON cs1.Id = sn1.IdCalificacionSemestral and sn1.IdEvaluacion = " + $scope.evaluaciones.ev1 + " RIGHT JOIN SubCalificacionesNumericas sn2 ON cs1.Id = sn2.IdCalificacionSemestral and sn2.IdEvaluacion = " + $scope.evaluaciones.ev2 + " LEFT JOIN SubCalificacionesNumericas sn3 ON cs2.Id = sn3.IdCalificacionSemestral and sn3.IdEvaluacion = " + $scope.evaluaciones.ev3 + " LEFT JOIN SubCalificacionesNumericas sn4 ON cs2.Id = sn4.IdCalificacionSemestral and sn4.IdEvaluacion = " + $scope.evaluaciones.ev4 + " INNER JOIN  Asignaturas ON CalificacionesNumericas.IdAsignatura = Asignaturas.Id and Asignaturas.Estado = 1 INNER JOIN Inscripciones ON CalificacionesNumericas.IdInscripcion = Inscripciones.Id and Inscripciones.IdAnio = 1 INNER JOIN Estudiantes e ON Inscripciones.IdEstudiante = e.Id WHERE e.Id = " + $stateParams.Id + " order by Asignaturas.Orden";
         console.log($scope.query);
         $scope.result = $http({
             method: 'POST',
@@ -979,7 +978,26 @@ angular.module('davinciapp.controllers', [])
 
         })
         .success(function(data) {
+            
+            if(data.EV2 > 0)
+            {
+                data.prom1 = (data.EV1 + data.EV2)/2;
+            }
+            else 
+            {
+                data.prom1 = data.EV1;
+            }
+
+            if(data.EV4 > 0)
+            {
+                data.prom2 = (data.EV4 + data.EV3)/2;
+            }
+            else 
+            {
+                data.prom2 = data.EV3;
+            }
             $scope.notas = data;
+            console.log($scope.notas);
         })
         .error(function(data) {
             console.log('error');
