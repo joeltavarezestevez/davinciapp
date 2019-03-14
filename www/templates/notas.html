@@ -42,15 +42,15 @@
                 <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay notas publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="row in notas | orderBy:predicate:desc">
                     <div class="col col-left min-175">{{ row.Asignatura }}</div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV1 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ row.EV2 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span>{{ (row.EV1+row.EV2)/2 | number:0 }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev3">{{ row.EV3 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev4">{{ row.EV4 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ row.promf | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom70">{{ row.prom70 | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.pru">{{ row.pru | number }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.pru30">{{ row.pru30 | number }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV1 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ row.EV2 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom1">{{ (row.prom1 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev3">{{ row.EV3 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev4">{{ row.EV4 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom2">{{ row.prom2 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ row.promf | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.compl">{{ row.compl | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ext">{{ row.ext | number:0 }}</span></div>
                 </div>
                 <div></div>
             </ion-scroll>

@@ -8,7 +8,7 @@
 	        <video controls ng-show="informacion.apadavi_tipo_recurso == 'video'" width="500" style="margin-top: 10px;">
 	          <source ng-src="{{url+informacion.apadavi_video}}" type="video/mp4">
 	        </video>
-            <div class="video-container">
+            <div class="video-container" ng-show="informacion.apadavi_tipo_recurso == 'video'">
                 <iframe ng-src="{{url+''+informacion.apadavi_video}}" frameborder="0" width="560" height="315"></iframe>
             </div>	        
 			<a ng-click="openModalApadavi({{informacion.id}})" ng-show="informacion.apadavi_tipo_recurso == 'imagen'">
