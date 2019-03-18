@@ -128,7 +128,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getApadavi = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {    
+        $http.get('http://leonardo-da-vinci.edu.do/apadavi.json?nocache=' + (new Date()).getTime()).success(function(data) {    
             $scope.apadavi = data;
         }); 
     }
@@ -159,7 +159,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getDeportivas = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {    
+        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json?nocache=' + (new Date()).getTime()).success(function(data) {    
             $scope.deportivas = data;
         }); 
     }
@@ -204,7 +204,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getCirculares = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/circulares.json').success(function(data) {    
+        $http.get('http://leonardo-da-vinci.edu.do/circulares.json?nocache=' + (new Date()).getTime()).success(function(data) {    
             $scope.circulares = data;
         });        
     }
@@ -222,7 +222,7 @@ angular.module('davinciapp.controllers', [])
     $scope.promociones = [];
 
     $scope.getPromociones = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/promociones.json').success(function(data) {    
+        $http.get('http://leonardo-da-vinci.edu.do/promociones.json?nocache=' + (new Date()).getTime()).success(function(data) {    
             $scope.promociones = data;
         });        
     }
@@ -251,7 +251,7 @@ angular.module('davinciapp.controllers', [])
 
     $scope.horarios = [];
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/horarios.json').success(function(data) {
+    $http.get('http://leonardo-da-vinci.edu.do/horarios.json?nocache=' + (new Date()).getTime()).success(function(data) {
         $scope.horarios = data;
     });
 
@@ -360,7 +360,7 @@ angular.module('davinciapp.controllers', [])
     $scope.horarios = [];
     $scope.horario = {};
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/horarios.json').success(function(data) {
+    $http.get('http://leonardo-da-vinci.edu.do/horarios.json?nocache=' + (new Date()).getTime()).success(function(data) {
         $scope.horarios = data;
         for (var i = 0; i < $scope.horarios[0].niveles.length; i++) {
             for(var j = 0; j < $scope.horarios[0].niveles[i].horarios.length; j++)
@@ -403,7 +403,7 @@ angular.module('davinciapp.controllers', [])
     $scope.apadavi = [];
     $scope.informacion = {};
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/apadavi.json').success(function(data) {
+    $http.get('http://leonardo-da-vinci.edu.do/apadavi.json?nocache=' + (new Date()).getTime()).success(function(data) {
         $scope.apadavi = data;
         for (var i = 0; i < $scope.apadavi.length; i++) {
             if ($scope.apadavi[i].id === parseInt($stateParams.Id)) {
@@ -445,7 +445,7 @@ angular.module('davinciapp.controllers', [])
     $scope.circulares = [];
     $scope.circular = {};
     $scope.url = "http://leonardo-da-vinci.edu.do/";
-    $http.get('http://leonardo-da-vinci.edu.do/circulares.json').success(function(data) {
+    $http.get('http://leonardo-da-vinci.edu.do/circulares.json?nocache=' + (new Date()).getTime()).success(function(data) {
         $scope.circulares = data;
         for (var i = 0; i < $scope.circulares.length; i++) {
             if ($scope.circulares[i].id === parseInt($stateParams.Id)) {
@@ -489,7 +489,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
 
     $scope.getCalendario = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json').success(function(data) {
+        $http.get('http://leonardo-da-vinci.edu.do/deportivas.json?nocache=' + (new Date()).getTime()).success(function(data) {
             $scope.deportivas = data;
             for (var i = 0; i < $scope.deportivas.length; i++) {
                 if ($scope.deportivas[i].id === parseInt($stateParams.Id)) {
@@ -789,7 +789,7 @@ angular.module('davinciapp.controllers', [])
 
   $scope.calendario = [];
 
-  $http.get('http://leonardo-da-vinci.edu.do/calendario.json').success(function(data) {
+  $http.get('http://leonardo-da-vinci.edu.do/calendario.json?nocache=' + (new Date()).getTime()).success(function(data) {
     $scope.calendario = data;
   });  
     
@@ -881,7 +881,9 @@ angular.module('davinciapp.controllers', [])
     $scope.estudiante = {};
 
     $scope.getPublicaciones = function() {
-        $http.get('http://leonardo-da-vinci.edu.do/publicaciones.json').success(function(data) {
+        var url = 'http://leonardo-da-vinci.edu.do/publicaciones.json?nocache=' + (new Date()).getTime();
+        console.log(url);
+        $http.get(url).success(function(data) {
             $scope.publicaciones = data; 
             $scope.getEstudiante();
         })
@@ -955,6 +957,7 @@ angular.module('davinciapp.controllers', [])
                 $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
                 $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
             }
+            console.log($scope.publicada);
             $scope.getNotas();          
         })
         .error(function(data) {
@@ -978,23 +981,26 @@ angular.module('davinciapp.controllers', [])
 
         })
         .success(function(data) {
-            
-            if(data.EV2 > 0)
-            {
-                data.prom1 = (data.EV1 + data.EV2)/2;
-            }
-            else 
-            {
-                data.prom1 = data.EV1;
-            }
+            for (var i = 0; i < data.length; i++) {
+                data[i].prom1 = 0;
+                data[i].prom2 = 0;
+                if(data[i].EV2 > 0)
+                {
+                    data[i].prom1 = (data[i].EV1 + data[i].EV2)/2;
+                }
+                else 
+                {
+                    data[i].prom1 = data[i].EV1;
+                }
 
-            if(data.EV4 > 0)
-            {
-                data.prom2 = (data.EV4 + data.EV3)/2;
-            }
-            else 
-            {
-                data.prom2 = data.EV3;
+                if(data[i].EV4 > 0)
+                {
+                    data[i].prom2 = (data[i].EV4 + data[i].EV3)/2;
+                }
+                else 
+                {
+                    data[i].prom2 = data[i].EV3;
+                }
             }
             $scope.notas = data;
             console.log($scope.notas);
