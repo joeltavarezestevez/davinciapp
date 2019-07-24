@@ -76,7 +76,7 @@ angular.module('davinciapp.controllers', [])
             $scope.familia.Contraseña = md5.createHash($scope.passForm.password);
             $http({
                 method: 'PUT',
-                url: 'http://localhost:3515/api/usuarios/' + $scope.familia.id,
+                url: 'http://leonardo-da-vinci.edu.do:3515/api/usuarios/' + $scope.familia.id,
                 headers: { 'Content-Type' : 'application/x-www-form-urlencoded',
                 'Authorization': $scope.familia.token },
                 data: $.param($scope.familia)
@@ -701,7 +701,7 @@ angular.module('davinciapp.controllers', [])
             console.log($scope.familia);
             $http({
                 method: 'PUT',
-                url: 'http://localhost:3515/api/usuarios/' + $scope.familia.id,
+                url: 'http://leonardo-da-vinci.edu.do:3515/api/usuarios/' + $scope.familia.id,
                 headers: { 'Content-Type' : 'application/x-www-form-urlencoded',
                 'Authorization': $scope.familia.token },
                 data: $.param($scope.familia)
@@ -830,7 +830,7 @@ angular.module('davinciapp.controllers', [])
         $scope.familia = Auth.getLoggedInUser();
         $scope.result = $http({
             method: 'GET',
-            url: 'http://localhost:3515/api/familias/' + $scope.familia.IdFamilia + '/estudiantes',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/familias/' + $scope.familia.IdFamilia + '/estudiantes',
             headers: {'Authorization': $scope.familia.token }
         })
         .success(function(estudiantes) {
@@ -891,7 +891,7 @@ angular.module('davinciapp.controllers', [])
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Datos del Estudiante...'});
         $scope.result = $http({
             method: 'GET',
-            url: 'http://localhost:3515/api/estudiantes/' + $stateParams.Id,
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/' + $stateParams.Id,
             headers: {'Authorization': $scope.familia.token }
         })
         .success(function(estudiante) {
@@ -968,7 +968,7 @@ angular.module('davinciapp.controllers', [])
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
         $scope.result = $http({
             method: 'GET',
-            url: 'http://localhost:3515/api/estudiantes/' + $stateParams.Id + '/notas',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/' + $stateParams.Id + '/notas',
             headers: {'Authorization': $scope.familia.token },
             params: {
                 ev1: $scope.evaluaciones.ev1, 
