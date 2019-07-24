@@ -6,7 +6,7 @@ angular.module('davinciapp.services', [])
       user.password = md5.createHash(user.password);
         return $http({
           method: 'POST',
-          url: 'http://localhost:3515/api/usuarios/signin',
+          url: 'http://leonardo-da-vinci.edu.do:3515/api/usuarios/signin',
           headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
           data: $.param(user)
         });
