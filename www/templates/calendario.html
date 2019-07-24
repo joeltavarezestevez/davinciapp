@@ -4,29 +4,55 @@
   </ion-nav-buttons>   
   <ion-content class="bg-yellow">
     <h2 class="text-center">Calendario Escolar</h2>
-    <h4 class="text-center energized">2018-2019</h4>
-    <div class="list list-inset">
-      <div class="item item-card item-input bg-yellow-dark" style="border-color: #A10461;">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" ng-model="search" placeholder=" Buscar por Actividad/Fecha/Curso, etc." />
+    <h4 class="text-center energized">2019-2020</h4>
+    <div class="row text-center">
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario.jpg" width="25%" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario.jpg')">
+      </div>        
+    </div>
+    <div class="row">
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-01.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-01.jpg')">
       </div>
-    </div>    
-      <ion-list class="bg-yellow">      
-          <ion-item ng-repeat="c in calendario" class="item item- bg-yellow">
-            <div class="item item-divider bg-yellow-dark">
-              <b> {{c.mes}} </b>
-            </div>
-            <div ng-repeat="actividad in c.actividades | filter:search" class="padding bg-yellow">
-              <h4 style="color: #031d7c;" ng-if="actividad.fecha"><b>{{actividad.fecha}}</b></h3>
-              <ul ng-repeat="cc in actividad.eventos">
-                  <li ng-if="cc.evento">
-                    <span class="energized item-text-wrap" >- {{cc.evento}}</span>
-                    <span class="energized" ng-if="cc.hora"><br>&nbsp;&nbsp;<b>Hora: </b>{{cc.hora}}</span>
-                    <span class="energized" ng-if="cc.modalidad"><br>&nbsp;&nbsp;<b>{{cc.modalidad}}</b></span>
-                  </li>
-              </ul>              
-            </div>
-          </ion-item>
-      </ion-list>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-02.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-02.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-03.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-03.jpg')">
+      </div>        
+    </div>
+    <div class="row">
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-04.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-04.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-05.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-05.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-06.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-06.jpg')">
+      </div>        
+    </div>
+    <div class="row">
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-07.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-07.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-08.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-08.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-09.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-09.jpg')">
+      </div>        
+    </div>
+    <div class="row">
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-10.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-10.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-11.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-11.jpg')">
+      </div>
+      <div class="col">
+        <img class="img-border" src="http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-12.jpg" ng-click="openModalCalendario('http://leonardo-da-vinci.edu.do/img/calendario/Da-Vinci-Calendario-12.jpg')">
+      </div>        
+    </div>      
   </ion-content>
 </ion-view>

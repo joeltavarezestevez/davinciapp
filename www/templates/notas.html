@@ -25,7 +25,8 @@
                 </div>                   
             </div>
         </div>
-        <div class="card bg-yellow">
+        <div class="text-center" ng-if="estudiante.IdCurso < 12">Este estudiante no tiene calificaciones num&eacute;ricas.</div>
+        <div class="card bg-yellow" ng-if="estudiante.IdCurso > 12">
             <ion-scroll direction="x" class="padding wide-as-needed">
                 <div class="item item-header item-energized row row-item min-500">
                     <div class="col col-left min-175">Asignatura</div>
@@ -39,7 +40,7 @@
                     <div class="col col-right min-10">COMPL</div>
                     <div class="col col-right min-10">EXT</div>  
                 </div>
-                <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay notas publicadas para este estudiante.</div>
+                <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="row in notas | orderBy:predicate:desc">
                     <div class="col col-left min-175">{{ row.Asignatura }}</div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV1 | number:0 }}</span></div>
@@ -55,7 +56,7 @@
                 <div></div>
             </ion-scroll>
         </div>
-        <div class="card">
+        <div class="card" ng-if="estudiante.IdCurso > 12">
             <div class="item item-divider item-energized">
                 <h3 style="color: white !important;"><b>Leyenda</b></h3>
             </div>

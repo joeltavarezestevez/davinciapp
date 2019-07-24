@@ -71,22 +71,23 @@ angular.module('davinciapp.controllers', [])
 
 
     $scope.cambiarContrasena = function() {
-        console.log($scope.usuario);
-        console.log($scope.passForm);
-        if($scope.passForm.password == $scope.passForm.confirmPassword) {
-            console.log('Contrasena correcta');
-            $scope.usuario.Contraseña = md5.createHash($scope.passForm.password);
-            //$scope.usuario.Accesado = 1;
-            console.log($scope.usuario);
+        $scope.familia = Auth.getLoggedInUser();
+        if($scope.passForm.password === $scope.passForm.confirmPassword) {
+            $scope.familia.Contraseña = md5.createHash($scope.passForm.password);
             $http({
-                method: 'PATCH',
-                url: 'http://leonardo-da-vinci.edu.do:8000/api/Usuarios/'+$scope.usuario.Id,
-                headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
-                data: $.param($scope.usuario)
+                method: 'PUT',
+                url: 'http://localhost:3515/api/usuarios/' + $scope.familia.id,
+                headers: { 'Content-Type' : 'application/x-www-form-urlencoded',
+                'Authorization': $scope.familia.token },
+                data: $.param($scope.familia)
             })
             .success(function(data) {
+                console.log(data);
+                console.log('exito'); 
                 $scope.showAlert('Su contraseña ha sido actualizada.');
-                $scope.closeModalPassword();              
+                $ionicHistory.nextViewOptions({
+                    disableBack: true
+                });             
             })
             .error(function(data) {
                 console.log('error');
@@ -96,7 +97,6 @@ angular.module('davinciapp.controllers', [])
             })
         }
         else {
-            console.log('Contrasena incorrecta');
             $scope.showAlert('Las contraseñas no coinciden.');
             return;
         }
@@ -111,7 +111,7 @@ angular.module('davinciapp.controllers', [])
     }
 })
 
-.controller('ApadaviCtrl', function ($scope, $http, $ionicModal, $rootScope, $location, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('ApadaviCtrl', function ($scope, $http, $ionicModal, $location, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
   if(!Auth.isLoggedIn()) {
     console.log('is not loggedin');
     $ionicHistory.nextViewOptions({
@@ -142,7 +142,7 @@ angular.module('davinciapp.controllers', [])
 
 })
 
-.controller('DeportivasCtrl', function ($scope, $http, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('DeportivasCtrl', function ($scope, $http, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
   if(!Auth.isLoggedIn()) {
     console.log('is not loggedin');
     $ionicHistory.nextViewOptions({
@@ -186,7 +186,7 @@ angular.module('davinciapp.controllers', [])
   
 })
 
-.controller('CircularesCtrl', function ($scope, $http, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('CircularesCtrl', function ($scope, $http, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
     
     $scope.openMenu = function () {
         $ionicSideMenuDelegate.toggleLeft();
@@ -235,7 +235,7 @@ angular.module('davinciapp.controllers', [])
     }    
 })
 
-.controller('HorariosCtrl', function ($scope, $http, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('HorariosCtrl', function ($scope, $http, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
     
       if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -343,7 +343,7 @@ angular.module('davinciapp.controllers', [])
     };    
 })
 
-.controller('HorarioDetailCtrl', function ($scope, $http, $stateParams, $rootScope, $ionicHistory, $state, $ionicModal, $ionicSideMenuDelegate, Auth) {
+.controller('HorarioDetailCtrl', function ($scope, $http, $stateParams, $ionicHistory, $state, $ionicModal, $ionicSideMenuDelegate, Auth) {
 
       if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -386,7 +386,7 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
-.controller('ApadaviDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('ApadaviDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
       
       if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -428,7 +428,7 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
-.controller('CircularDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('CircularDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
 
       if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -470,7 +470,7 @@ angular.module('davinciapp.controllers', [])
     };
 })
 
-.controller('DeportivaDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $rootScope, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
+.controller('DeportivaDetailCtrl', function ($scope, $http, $stateParams, $ionicModal, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
 
       if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -553,8 +553,7 @@ angular.module('davinciapp.controllers', [])
         console.log('Error sending message', $scope.response);
       })
   }
-    
-	// init gps array
+    // init gps array
     $scope.whoiswhere = [];
     $scope.basel = { lat: 19.4587846, lon: -70.6593584 };
 
@@ -562,7 +561,7 @@ angular.module('davinciapp.controllers', [])
     // to be user as markers, objects should have "lat", "lon", and "name" properties
     $scope.whoiswhere = [
         { "name": "Instituto Leonardo Da Vinci", "lat": $scope.basel.lat, "lon": $scope.basel.lon, "icon": "img/davinci-logo-marker.png" }
-	];
+    ];
 }])
 
 .controller("FeedCtrl", function($http, $scope, $ionicSideMenuDelegate) {
@@ -652,33 +651,28 @@ angular.module('davinciapp.controllers', [])
             $scope.showAlert('Debe ingresar la contraseña.');
             return;
         }
-
-        Auth.login($scope.loginData).
-        then(function(response) {
-            $scope.user = response.data;
-            if($scope.user.length > 0) {
-                if($scope.user[0].NombreUsuario == $scope.loginData.username && $scope.user[0].Contraseña == md5.createHash($scope.loginData.password)) {
-                    Auth.setLoggedInUser($scope.user[0]);
-                    if($scope.user[0].Accesado !== 0) {
-                        $ionicHistory.nextViewOptions({
-                            disableBack: true
-                        });        
-                        $state.go('dashboard');                       
-                    }
-                    else {
-                        $location.path("app/contrasena/" + $scope.user[0].Id);
-                    }
-                }
-                else {
-                    $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
-                    return;
-                } 
+        Auth.login($scope.loginData)
+        .then(function(response) {
+            console.log(response);
+            $scope.user = response.data.user;
+            $scope.user.token = response.data.token;
+            Auth.setLoggedInUser($scope.user);
+            if($scope.user.Accesado !== 0) {
+                $ionicHistory.nextViewOptions({
+                    disableBack: true
+                });        
+                $state.go('dashboard');                       
             }
             else {
-                $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
-                return;
+                $location.path("app/contrasena/" + $scope.user.id);
             }
-        })
+        }, function(error) {
+            console.log(error);
+            if(error.status == 401) {
+                $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
+                $scope.loginData.password = "";
+            }
+        });
     }
 })
 
@@ -697,26 +691,23 @@ angular.module('davinciapp.controllers', [])
             }]
         })
         alertPopup.then(function(res) { console.log('showing alert'); });
-      }
-
-    $scope.getUserData = function() {
-        $http.get('http://leonardo-da-vinci.edu.do:8000/api/Usuarios/'+$stateParams.Id).success(function(data) {
-            $scope.usuario = data[0]
-        });
-    }
+      }    
 
     $scope.cambiarContrasena = function() {
-        console.log($scope.usuario);
+        $scope.familia = Auth.getLoggedInUser();
         if($scope.passForm.password === $scope.passForm.confirmPassword) {
-            $scope.usuario.Contraseña = md5.createHash($scope.passForm.password);
-            $scope.usuario.Accesado = 1;
+            $scope.familia.Contraseña = md5.createHash($scope.passForm.password);
+            $scope.familia.Accesado = 1;
+            console.log($scope.familia);
             $http({
-                method: 'PATCH',
-                url: 'http://leonardo-da-vinci.edu.do:8000/api/Usuarios/'+$stateParams.Id,
-                headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
-                data: $.param($scope.usuario)
+                method: 'PUT',
+                url: 'http://localhost:3515/api/usuarios/' + $scope.familia.id,
+                headers: { 'Content-Type' : 'application/x-www-form-urlencoded',
+                'Authorization': $scope.familia.token },
+                data: $.param($scope.familia)
             })
             .success(function(data) {
+                console.log(data);
                 console.log('exito'); 
                 $scope.showAlert('Su contraseña ha sido actualizada.');
                 $ionicHistory.nextViewOptions({
@@ -738,7 +729,7 @@ angular.module('davinciapp.controllers', [])
     }
 })
 
-.controller('DashboardController', function($scope, $state, $rootScope, $ionicHistory, $state, Auth) {
+.controller('DashboardController', function($scope, $state, $ionicHistory, $state, Auth) {
     
     console.log(Auth.isLoggedIn());
 
@@ -781,19 +772,29 @@ angular.module('davinciapp.controllers', [])
     })     
 })
 
-.controller('CalendarioCtrl', function($scope, $ionicSideMenuDelegate, $http) {
+.controller('CalendarioCtrl', function($scope, $ionicSideMenuDelegate, $http, $ionicModal) {
 
  $scope.openMenu = function () {
     $ionicSideMenuDelegate.toggleLeft();
   }
+  $scope.imgsrc = "";
 
-  $scope.calendario = [];
+    $ionicModal.fromTemplateUrl('templates/modal-fotoCalendario.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function(modal) {
+        $scope.modalCalendario = modal;
+    });
 
-  $http.get('http://leonardo-da-vinci.edu.do/calendario.json?nocache=' + (new Date()).getTime()).success(function(data) {
-    $scope.calendario = data;
-  });  
-    
-    console.log($scope.calendario);
+    $scope.openModalCalendario = function(src) {
+        $scope.imgsrc=src;
+        $scope.modalCalendario.show();
+    };
+
+    $scope.closeModalCalendario = function() {
+        $scope.modalCalendario.hide();
+        $scope.imgsrc="";
+    };    
 })
 
 .controller('EstudiantesCtrl', function($scope, $http, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
@@ -826,24 +827,20 @@ angular.module('davinciapp.controllers', [])
 
     $scope.getEstudiantes = function() {
         console.log($scope.familia);
-        $scope.query = 'select Estudiantes.Id, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Estudiantes.IdCurso From Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante INNER JOIN Secciones ON Inscripciones.IdSeccion = Secciones.Id INNER JOIN Cursos ON Secciones.IdCurso = Cursos.Id and Cursos.Id > 12 INNER JOIN Niveles ON Cursos.IdNivel = Niveles.Id where Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia;
-        console.log($scope.query);
+        $scope.familia = Auth.getLoggedInUser();
         $scope.result = $http({
-            method: 'POST',
-            url: 'http://leonardo-da-vinci.edu.do:8000/dynamic',
-            headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
-            data: $.param({ 'query': $scope.query })
-
+            method: 'GET',
+            url: 'http://localhost:3515/api/familias/' + $scope.familia.IdFamilia + '/estudiantes',
+            headers: {'Authorization': $scope.familia.token }
         })
-        .success(function(data) {
+        .success(function(estudiantes) {
             console.log('exito'); 
-            console.log(data);
-            $scope.estudiantes = data;
+            console.log(estudiantes);
+            $scope.estudiantes = estudiantes.data;
         })
-        .error(function(data) {
+        .error(function(error) {
             console.log('error');
-            console.log(data);
-            console.log($scope.query);
+            console.log(error);
         })
     }
 
@@ -890,21 +887,17 @@ angular.module('davinciapp.controllers', [])
     }
 
     $scope.getEstudiante = function() {
-
+        $scope.familia = Auth.getLoggedInUser();
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Datos del Estudiante...'});
-
-        $scope.query = 'select Estudiantes.Id, Estudiantes.Matricula, Estudiantes.Nombre1, Estudiantes.Nombre2, Estudiantes.Apellido1, Estudiantes.Apellido2, Cursos.Descripcion as Curso, Secciones.Codigo as Seccion, Niveles.Id as IdNivel, Niveles.Descripcion as Nivel from Estudiantes INNER JOIN Inscripciones ON Estudiantes.Id = Inscripciones.IdEstudiante INNER JOIN Secciones ON Inscripciones.IdSeccion = Secciones.Id INNER JOIN Cursos ON Secciones.IdCurso = Cursos.Id and Cursos.Id > 12 INNER JOIN Niveles ON Cursos.IdNivel = Niveles.Id where Estudiantes.IdFamilia = ' + $scope.familia.IdFamilia + ' and Estudiantes.Id = ' + $stateParams.Id;
-        console.log($scope.query);
         $scope.result = $http({
-            method: 'POST',
-            url: 'http://leonardo-da-vinci.edu.do:8000/dynamic',
-            headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
-            data: $.param({ 'query': $scope.query })
-
+            method: 'GET',
+            url: 'http://localhost:3515/api/estudiantes/' + $stateParams.Id,
+            headers: {'Authorization': $scope.familia.token }
         })
-        .success(function(data) {
-            $scope.estudiante = data[0];
-              console.log($scope.publicaciones);
+        .success(function(estudiante) {
+            $scope.estudiante = estudiante.data[0];
+            console.log($scope.estudiante);
+            console.log($scope.publicaciones);
 
             if($scope.estudiante.IdNivel == 5) {
                 $scope.evaluaciones.ev1 = 1;
@@ -924,91 +917,96 @@ angular.module('davinciapp.controllers', [])
                 $scope.evaluaciones.ev3 = 12;
                 $scope.evaluaciones.ev4 = 13;            
             }
+            if($scope.estudiante.IdNivel >= 3) {
 
-             if($scope.estudiante.IdNivel == 5 || $scope.estudiante.IdNivel == 4) {
-                //Nivel Secundario I/II
-                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ns.ev1;
-                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ns.ev2;
-                $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_ns.prom1;
-                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ns.ev3;
-                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ns.ev4;
-                $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_ns.prom2;
-                $scope.publicada.promf = $scope.publicaciones.evaluaciones_ns.promf;
-                $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_ns.prom70;
-                $scope.publicada.pru = $scope.publicaciones.evaluaciones_ns.pru;
-                $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_ns.pru30;
-                $scope.publicada.cf = $scope.publicaciones.evaluaciones_ns.cf;
-                $scope.publicada.asi = $scope.publicaciones.evaluaciones_ns.asi;
-                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ns.nivel;
-            }
-            else if($scope.estudiante.IdNivel == 3) {
-                //Nivel Primario II
-                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_np.ev1;
-                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_np.ev2;
-                $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_np.prom1;
-                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_np.ev3;
-                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_np.ev4;
-                $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_np.prom2;
-                $scope.publicada.promf = $scope.publicaciones.evaluaciones_np.promf;
-                $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_np.prom70;
-                $scope.publicada.pru = $scope.publicaciones.evaluaciones_np.pru;
-                $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_np.pru30;
-                $scope.publicada.cf = $scope.publicaciones.evaluaciones_np.cf;
-                $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
-                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
-            }
-            console.log($scope.publicada);
-            $scope.getNotas();          
+                if($scope.estudiante.IdNivel == 5 || $scope.estudiante.IdNivel == 4) {
+                    //Nivel Secundario I/II
+                    $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ns.ev1;
+                    $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ns.ev2;
+                    $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_ns.prom1;
+                    $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ns.ev3;
+                    $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ns.ev4;
+                    $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_ns.prom2;
+                    $scope.publicada.promf = $scope.publicaciones.evaluaciones_ns.promf;
+                    $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_ns.prom70;
+                    $scope.publicada.pru = $scope.publicaciones.evaluaciones_ns.pru;
+                    $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_ns.pru30;
+                    $scope.publicada.cf = $scope.publicaciones.evaluaciones_ns.cf;
+                    $scope.publicada.asi = $scope.publicaciones.evaluaciones_ns.asi;
+                    $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ns.nivel;
+                }
+                else if($scope.estudiante.IdNivel == 3) {
+                    //Nivel Primario II
+                    $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_np.ev1;
+                    $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_np.ev2;
+                    $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_np.prom1;
+                    $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_np.ev3;
+                    $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_np.ev4;
+                    $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_np.prom2;
+                    $scope.publicada.promf = $scope.publicaciones.evaluaciones_np.promf;
+                    $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_np.prom70;
+                    $scope.publicada.pru = $scope.publicaciones.evaluaciones_np.pru;
+                    $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_np.pru30;
+                    $scope.publicada.cf = $scope.publicaciones.evaluaciones_np.cf;
+                    $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
+                    $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
+                }
+                $scope.getNotas();
+            }     
         })
         .error(function(data) {
             console.log('error');
             console.log(data);
-            console.log($scope.query);
         })
 
         $ionicLoading.hide();
     }
 
     $scope.getNotas = function() {
+        console.log($scope.estudiante);
+        $scope.familia = Auth.getLoggedInUser();
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
-        $scope.query = "SELECT sn1.Promedio as EV1, sn2.Promedio as EV2, sn3.Promedio as EV3,  sn4.Promedio as EV4, Asignaturas.Nombre as Asignatura FROM CalificacionesNumericas INNER JOIN CalificacionesNumericasSemestrales cs1 ON CalificacionesNumericas.Id = cs1.IdCalificacionNumerica and cs1.Semestre = 1 INNER JOIN CalificacionesNumericasSemestrales cs2 ON CalificacionesNumericas.Id = cs2.IdCalificacionNumerica and cs2.Semestre = 2 RIGHT JOIN SubCalificacionesNumericas sn1 ON cs1.Id = sn1.IdCalificacionSemestral and sn1.IdEvaluacion = " + $scope.evaluaciones.ev1 + " RIGHT JOIN SubCalificacionesNumericas sn2 ON cs1.Id = sn2.IdCalificacionSemestral and sn2.IdEvaluacion = " + $scope.evaluaciones.ev2 + " LEFT JOIN SubCalificacionesNumericas sn3 ON cs2.Id = sn3.IdCalificacionSemestral and sn3.IdEvaluacion = " + $scope.evaluaciones.ev3 + " LEFT JOIN SubCalificacionesNumericas sn4 ON cs2.Id = sn4.IdCalificacionSemestral and sn4.IdEvaluacion = " + $scope.evaluaciones.ev4 + " INNER JOIN  Asignaturas ON CalificacionesNumericas.IdAsignatura = Asignaturas.Id and Asignaturas.Estado = 1 INNER JOIN Inscripciones ON CalificacionesNumericas.IdInscripcion = Inscripciones.Id and Inscripciones.IdAnio = 1 INNER JOIN Estudiantes e ON Inscripciones.IdEstudiante = e.Id WHERE e.Id = " + $stateParams.Id + " order by Asignaturas.Orden";
-        console.log($scope.query);
         $scope.result = $http({
-            method: 'POST',
-            url: 'http://leonardo-da-vinci.edu.do:8000/dynamic',
-            headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
-            data: $.param({ 'query': $scope.query })
+            method: 'GET',
+            url: 'http://localhost:3515/api/estudiantes/' + $stateParams.Id + '/notas',
+            headers: {'Authorization': $scope.familia.token },
+            params: {
+                ev1: $scope.evaluaciones.ev1, 
+                ev2: $scope.evaluaciones.ev2,
+                ev3: $scope.evaluaciones.ev3,
+                ev4: $scope.evaluaciones.ev4,
+                curso: $scope.estudiante.IdCurso
+            }
 
         })
-        .success(function(data) {
-            for (var i = 0; i < data.length; i++) {
-                data[i].prom1 = 0;
-                data[i].prom2 = 0;
-                if(data[i].EV2 > 0)
+        .success(function(notas) {
+            for (var i = 0; i < notas.data.length; i++) {
+                notas.data[i].prom1 = 0;
+                notas.data[i].prom2 = 0;
+                if(notas.data[i].EV2 > 0)
                 {
-                    data[i].prom1 = (data[i].EV1 + data[i].EV2)/2;
+                    notas.data[i].prom1 = (notas.data[i].EV1 + notas.data[i].EV2)/2;
                 }
                 else 
                 {
-                    data[i].prom1 = data[i].EV1;
+                    notas.data[i].prom1 = notas.data[i].EV1;
                 }
 
-                if(data[i].EV4 > 0)
+                if(notas.data[i].EV4 > 0)
                 {
-                    data[i].prom2 = (data[i].EV4 + data[i].EV3)/2;
+                    notas.data[i].prom2 = (notas.data[i].EV4 + notas.data[i].EV3)/2;
                 }
                 else 
                 {
-                    data[i].prom2 = data[i].EV3;
+                    notas.data[i].prom2 = notas.data[i].EV3;
                 }
             }
-            $scope.notas = data;
+            $scope.notas = notas.data;
             console.log($scope.notas);
         })
         .error(function(data) {
             console.log('error');
             console.log(data);
-            console.log($scope.query);
         })
         $ionicLoading.hide();
     }

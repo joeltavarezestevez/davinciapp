@@ -3,9 +3,12 @@ angular.module('davinciapp.services', [])
 .factory('Auth', ['$rootScope', '$localStorage', '$http', 'md5', function ($rootScope, $localStorage, $http, md5) {    
   return {
     login: function (user) {
+      user.password = md5.createHash(user.password);
         return $http({
-            method: 'GET',
-            url: "http://50.116.97.38:8000/api/Usuarios?_where=((NombreUsuario,eq," + user.username +")~and(Contrase%C3%B1a,eq," + md5.createHash(user.password) + "))"
+          method: 'POST',
+          url: 'http://localhost:3515/api/usuarios/signin',
+          headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
+          data: $.param(user)
         });
     },
     getLoggedInUser: function () {
