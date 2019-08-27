@@ -442,6 +442,14 @@ angular.module('davinciapp.controllers', [])
         $ionicSideMenuDelegate.toggleLeft();
     };
 
+    $scope.openURL = function(link) {
+        try {
+            window.open(link, '_system', 'location=no');
+        } catch (err) {
+            alert(err);
+        }
+    }    
+
     $scope.circulares = [];
     $scope.circular = {};
     $scope.url = "http://leonardo-da-vinci.edu.do/";

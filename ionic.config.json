@@ -1,6 +1,5 @@
 {
   "name": "davinciapp",
-  "app_id": "",
   "integrations": {
     "cordova": {}
   },

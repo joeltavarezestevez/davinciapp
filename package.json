@@ -4,7 +4,7 @@
   "description": "davinciapp: An Ionic project",
   "dependencies": {
     "angular-md5": "^0.1.10",
-    "cordova-android": "^7.1.4",
+    "cordova-android": "^8.0.0",
     "cordova-plugin-cache-clear": "^1.3.8",
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-device": "^2.0.2",
@@ -12,7 +12,7 @@
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "cordova-plugin-whitelist": "^1.3.3",
-    "gulp": "^3.5.6",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
@@ -23,6 +23,7 @@
     "onesignal-cordova-plugin": "^2.4.6"
   },
   "devDependencies": {
+    "@ionic/v1-toolkit": "2.0.9",
     "bower": "^1.8.8",
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0"

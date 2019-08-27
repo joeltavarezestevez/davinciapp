@@ -4,7 +4,12 @@
   </ion-nav-buttons>	
 	<ion-content class="padding bg-yellow">
 		<div class="text-center">
-			<h2>{{circular.circular_descripcion}}</h2>			
+			<h2>{{circular.circular_descripcion}}</h2>
+			<div class="text-center" ng-if="circular.circular_url.length > 0">
+				<br>
+				<a class="button button-energized" ng-click="openURL('{{circular.circular_url}}')">{{circular.circular_url_descripcion}}</a>
+				<br><br>
+			</div>			
 			<a ng-click="openModalCircular({{circular.id}})">
 				<img ng-src="{{url+''+circular.circular_foto}}" alt="{{url+''+circular.circular_foto}}" width="500">
 			</a>
