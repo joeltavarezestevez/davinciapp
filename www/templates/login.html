@@ -6,7 +6,7 @@
     <div class="limiter content-wrapper bg-yellow">
       <div class="container-login100">
         <div class="wrap-login100">
-          <form class="login100-form validate-form" ng-submit="doLogin()">
+          <form class="login100-form validate-form">
             <span class="login100-form-title p-b-5">
               Bienvenido
             </span>
@@ -25,7 +25,7 @@
             </div>
 
             <div class="container-login100-form-btn">
-              <button id="btnlogin" class="login100-form-btn" type="submit">Entrar</button>
+              <button id="btnlogin" class="login100-form-btn" type="button" ng-click="doLogin()">Entrar</button>
             </div>
 
             <ul class="login-more p-t-50">

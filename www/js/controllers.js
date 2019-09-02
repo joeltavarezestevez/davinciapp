@@ -633,8 +633,8 @@ angular.module('davinciapp.controllers', [])
 .controller('LoginCtrl', function($scope, md5, $ionicPopup, $ionicHistory, $state, $location, Auth) {
 
       // Form data for the login modal
-      $scope.loginData = {};
-
+      $scope.loginData = { 'username': '', 'password': ''};
+      console.log('logging in...');
       $scope.showAlert = function(message) {
         var alertPopup = $ionicPopup.alert({
             title: 'Aviso',
@@ -650,6 +650,11 @@ angular.module('davinciapp.controllers', [])
       // Perform the login action when the user submits the login form
       $scope.doLogin = function() {
 
+//        $scope.loginData.username = $scope.username;
+  //      $scope.loginData.password = $scope.password;
+
+        console.log($scope.loginData);
+
         if(!$scope.loginData.username) {
             $scope.showAlert('Debe ingresar el codigo de la familia.');
             return;
@@ -659,28 +664,36 @@ angular.module('davinciapp.controllers', [])
             $scope.showAlert('Debe ingresar la contraseña.');
             return;
         }
-        Auth.login($scope.loginData)
+
+        console.log($scope.loginData);
+        $scope.usuario = $scope.loginData;
+        $scope.loginData = {};
+        Auth.login($scope.usuario)
         .then(function(response) {
             console.log(response);
-            $scope.user = response.data.user;
-            $scope.user.token = response.data.token;
-            Auth.setLoggedInUser($scope.user);
-            if($scope.user.Accesado !== 0) {
+            $scope.loggedinUser = response.data.user;
+            $scope.loggedinUser.token = response.data.token;
+            Auth.setLoggedInUser($scope.loggedinUser);
+            if($scope.loggedinUser.Accesado !== 0) {
                 $ionicHistory.nextViewOptions({
                     disableBack: true
                 });        
                 $state.go('dashboard');                       
             }
             else {
-                $location.path("app/contrasena/" + $scope.user.id);
+                $location.path("app/contrasena/" + $scope.loggedinUser.id);
             }
         }, function(error) {
             console.log(error);
             if(error.status == 401) {
                 $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
-                $scope.loginData.password = "";
+            }
+            else {
+                $scope.showAlert(error.message);
             }
         });
+        console.log($scope.loginData);
+        console.log($scope.usuario);
     }
 })
 
