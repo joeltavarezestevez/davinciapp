@@ -164,7 +164,7 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
   .state('calendario', {
       url: '/app/calendario',
       templateUrl: 'templates/calendario.html',
-      controller: 'CalendarioCtrl'            
+      controller: 'CalendarioCtrl'
     })
   
   .state('horarios', {

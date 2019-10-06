@@ -630,11 +630,12 @@ angular.module('davinciapp.controllers', [])
     }
 })
 
-.controller('LoginCtrl', function($scope, md5, $ionicPopup, $ionicHistory, $state, $location, Auth) {
+.controller('LoginCtrl', function($scope, md5, $ionicPopup, $ionicHistory, $state, $location, Auth, $ionicLoading) {
 
       // Form data for the login modal
       $scope.loginData = { 'username': '', 'password': ''};
       console.log('logging in...');
+
       $scope.showAlert = function(message) {
         var alertPopup = $ionicPopup.alert({
             title: 'Aviso',
@@ -647,9 +648,19 @@ angular.module('davinciapp.controllers', [])
         alertPopup.then(function(res) { console.log('showing alert'); });
       }
 
+      $scope.checkInternetConnection = function() {
+        if(window.Connection) {
+            if(navigator.connection.type == Connection.NONE) {
+                $scope.showAlert('No hay conexion a internet');
+                return;
+            }
+        }
+      }
+
       // Perform the login action when the user submits the login form
       $scope.doLogin = function() {
-
+        $ionicLoading.show();
+        $scope.checkInternetConnection();
 //        $scope.loginData.username = $scope.username;
   //      $scope.loginData.password = $scope.password;
 
@@ -665,12 +676,11 @@ angular.module('davinciapp.controllers', [])
             return;
         }
 
-        console.log($scope.loginData);
         $scope.usuario = $scope.loginData;
         $scope.loginData = {};
         Auth.login($scope.usuario)
         .then(function(response) {
-            console.log(response);
+            $ionicLoading.hide();
             $scope.loggedinUser = response.data.user;
             $scope.loggedinUser.token = response.data.token;
             Auth.setLoggedInUser($scope.loggedinUser);
@@ -685,11 +695,17 @@ angular.module('davinciapp.controllers', [])
             }
         }, function(error) {
             console.log(error);
+            $ionicLoading.hide();
             if(error.status == 401) {
                 $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
             }
             else {
-                $scope.showAlert(error.message);
+                if(error.message) {
+                    $scope.showAlert(error.message);
+                }
+                else {
+                    $scope.showAlert('No hay conexion a internet');
+                }
             }
         });
         console.log($scope.loginData);
@@ -877,6 +893,13 @@ angular.module('davinciapp.controllers', [])
         $ionicSideMenuDelegate.toggleLeft();
     }
 
+    $scope.toggleGroup = function(reporteprogreso) {
+        reporteprogreso.show = !reporteprogreso.show;
+    };
+    $scope.isGroupShown = function(reporteprogreso) {
+        return reporteprogreso.show;
+    };    
+
 
     if(!Auth.isLoggedIn()) {
         console.log('is not loggedin');
@@ -903,11 +926,13 @@ angular.module('davinciapp.controllers', [])
         console.log(url);
         $http.get(url).success(function(data) {
             $scope.publicaciones = data; 
+            console.log(data);
             $scope.getEstudiante();
         })
     }
 
     $scope.getEstudiante = function() {
+        $ionicLoading.show();
         $scope.familia = Auth.getLoggedInUser();
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Datos del Estudiante...'});
         $scope.result = $http({
@@ -919,74 +944,106 @@ angular.module('davinciapp.controllers', [])
             $scope.estudiante = estudiante.data[0];
             console.log($scope.estudiante);
             console.log($scope.publicaciones);
-
             if($scope.estudiante.IdNivel == 5) {
-                $scope.evaluaciones.ev1 = 1;
-                $scope.evaluaciones.ev2 = 2;
-                $scope.evaluaciones.ev3 = 4;
-                $scope.evaluaciones.ev4 = 5;
+                $scope.evaluaciones.ev1 = $scope.publicaciones.evaluaciones_ns.ev1_ns2_codigo;
+                $scope.evaluaciones.ev2 = $scope.publicaciones.evaluaciones_ns.ev2_ns2_codigo;
+                $scope.evaluaciones.ev3 = $scope.publicaciones.evaluaciones_ns.ev3_ns2_codigo;
+                $scope.evaluaciones.ev4 = $scope.publicaciones.evaluaciones_ns.ev4_ns2_codigo;
+                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ns.ev1;
+                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ns.ev2;
+                $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_ns.prom1;
+                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ns.ev3;
+                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ns.ev4;
+                $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_ns.prom2;
+                $scope.publicada.promf = $scope.publicaciones.evaluaciones_ns.promf;
+                $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_ns.prom70;
+                $scope.publicada.pru = $scope.publicaciones.evaluaciones_ns.pru;
+                $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_ns.pru30;
+                $scope.publicada.cf = $scope.publicaciones.evaluaciones_ns.cf;
+                $scope.publicada.asi = $scope.publicaciones.evaluaciones_ns.asi;
+                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ns.nivel;
+
+                $ionicLoading.hide();
+                $scope.getNotas();                                
             }
             else if($scope.estudiante.IdNivel == 4) {
-                $scope.evaluaciones.ev1 = 6;
-                $scope.evaluaciones.ev2 = 7;
-                $scope.evaluaciones.ev3 = 8;
-                $scope.evaluaciones.ev4 = 9;            
+                $scope.evaluaciones.ev1 = $scope.publicaciones.evaluaciones_ns.ev1_ns1_codigo;
+                $scope.evaluaciones.ev2 = $scope.publicaciones.evaluaciones_ns.ev2_ns1_codigo;
+                $scope.evaluaciones.ev3 = $scope.publicaciones.evaluaciones_ns.ev3_ns1_codigo;
+                $scope.evaluaciones.ev4 = $scope.publicaciones.evaluaciones_ns.ev4_ns1_codigo;
+                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ns.ev1;
+                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ns.ev2;
+                $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_ns.prom1;
+                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ns.ev3;
+                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ns.ev4;
+                $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_ns.prom2;
+                $scope.publicada.promf = $scope.publicaciones.evaluaciones_ns.promf;
+                $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_ns.prom70;
+                $scope.publicada.pru = $scope.publicaciones.evaluaciones_ns.pru;
+                $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_ns.pru30;
+                $scope.publicada.cf = $scope.publicaciones.evaluaciones_ns.cf;
+                $scope.publicada.asi = $scope.publicaciones.evaluaciones_ns.asi;
+                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ns.nivel;    
+
+                $ionicLoading.hide();
+                $scope.getNotas();                            
             }
             else if($scope.estudiante.IdNivel == 3) {
-                $scope.evaluaciones.ev1 = 10;
-                $scope.evaluaciones.ev2 = 11;
-                $scope.evaluaciones.ev3 = 12;
-                $scope.evaluaciones.ev4 = 13;            
-            }
-            if($scope.estudiante.IdNivel >= 3) {
-
-                if($scope.estudiante.IdNivel == 5 || $scope.estudiante.IdNivel == 4) {
-                    //Nivel Secundario I/II
-                    $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ns.ev1;
-                    $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ns.ev2;
-                    $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_ns.prom1;
-                    $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ns.ev3;
-                    $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ns.ev4;
-                    $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_ns.prom2;
-                    $scope.publicada.promf = $scope.publicaciones.evaluaciones_ns.promf;
-                    $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_ns.prom70;
-                    $scope.publicada.pru = $scope.publicaciones.evaluaciones_ns.pru;
-                    $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_ns.pru30;
-                    $scope.publicada.cf = $scope.publicaciones.evaluaciones_ns.cf;
-                    $scope.publicada.asi = $scope.publicaciones.evaluaciones_ns.asi;
-                    $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ns.nivel;
-                }
-                else if($scope.estudiante.IdNivel == 3) {
-                    //Nivel Primario II
-                    $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_np.ev1;
-                    $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_np.ev2;
-                    $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_np.prom1;
-                    $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_np.ev3;
-                    $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_np.ev4;
-                    $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_np.prom2;
-                    $scope.publicada.promf = $scope.publicaciones.evaluaciones_np.promf;
-                    $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_np.prom70;
-                    $scope.publicada.pru = $scope.publicaciones.evaluaciones_np.pru;
-                    $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_np.pru30;
-                    $scope.publicada.cf = $scope.publicaciones.evaluaciones_np.cf;
-                    $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
-                    $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
-                }
+                $scope.evaluaciones.ev1 = $scope.publicaciones.evaluaciones_np.ev1_codigo;
+                $scope.evaluaciones.ev2 = $scope.publicaciones.evaluaciones_np.ev2_codigo;
+                $scope.evaluaciones.ev3 = $scope.publicaciones.evaluaciones_np.ev3_codigo;
+                $scope.evaluaciones.ev4 = $scope.publicaciones.evaluaciones_np.ev4_codigo;
+                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_np.ev1;
+                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_np.ev2;
+                $scope.publicada.prom1 = $scope.publicaciones.evaluaciones_np.prom1;
+                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_np.ev3;
+                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_np.ev4;
+                $scope.publicada.prom2 = $scope.publicaciones.evaluaciones_np.prom2;
+                $scope.publicada.promf = $scope.publicaciones.evaluaciones_np.promf;
+                $scope.publicada.prom70 = $scope.publicaciones.evaluaciones_np.prom70;
+                $scope.publicada.pru = $scope.publicaciones.evaluaciones_np.pru;
+                $scope.publicada.pru30 = $scope.publicaciones.evaluaciones_np.pru30;
+                $scope.publicada.cf = $scope.publicaciones.evaluaciones_np.cf;
+                $scope.publicada.asi = $scope.publicaciones.evaluaciones_np.asi;
+                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;            
+                
+                $ionicLoading.hide();
                 $scope.getNotas();
-            }     
+            }
+            else if($scope.estudiante.IdNivel == 2) {
+                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_np.ev1;
+                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_np.ev2;
+                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_np.ev3;
+                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_np.ev4;
+                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_np.nivel;
+
+                $ionicLoading.hide();
+                $scope.getReporteProgresoEstudiante($scope.estudiante.Id);
+            }
+            else if($scope.estudiante.IdNivel == 1) {
+                $scope.publicada.ev1 = $scope.publicaciones.evaluaciones_ni.ev1;
+                $scope.publicada.ev2 = $scope.publicaciones.evaluaciones_ni.ev2;
+                $scope.publicada.ev3 = $scope.publicaciones.evaluaciones_ni.ev3;
+                $scope.publicada.ev4 = $scope.publicaciones.evaluaciones_ni.ev4;
+                $scope.publicada.nivel = $scope.publicaciones.evaluaciones_ni.nivel;
+
+                $ionicLoading.hide();
+                $scope.getReporteProgresoEstudiante($scope.estudiante.Id);
+            }   
         })
         .error(function(data) {
             console.log('error');
             console.log(data);
+            $ionicLoading.hide();
         })
 
         $ionicLoading.hide();
     }
 
     $scope.getNotas = function() {
+        $ionicLoading.show();
         console.log($scope.estudiante);
         $scope.familia = Auth.getLoggedInUser();
-        $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
         $scope.result = $http({
             method: 'GET',
             url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/' + $stateParams.Id + '/notas',
@@ -1001,6 +1058,7 @@ angular.module('davinciapp.controllers', [])
 
         })
         .success(function(notas) {
+            console.log($scope.result);
             for (var i = 0; i < notas.data.length; i++) {
                 notas.data[i].prom1 = 0;
                 notas.data[i].prom2 = 0;
@@ -1024,12 +1082,35 @@ angular.module('davinciapp.controllers', [])
             }
             $scope.notas = notas.data;
             console.log($scope.notas);
+            $ionicLoading.hide();
         })
         .error(function(data) {
             console.log('error');
             console.log(data);
+            $ionicLoading.hide();
         })
-        $ionicLoading.hide();
+    }
+
+    $scope.getReporteProgresoEstudiante = function(IdEstudiante) {
+        console.log($scope.publicada);
+        $scope.familia = Auth.getLoggedInUser();
+        $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Reporte de Progreso...'});
+        console.log('http://leonardo-da-vinci.edu.do:3515/api/reportesprogresos/' + $stateParams.Id);
+        $http({
+            method: 'GET',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/reportesprogresos/' + $stateParams.Id,
+            headers: {'Authorization': $scope.familia.token }
+        })
+        .success(function(reportesprogresos) {
+            $scope.reportesProgresos = reportesprogresos.data;
+            console.log($scope.reportesProgresos);
+            $ionicLoading.hide();
+        })
+        .error(function(data) {
+            console.log('error');
+            console.log(data);
+            $ionicLoading.hide();
+        })
     }
 
     $scope.init = function() { 

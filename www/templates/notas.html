@@ -4,31 +4,57 @@
     </ion-nav-buttons>
     <ion-content overflow-scroll="true" scroll="true" class="content has-header">
         <ion-refresher on-refresh="doRefresh()" pulling-text="Recargar..." refreshing-text="Cargando..."></ion-refresher>
-        <h5 class="energized text-center"><b>REPORTE DE CALIFICACIONES</b></h5>
-        <h5 class="energized text-center"><b>A&ntilde;o Escolar 2018-2019</b></h5>
+        <h5 class="energized text-center" ng-if="estudiante.IdCurso <= 12"><b>REPORTES DE PROGRESOS</b></h5>
+        <h5 class="energized text-center" ng-if="estudiante.IdCurso > 12"><b>REPORTE DE CALIFICACIONES</b></h5>
+        <h5 class="energized text-center"><b>A&ntilde;o Escolar {{estudiante.Codigo}}</b></h5>
         <div class="card">
             <div class="item item-divider item-energized">
                 <h3 style="color: white !important;"><b>Datos del Estudiante</b></h3>
             </div>
-            <div class="bg-yellow">
+            <div class="bg-yellow" style="font-size: 0.85em;">
                 <div class="row responsive-sm">
-                    <p class="col small-line"><small>Alumno(a): <b>{{ estudiante.Nombre1 }} {{ estudiante.Nombre2 }} {{ estudiante.Apellido1 }} {{ estudiante.Apellido2 }}</b></small></p>
+                    <p class="col"><small>Matrícula: <b>{{ estudiante.Matricula }} - {{ estudiante.Nombre1 }} {{ estudiante.Nombre2 }} {{ estudiante.Apellido1 }} {{ estudiante.Apellido2 }}</b></small></p>
                 </div>
                 <div class="row responsive-sm">
-                    <p class="col small-line"><small>Matrícula: <b>{{ estudiante.Matricula }}</b></small></p>
-                    <p class="col small-line"><small>Curso: <b>{{ estudiante.Curso }}</b></small></p>
-                </div>
-                <div class="row responsive-sm">
-                    <p class="col small-line"><small>Sección: <b>{{ estudiante.Seccion }}</b></small></p>
-                    <p class="col small-line"><small>Nivel: <b>{{ estudiante.Nivel }}</b></small></p>
-                    <p class="col small-line"><small>Año Escolar: <b>2018-2019</b></small></p>
+                    <div class="row">
+                        <p class="col-33"><small>Curso: <b>{{ estudiante.Curso }} {{ estudiante.Seccion }} - NIVEL {{ estudiante.Nivel }}</b></small></p>
+                    </div>
                 </div>                   
             </div>
         </div>
-        <div class="text-center" ng-if="estudiante.IdCurso < 12">Este estudiante no tiene calificaciones num&eacute;ricas.</div>
+        <div class="card bg-yellow" ng-if="estudiante.IdCurso <= 12">
+            <div ng-if="!publicada.nivel || reportesProgresos.length == 0" class="item item-text-wrap text-center bg-yellow">No hay reportes de progresos publicados para este estudiante.</div>
+            <ion-list class="bg-yellow-dark" ng-if="publicada.nivel">
+              <div ng-repeat="reporteProgreso in reportesProgresos" id="reporteProgreso">
+                <ion-item class="item item-divider item-energized item-text-wrap" ng-click="toggleGroup(reporteProgreso)" ng-class="{active: isGroupShown(reporteProgreso)}" id="reporteProgreso" style="font-size: 0.95em; border-bottom: 2px solid #000;" ng-if="publicada.ev1 || publicada.ev2 || publicada.ev3 || publicada.ev4">
+                  <i class="icon" ng-class="isGroupShown(reporteProgreso) ? 'ion-minus' : 'ion-plus'"></i> &nbsp;
+                  <b ng-if="reporteProgreso.Periodo == 1"> Reporte de Progreso Primera Evaluaci&oacute;n</b>
+                  <b ng-if="reporteProgreso.Periodo == 2"> Reporte de Progreso Segunda Evaluaci&oacute;n</b>
+                  <b ng-if="reporteProgreso.Periodo == 3"> Reporte de Progreso Tercera Evaluaci&oacute;n</b>
+                  <b ng-if="reporteProgreso.Periodo == 4"> Reporte de Progreso Cuarta Evaluaci&oacute;n</b>
+                </ion-item>
+                <ion-item class="item item-text-wrap text-center bg-yellow" ng-if="!publicada.ev1 && !publicada.ev2 && !publicada.ev3 && !publicada.ev4">No hay reportes de progresos publicados para este estudiante.</ion-item>
+                <div ng-show="isGroupShown(reporteProgreso)" class="item-accordion" id="promocion">
+                  <ion-item class="item bg-yellow-dark item-text-wrap" style="font-size: 0.95em">
+                    <p class="text-right">Fecha:
+                        <b ng-if="reporteProgreso.Periodo == 1">Octubre {{reporteProgreso.Fecha | date: 'yyyy'}}</b>
+                        <b ng-if="reporteProgreso.Periodo == 2">Diciembre {{reporteProgreso.Fecha | date: 'yyyy'}}</b>
+                        <b ng-if="reporteProgreso.Periodo == 3">Marzo {{reporteProgreso.Fecha | date: 'yyyy'}}</b>
+                        <b ng-if="reporteProgreso.Periodo == 4">Junio {{reporteProgreso.Fecha | date: 'yyyy'}}</b>
+                    </p>
+                    <b><u>Fortalezas</u></b><br> {{reporteProgreso.Fortalezas}}<br><br>
+                    <b><u>Aspectos a mejorar</u></b><br> {{reporteProgreso.Mejoras}}<br><br>
+                    <b><u>Recomendaciones de el/la maestro/a</u></b><br> {{reporteProgreso.Recomendaciones}}<br><br>
+                    <b><u>Comentarios</u></b><br> {{reporteProgreso.Comentarios}}
+                    <p class="text-right">Profesor/a: <b>{{reporteProgreso.ProfesorNombre}} {{reporteProgreso.ProfesorApellido}}</b>
+                  </ion-item>
+                </div>
+              </div>
+            </ion-list>            
+        </div>
         <div class="card bg-yellow" ng-if="estudiante.IdCurso > 12">
             <ion-scroll direction="x" class="padding wide-as-needed">
-                <div class="item item-header item-energized row row-item min-500">
+                <div class="item item-header item-energized row row-item min-500" ng-if="publicada.nivel">
                     <div class="col col-left min-175">Asignatura</div>
                     <div class="col col-right min-10">EV1</div>
                     <div class="col col-right min-10">EV2</div>
@@ -40,7 +66,7 @@
                     <div class="col col-right min-10">COMPL</div>
                     <div class="col col-right min-10">EXT</div>  
                 </div>
-                <div ng-if="!publicada.nivel" class="text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
+                <div ng-if="!publicada.nivel" class="item item-text-wrap text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="row in notas | orderBy:predicate:desc">
                     <div class="col col-left min-175">{{ row.Asignatura }}</div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ row.EV1 | number:0 }}</span></div>
@@ -70,7 +96,7 @@
                     <p class="col col-50 small-line"><small><b>COMPL</b> = Completivo</small></p>
                 </div>
                 <div class="row">
-                    <p class="col col-50 small-line"><small><b>EXT</b> = Extraordinario</small></p>
+                    <p class="col small-line"><small><b>EXT</b> = Extraordinario</small></p>
                 </div>
             </div>
         </div>

@@ -72,7 +72,7 @@
 .min-175 { min-width: 175px; font-size: 8px; }
 .min-500 { min-width: 500px; }
 
-.small-line {line-height: 20%; }
+.small-line {line-height: 20%;}
 
 .row-item {
   padding: 0px !important;
