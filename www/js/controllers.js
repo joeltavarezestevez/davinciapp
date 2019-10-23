@@ -657,14 +657,15 @@ angular.module('davinciapp.controllers', [])
         }
       }
 
+      $scope.checkInternetConnection();
+
       // Perform the login action when the user submits the login form
       $scope.doLogin = function() {
         $ionicLoading.show();
-        $scope.checkInternetConnection();
 //        $scope.loginData.username = $scope.username;
   //      $scope.loginData.password = $scope.password;
 
-        console.log($scope.loginData);
+        //console.log($scope.loginData);
 
         if(!$scope.loginData.username) {
             $scope.showAlert('Debe ingresar el codigo de la familia.');
@@ -695,17 +696,11 @@ angular.module('davinciapp.controllers', [])
             }
         }, function(error) {
             console.log(error);
-            $ionicLoading.hide();
             if(error.status == 401) {
                 $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
             }
             else {
-                if(error.message) {
-                    $scope.showAlert(error.message);
-                }
-                else {
-                    $scope.showAlert('No hay conexion a internet');
-                }
+                $scope.showAlert(error.message);
             }
         });
         console.log($scope.loginData);

@@ -69,7 +69,8 @@
 }
 
 .min-10 { min-width: 10px; font-size: 8px; text-align: center; }
-.min-175 { min-width: 175px; font-size: 8px; }
+.min-175 { min-width: 175px;}
+.min-235 { min-width: 235px;}
 .min-500 { min-width: 500px; }
 
 .small-line {line-height: 20%;}
@@ -201,4 +202,8 @@ h2 {
 
 .img-border {
   border: 1px solid #000;
+}
+
+.td-break {
+  word-wrap: break-word;
 }
