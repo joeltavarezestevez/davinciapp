@@ -69,8 +69,9 @@
 }
 
 .min-10 { min-width: 10px; font-size: 8px; text-align: center; }
-.min-175 { min-width: 175px;}
-.min-235 { min-width: 235px;}
+.min-175 { min-width: 175px; }
+.min-200 { min-width: 200px; }
+.min-235 { min-width: 235px; }
 .min-500 { min-width: 500px; }
 
 .small-line {line-height: 20%;}

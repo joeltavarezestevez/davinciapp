@@ -657,7 +657,7 @@ angular.module('davinciapp.controllers', [])
         }
       }
 
-      $scope.checkInternetConnection();
+      //$scope.checkInternetConnection();
 
       // Perform the login action when the user submits the login form
       $scope.doLogin = function() {
