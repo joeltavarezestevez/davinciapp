@@ -85,7 +85,7 @@
                     </tbody> 
                 </table>-->
                 <div class="item item-header item-energized row row-item min-500" ng-if="publicada.nivel">
-                    <div class="col col-left">Asignatura</div>
+                    <div class="col col-left min-200">Asignatura</div>
                     <div class="col col-right min-10">EV1</div>
                     <div class="col col-right min-10">EV2</div>
                     <div class="col col-right min-10">PROM<br>SEM1</div>
@@ -98,7 +98,7 @@
                 </div>
                 <div ng-if="!publicada.nivel" class="item item-text-wrap text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="nota in notas | orderBy:predicate:desc">
-                    <div class="col col-left min-200">{{ nota.Asignatura | limitTo:30}}{{nota.Asignatura.length < 30 ? '' : '...'}}</div>
+                    <div class="col col-left min-200">{{ nota.Asignatura | limitTo:25}}{{nota.Asignatura.length < 30 ? '' : '...'}}</div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ nota.EV1 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ nota.EV2 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.prom1">{{ nota.prom1 | number:0 }}</span></div>
