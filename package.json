@@ -19,7 +19,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^4.0.2",
     "ionic-plugin-keyboard": "^2.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.12.0",
     "onesignal-cordova-plugin": "^2.6.0"
   },
