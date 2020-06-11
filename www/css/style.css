@@ -57,18 +57,18 @@
 
 .col-right {
   text-align: right;
-  padding: 1px 3px 1px 3px !important;
+  padding: 5px 0px 5px 0px !important;
 }
 
 .col-sep {
-  border-left: 1px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 .col-left {
-  padding: 1px 3px 1px 3px !important;
+  padding: 5px 0px 5px 0px !important;
 }
 
-.min-10 { min-width: 10px; font-size: 8px; text-align: center; }
+.min-10 { min-width: 20px; text-align: center; }
 .min-175 { min-width: 175px; }
 .min-200 { min-width: 200px; }
 .min-235 { min-width: 235px; }

@@ -52,53 +52,30 @@
               </div>
             </ion-list>            
         </div>
-        <div class="card bg-yellow" ng-if="estudiante.IdCurso > 12">
+        <div class="card bg-yellow" ng-if="estudiante.IdCurso > 15" style="font-size: 1em;">
             <ion-scroll direction="x" class="padding">
-                <!--<table ng-if="publicada.nivel">
-                    <thead>
-                        <tr class="row row-item item item-header item-energized">
-                            <td class="col col-left">Asignatura</td>
-                            <td class="col col-right min-10">EV1</td>
-                            <td class="col col-right min-10">EV2</td>
-                            <td class="col col-right min-10">PROM<br>SEM1</td>
-                            <td class="col col-right min-10">EV3</td>
-                            <td class="col col-right min-10">EV4</td>
-                            <td class="col col-right min-10">PROM<br>SEM2</td>
-                            <td class="col col-right min-10">PROM<br>FINAL</td>
-                            <td class="col col-right min-10">COMPL</td>
-                            <td class="col col-right min-10">EXT</td>
-                        </tr> 
-                    </thead>
-                    <tbody>
-                        <tr class="row row-item item bg-yellow" ng-repeat="nota in notas | orderBy:predicate:desc">
-                            <td class="col"><div style="word-wrap: break-word;">{{nota.Asignatura | limitTo: 20}}</div></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.ev1">{{ nota.EV1 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.ev2">{{ nota.EV2 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.prom1">{{ nota.prom1 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.ev3">{{ nota.EV3 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.ev4">{{ nota.EV4 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.prom2">{{ nota.prom2 | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.promf">{{ nota.promf | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.compl">{{ nota.compl | number:0 }}</span></td>
-                            <td class="col col-sep col-right min-10"><span ng-if="publicada.ext">{{ nota.ext | number:0 }}</span></td>
-                        </tr>
-                    </tbody> 
-                </table>-->
                 <div class="item item-header item-energized row row-item min-500" ng-if="publicada.nivel">
-                    <div class="col col-left min-200">Asignatura</div>
-                    <div class="col col-right min-10">EV1</div>
-                    <div class="col col-right min-10">EV2</div>
-                    <div class="col col-right min-10">PROM<br>SEM1</div>
-                    <div class="col col-right min-10">EV3</div>
-                    <div class="col col-right min-10">EV4</div>
-                    <div class="col col-right min-10">PROM<br>SEM2</div>
-                    <div class="col col-right min-10">PROM<br>FINAL</div>
-                    <div class="col col-right min-10">COMPL</div>
-                    <div class="col col-right min-10">EXT</div>  
+                    <div class="col col-left col-sep min-200">ASIGNATURA</div>
+                    <div class="col col-right col-sep min-10">1ev</div>
+                    <div class="col col-right col-sep min-10">2ev</div>
+                    <div class="col col-right col-sep min-10">PS1</div>
+                    <div class="col col-right col-sep min-10">3ev</div>
+                    <div class="col col-right col-sep min-10">4ev</div>
+                    <div class="col col-right col-sep min-10">PS2</div>
+                    <div class="col col-right col-sep min-10">PF</div>
+                    <div class="col col-right col-sep min-10">ASI</div>
+                    <div class="col col-right col-sep min-10">50%<br>PF</div>
+                    <div class="col col-right col-sep min-10">PC</div>
+                    <div class="col col-right col-sep min-10">50%<br>PC</div>
+                    <div class="col col-right col-sep min-10">PF+<br>PC</div>
+                    <div class="col col-right col-sep min-10">30%<br>PF</div>
+                    <div class="col col-right col-sep min-10">PE</div>
+                    <div class="col col-right col-sep min-10">70%<br>PE</div>
+                    <div class="col col-right col-sep min-10">PF+<br>PE</div>               
                 </div>
                 <div ng-if="!publicada.nivel" class="item item-text-wrap text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
                 <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="nota in notas | orderBy:predicate:desc">
-                    <div class="col col-left min-200">{{ nota.Asignatura | limitTo:25}}{{nota.Asignatura.length < 30 ? '' : '...'}}</div>
+                    <div class="col col-left col-sep min-200">{{ nota.Asignatura | limitTo:25}}{{nota.Asignatura.length < 30 ? '' : '...'}}</div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ nota.EV1 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ nota.EV2 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.prom1">{{ nota.prom1 | number:0 }}</span></div>
@@ -106,30 +83,88 @@
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.ev4">{{ nota.EV4 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.prom2">{{ nota.prom2 | number:0 }}</span></div>
                     <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ nota.promf | number:0 }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.compl">{{ nota.compl | number:0 }}</span></div>
-                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ext">{{ nota.ext | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span>{{ nota.asi | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PC > 0">{{ nota.pf50 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PC > 0">{{ nota.PC | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PC > 0">{{ nota.pc50 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PC > 0">{{ nota.pcf | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PE > 0">{{ nota.pf30 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PE > 0">{{ nota.PE | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PE > 0">{{ nota.pe70 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.PE > 0">{{ nota.pef | number:0 }}</span></div>
                 </div>
-                <div></div>
             </ion-scroll>
         </div>
+        <div class="card bg-yellow" ng-if="estudiante.IdCurso > 12 && estudiante.IdCurso < 16" style="font-size: 1em;">
+            <ion-scroll direction="x" class="padding">
+                <div class="item item-header item-energized row row-item min-500" ng-if="publicada.nivel">
+                    <div class="col col-left col-sep min-200">ASIGNATURA</div>
+                    <div class="col col-right col-sep min-10">1ev</div>
+                    <div class="col col-right col-sep min-10">2ev</div>
+                    <div class="col col-right col-sep min-10">PS1</div>
+                    <div class="col col-right col-sep min-10">3ev</div>
+                    <div class="col col-right col-sep min-10">4ev</div>
+                    <div class="col col-right col-sep min-10">PS2</div>
+                    <div class="col col-right col-sep min-10">PF</div>
+                    <div class="col col-right col-sep min-10">PC</div>           
+                </div>
+                <div ng-if="!publicada.nivel" class="item item-text-wrap text-center bg-yellow">No hay calificaciones publicadas para este estudiante.</div>
+                <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="nota in notas | orderBy:predicate:desc">
+                    <div class="col col-left col-sep min-200">{{ nota.Asignatura | limitTo:25}}{{nota.Asignatura.length < 30 ? '' : '...'}}</div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev1">{{ nota.EV1 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev2">{{ nota.EV2 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom1">{{ nota.prom1 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev3">{{ nota.EV3 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.ev4">{{ nota.EV4 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom2">{{ nota.prom2 | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ nota.promf | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="nota.CalificacionDefinitiva > 0">{{ nota.CalificacionDefinitiva | number:0 }}</span></div>
+                </div>
+            </ion-scroll>
+            <div class="row">
+                <div class="col-66">
+                    &nbsp;
+                </div>
+                <div class="col-33" style="text-align: right;">
+                    Asistencia: <span style="border: 1px solid #000; padding: 2px;"><b>{{notas[0].asi}}</b></span>
+                </div>
+            </div>
+        </div>        
         <div class="card" ng-if="estudiante.IdCurso > 12">
             <div class="item item-divider item-energized">
-                <h3 style="color: white !important;"><b>Leyenda</b></h3>
+                <h3 style="color: white !important;"><b>LEYENDA</b></h3>
             </div>
             <div class="bg-yellow">
                 <div class="row">
                     <p class="col col-50 small-line"><small><b>EV</b> = Evaluación </small></p>
-                    <p class="col col-50 small-line"><small><b>SEM</b> = Semestre</small></p>
+                    <p class="col col-50 small-line"><small><b>PS</b> = Promedio Semestre</small></p>
                 </div>
                 <div class="row">
-                    <p class="col col-50 small-line"><small><b>PROM</b> = Promedio </small></p>
-                    <p class="col col-50 small-line"><small><b>COMPL</b> = Completivo</small></p>
+                    <p class="col col-50 small-line"><small><b>ASI</b> = Asistencia</small></p>
+                    <p class="col col-50 small-line"><small><b>PC</b> = Prueba Completiva</small></p>
                 </div>
                 <div class="row">
-                    <p class="col small-line"><small><b>EXT</b> = Extraordinario</small></p>
+                    <p class="col small-line"><small><b>PE</b> = Prueba Extraordinaria</small></p>
                 </div>
             </div>
         </div>
-        &nbsp;
+        <br>
+        <div class="card bg-yellow" ng-if="estudiante.IdCurso > 12">          
+                <div class="item item-divider bg-yellow text-center">
+                    <h3><b>EVALUACIÓN RENDIMIENTO ACADÉMICO</b></h3>
+                </div>
+            <ion-scroll direction="x" class="padding">                
+                <div class="item item-header item-energized row row-item min-500" ng-if="publicada.nivel">
+                    <div class="col col-left col-sep min-200">ASIGNATURA</div>
+                    <div class="col col-right col-sep min-10">1ERA PRUEBA</div>
+                    <div class="col col-right col-sep min-10">2DA PRUEBA</div>
+                </div>
+                <div ng-if="publicada.nivel" class="item row row-item min-500 bg-yellow" ng-repeat="prueba in pruebasrendimiento">
+                    <div class="col col-left col-sep min-200">{{ prueba.Nombre | limitTo:40}}{{prueba.Nombre.length < 40 ? '' : '...'}}</div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.prom1">{{ prueba.ValorPrueba | number:0 }}</span></div>
+                    <div class="col col-right col-sep min-10"><span ng-if="publicada.promf">{{ prueba.ValorPrueba2 | number:0 }}</span></div>
+                </div>
+            </ion-scroll>
+        </div>      
     </ion-content>
 </ion-view>

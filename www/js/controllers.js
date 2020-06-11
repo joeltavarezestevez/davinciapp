@@ -910,6 +910,7 @@ angular.module('davinciapp.controllers', [])
     $scope.familia = Auth.getLoggedInUser();
 
     $scope.notas = [];
+    $scope.pruebasrendimiento = [];
     $scope.evaluaciones = {};
     $scope.publicaciones = {};
     $scope.publicada = {};
@@ -1038,6 +1039,7 @@ angular.module('davinciapp.controllers', [])
     $scope.getNotas = function() {
         $ionicLoading.show();
         console.log($scope.estudiante);
+        $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Notas...'});
         $scope.familia = Auth.getLoggedInUser();
         $scope.result = $http({
             method: 'GET',
@@ -1074,9 +1076,26 @@ angular.module('davinciapp.controllers', [])
                 {
                     notas.data[i].prom2 = notas.data[i].EV3;
                 }
+
+                notas.data[i].promf = (Math.round(notas.data[i].prom1) + Math.round(notas.data[i].prom2))/2;
+
+                if(notas.data[i].promf < 70)
+                {
+                    notas.data[i].pf50 = Math.round(notas.data[i].promf)*0.50;
+                    notas.data[i].pc50 = notas.data[i].PC*0.50;
+                    notas.data[i].pcf = Math.round(notas.data[i].pf50) + Math.round(notas.data[i].pc50);
+                }
+
+                if(notas.data[i].PE > 0)
+                {
+                    notas.data[i].pf30 = Math.round(notas.data[i].promf)*0.30;
+                    notas.data[i].pe70 = notas.data[i].PE*0.70;
+                    notas.data[i].pef = Math.round(notas.data[i].pf30) + Math.round(notas.data[i].pe70);                    
+                }                
             }
             $scope.notas = notas.data;
             console.log($scope.notas);
+            $scope.getPruebasRendimiento();            
             $ionicLoading.hide();
         })
         .error(function(data) {
@@ -1085,6 +1104,25 @@ angular.module('davinciapp.controllers', [])
             $ionicLoading.hide();
         })
     }
+
+    $scope.getPruebasRendimiento = function() {
+        $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Pruebas de Rendimiento...'});
+        $http({
+            method: 'GET',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/pruebasrendimiento/' + $stateParams.Id,
+            headers: {'Authorization': $scope.familia.token }
+        })
+        .success(function(pruebasrendimiento) {
+            $scope.pruebasrendimiento = pruebasrendimiento.data;
+            console.log($scope.pruebasrendimiento);
+            $ionicLoading.hide();
+        })
+        .error(function(data) {
+            console.log('error');
+            console.log(data);
+            $ionicLoading.hide();
+        })
+    }    
 
     $scope.getReporteProgresoEstudiante = function(IdEstudiante) {
         console.log($scope.publicada);
