@@ -698,9 +698,13 @@ angular.module('davinciapp.controllers', [])
             console.log(error);
             if(error.status == 401) {
                 $scope.showAlert('Usuario y/o Contraseña Incorrecto.');
+                $ionicLoading.hide();
+                return;
             }
             else {
                 $scope.showAlert(error.message);
+                $ionicLoading.hide();
+                return;
             }
         });
         console.log($scope.loginData);
@@ -810,6 +814,7 @@ angular.module('davinciapp.controllers', [])
     $ionicSideMenuDelegate.toggleLeft();
   }
   $scope.imgsrc = "";
+  $scope.calendario = [];
 
     $ionicModal.fromTemplateUrl('templates/modal-fotoCalendario.html', {
         scope: $scope,
@@ -817,6 +822,12 @@ angular.module('davinciapp.controllers', [])
     }).then(function(modal) {
         $scope.modalCalendario = modal;
     });
+
+    $scope.getCalendario = function() {
+        $http.get('http://leonardo-da-vinci.edu.do/calendario.json?nocache=' + (new Date()).getTime()).success(function(data) {    
+            $scope.calendario = data;
+        }); 
+    }    
 
     $scope.openModalCalendario = function(src) {
         $scope.imgsrc=src;
@@ -826,7 +837,9 @@ angular.module('davinciapp.controllers', [])
     $scope.closeModalCalendario = function() {
         $scope.modalCalendario.hide();
         $scope.imgsrc="";
-    };    
+    };  
+
+    $scope.getCalendario();  
 })
 
 .controller('EstudiantesCtrl', function($scope, $http, $ionicHistory, $state, $ionicSideMenuDelegate, Auth) {
@@ -862,7 +875,7 @@ angular.module('davinciapp.controllers', [])
         $scope.familia = Auth.getLoggedInUser();
         $scope.result = $http({
             method: 'GET',
-            url: 'http://leonardo-da-vinci.edu.do:3515/api/familias/' + $scope.familia.IdFamilia + '/estudiantes',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/familias/' + $scope.familia.IdFamilia,
             headers: {'Authorization': $scope.familia.token }
         })
         .success(function(estudiantes) {
@@ -1043,7 +1056,7 @@ angular.module('davinciapp.controllers', [])
         $scope.familia = Auth.getLoggedInUser();
         $scope.result = $http({
             method: 'GET',
-            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/' + $stateParams.Id + '/notas',
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/estudiantes/' + $stateParams.Id + '/notas',
             headers: {'Authorization': $scope.familia.token },
             params: {
                 ev1: $scope.evaluaciones.ev1, 
@@ -1109,7 +1122,7 @@ angular.module('davinciapp.controllers', [])
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Pruebas de Rendimiento...'});
         $http({
             method: 'GET',
-            url: 'http://leonardo-da-vinci.edu.do:3515/api/pruebasrendimiento/' + $stateParams.Id,
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/estudiantes/pruebasrendimiento/' + $stateParams.Id,
             headers: {'Authorization': $scope.familia.token }
         })
         .success(function(pruebasrendimiento) {
@@ -1128,10 +1141,10 @@ angular.module('davinciapp.controllers', [])
         console.log($scope.publicada);
         $scope.familia = Auth.getLoggedInUser();
         $ionicLoading.show({ template: '<ion-spinner icon="spiral"></ion-spinner>Cargando Reporte de Progreso...'});
-        console.log('http://leonardo-da-vinci.edu.do:3515/api/reportesprogresos/' + $stateParams.Id);
+        console.log('http://leonardo-da-vinci.edu.do:3515/api/reporteprogreso/' + $stateParams.Id);
         $http({
             method: 'GET',
-            url: 'http://leonardo-da-vinci.edu.do:3515/api/reportesprogresos/' + $stateParams.Id,
+            url: 'http://leonardo-da-vinci.edu.do:3515/api/reporteprogreso/' + $stateParams.Id,
             headers: {'Authorization': $scope.familia.token }
         })
         .success(function(reportesprogresos) {
