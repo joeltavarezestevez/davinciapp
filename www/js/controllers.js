@@ -28,6 +28,7 @@ angular.module('davinciapp.controllers', [])
 
 .controller('ConfiguracionCtrl',  function ($scope, $http, $ionicModal, $ionicPopup, $ionicSideMenuDelegate, Auth, md5, $ionicHistory, $state) {
     
+    $scope.date = new Date();
     $scope.openMenu = function () {
         $ionicSideMenuDelegate.toggleLeft();
     };
@@ -253,6 +254,7 @@ angular.module('davinciapp.controllers', [])
     $scope.url = "http://leonardo-da-vinci.edu.do/";
     $http.get('http://leonardo-da-vinci.edu.do/horarios.json?nocache=' + (new Date()).getTime()).success(function(data) {
         $scope.horarios = data;
+        console.log($scope.horarios);
     });
 
     $ionicModal.fromTemplateUrl('templates/modal-fotoHorario.html', {
@@ -826,6 +828,7 @@ angular.module('davinciapp.controllers', [])
     $scope.getCalendario = function() {
         $http.get('http://leonardo-da-vinci.edu.do/calendario.json?nocache=' + (new Date()).getTime()).success(function(data) {    
             $scope.calendario = data;
+            console.log($scope.calendario);
         }); 
     }    
 

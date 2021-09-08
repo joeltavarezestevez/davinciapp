@@ -4,7 +4,6 @@
   "description": "davinciapp: An Ionic project",
   "dependencies": {
     "angular-md5": "^0.1.10",
-    "cordova-android": "^8.1.0",
     "cordova-plugin-cache-clear": "^1.3.8",
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-device": "^2.0.3",
@@ -26,6 +25,7 @@
   "devDependencies": {
     "@ionic/v1-toolkit": "^2.0.9",
     "bower": "^1.8.8",
+    "cordova-android": "^9.1.0",
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0"
   },

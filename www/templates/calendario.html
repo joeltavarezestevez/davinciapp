@@ -4,7 +4,6 @@
   </ion-nav-buttons>   
   <ion-content class="bg-yellow">
     <h2 class="text-center">Calendario Escolar</h2>
-    <h4 class="text-center energized">2020-2021</h4>
     <div class="row text-center">
       <div class="col-33" style="padding: 1%;">&nbsp;</div>
       <div class="col-33" style="padding: 1%;">
@@ -12,7 +11,7 @@
       </div>
       <div class="col-33" style="padding: 1%;">&nbsp;</div>
     </div>
-    <div class="row">
+    <div class="row" style="flex-wrap: wrap;">
       <div class="col-33" ng-repeat="mes in calendario" style="padding: 1%;">
         <img class="img-border" ng-src="{{mes.calendario_foto}}" ng-click="openModalCalendario('{{mes.calendario_foto}}')">
       </div>       

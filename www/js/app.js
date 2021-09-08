@@ -44,10 +44,10 @@ angular.module('starter', ['ionic', 'davinciapp.controllers', 'davinciapp.servic
 
     };
 
-    window.plugins.OneSignal
+   /* window.plugins.OneSignal
       .startInit("235f314d-64d9-4615-87d6-f7dbef0ae4ff")
       .handleNotificationOpened(notificationOpenedCallback)
-      .endInit();
+      .endInit();*/
     // Sync hashed email if you have a login system or collect it.
     //   Will be used to reach the user at the most optimal time of day.
     // window.plugins.OneSignal.syncHashedEmail(userEmail);
